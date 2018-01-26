@@ -1,0 +1,66 @@
+.body{
+width:100%;
+position:relative;
+margin-top:2px;
+
+
+
+}
+.body .slideshow{
+width:99.6%;
+height:280px;
+
+position:relative;
+border-radius:3px;
+margin:0px auto;
+}
+.body .slideshow img{
+width:100%;
+height:100%;
+position:absolute;
+border-radius:3px;
+display: inline-block;
+}
+.body .content{
+width:100%;
+margin:0px auto;
+
+
+
+
+
+}
+.body .content .galleryintro{
+padding:20px;
+
+margin-left:40px;
+margin-right:40px;
+
+}
+
+.body .content .box1{
+padding:20px;
+width:45.5%;
+position:absolute;
+background:#19A3FF;
+text-align:center;
+opacity:0.8;
+
+}
+.body .content .box2{
+width:45.5%;
+padding:20px;
+position:absolute;
+background:#19A3FF;
+opacity:0.8;
+left:50.5%;
+text-align:center;
+
+}
+
+.body .content .box1:hover {
+opacity:1;
+}
+.body .content .box2:hover {
+opacity:1;
+}

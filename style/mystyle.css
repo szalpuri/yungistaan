@@ -1,0 +1,187 @@
+body{
+padding:0px;
+margin:0px;
+//background:url(images/partytime.jpg) no-repeat center;
+background:black;
+
+
+}
+.wrapper{
+position:relative;
+
+width:980px;
+height:100%;
+margin:0px auto;
+}
+.wrapper header{
+width:978px;
+height:157px;
+margin:0px auto;
+
+}
+header .bar{
+margin:0px auto;
+
+position:relative;
+}
+header .bar .sitename{
+position:absolute;
+text-align:center;
+top:0px;
+font-family:BrushScriptStd;
+font-size:28px;
+text-shadow:0px 0px 10px #A852FF ;
+padding:10px;
+left:150px;
+color:white;
+//background:red;
+width:400px;
+height:80px;
+}
+
+header.bar #tfheader{
+	
+		background-color:#c3dfef;
+		position:absolute;
+		
+	}#tfnewsearch{
+		float:right;
+		margin-top:-70px;
+		padding:20px;
+		
+		
+	}
+	.tftextinput2{
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		color:#666;
+		border:1px solid #0076a3; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+		width:175px;
+	}
+	.tfbutton2 {
+		margin: 0;
+		padding: 5px 7px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		font-weight:bold;
+		
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #000; border-right:0px;
+		background: #000;
+		background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#9400D3));
+		background: -moz-linear-gradient(top,  #000, #9400D3);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+	}
+	.tfbutton2:hover {
+		text-decoration: none;
+	
+	}
+	/* Fixes submit button height problem in Firefox */
+	.tfbutton2::-moz-focus-inner {
+	  border: 0;
+	}
+	.tfclear{
+		clear:both;
+	}
+	
+
+header .nav{
+position:absolute;
+
+border-radius:2px;
+width:978px;
+height:42px;
+background:  #7600A9;
+
+box-shadow:0px 0px 10px #7600A9;
+margin:0px auto;
+
+
+}
+header .nav ul{
+list-style:none;
+color:white;
+text-align:center;
+margin-top:0px;
+margin-left:-10px;
+
+}
+header .nav ul li{
+display:inline;
+position:relative;
+
+
+padding:12px;
+}
+header .nav ul li a{
+font-weight:bold;
+color:white;
+font-family:gabriola;
+text-decoration:none;
+font-size:25px;
+}
+header .nav ul li ul{
+width:90px;
+position:absolute;
+font-weight:bold;
+top:40px;
+color:white;
+font-family:gabriola;
+z-index:1;
+
+background:#7600A9;
+display:none;
+
+text-align:left;
+border-radius:2px;
+box-shadow:0px 0px 10px #7600A9;
+left:20px;
+
+}
+header .nav ul li ul li a{
+font-size:20px;
+}
+.nav ul li:hover ul{
+	display: block;
+	
+}
+.nav ul li a:hover{
+color:black;
+
+}
+
+
+header .nav ul li ul li{
+display:inline-block;
+margin-top:-10px;
+margin-bottom:-10px;
+margin-left:-35px;
+margin-right:10px;
+}
+.nav ul li ul li a:hover{
+color:black;
+
+}
+
+
+.wrapper footer{
+position:absolute;
+margin:10px;
+width:962px;
+height:50px;
+background:black;
+text-align:center;
+
+
+}
+footer b{
+text-shadow:0px 0px 50px blue;
+
+}
