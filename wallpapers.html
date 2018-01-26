@@ -1,0 +1,557 @@
+<!Doctype html>
+<html>
+	<head>
+	<script src="jquery.min.js"/>
+	<meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+	<script type="text/javascript">
+	
+	$(function() {
+			$("#tfq2b").click(function() {
+				if ($("#tfq2b").val() == "Search Google"){
+					$("#tfq2b").val(""); 
+				}
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+
+			function loop(){
+		  $('#1').fadeOut(4000, function(){
+			$('#2').fadeOut(4000, function(){
+				$('#3').fadeOut(4000, function(){
+					$('#4').fadeOut(4000, function(){
+						$('#5').fadeOut(4000, function(){
+							$('#6').fadeOut(4000, function(){
+								
+									$('#1').fadeIn().css({"z-index":"0"});
+									$('#7').fadeOut(2000, function(){
+											$('#2').fadeIn();
+											$('#3').fadeIn();
+											$('#4').fadeIn();
+											$('#5').fadeIn();
+											$('#6').fadeIn();
+											$('#7').fadeIn();
+										loop();
+									});
+								
+							});
+						});	
+					});
+				});
+			});
+		  });
+		}
+		loop();
+		
+		//next and back code
+		
+		$('.click1').click(function(){
+					$('.wall1').fadeOut();
+					$('.wall2').fadeIn();
+		
+				
+				});
+				$('.click2').click(function(){
+					$('.wall2').fadeOut();
+					$('.wall3').fadeIn();
+		
+				
+				});
+				$('.click3').click(function(){
+					$('.wall3').fadeOut();
+					$('.wall4').fadeIn();
+		
+				
+				});
+				$('.click4').click(function(){
+					$('.wall4').fadeOut();
+					$('.wall5').fadeIn();
+		
+				
+				});
+				$('.click5').click(function(){
+					$('.wall5').fadeOut();
+					$('.wall1').fadeIn();
+		
+				
+				});
+				/*$('.click6').click(function(){
+					$('.wall6').fadeOut();
+					$('.wall7').fadeIn();
+		
+				
+				});
+				$('.click7').click(function(){
+					$('.wall7').fadeOut();
+					$('.wall8').fadeIn();
+		
+				
+				});
+				$('.click8').click(function(){
+					$('.wall8').fadeOut();
+					$('.wall9').fadeIn();
+		
+				
+				});
+				
+				$('.click9').click(function(){
+					$('.wall9').fadeOut();
+					$('.wall10').fadeIn();
+		
+				
+				});
+				$('.click10').click(function(){
+					$('.wall10').fadeOut();
+					$('.wall1').fadeIn();
+		
+				
+				});*/
+					$('.click12').click(function(){
+					$('.wall2').fadeOut();
+					$('.wall1').fadeIn();
+		
+				
+				});
+				$('.click13').click(function(){
+					$('.wall3').fadeOut();
+					$('.wall2').fadeIn();
+		
+				
+				});
+			
+				$('.click14').click(function(){
+					$('.wall4').fadeOut();
+					$('.wall3').fadeIn();
+		
+				
+				});
+				$('.click15').click(function(){
+					$('.wall5').fadeOut();
+					$('.wall4').fadeIn();
+		
+				
+				});
+				/*$('.click16').click(function(){
+					$('.wall6').fadeOut();
+					$('.wall5').fadeIn();
+		
+				
+				});
+				$('.click17').click(function(){
+					$('.wall7').fadeOut();
+					$('.wall6').fadeIn();
+		
+				
+				});
+				$('.click18').click(function(){
+					$('.wall8').fadeOut();
+					$('.wall7').fadeIn();
+		
+				
+				});
+				
+				$('.click19').click(function(){
+					$('.wall9').fadeOut();
+					$('.wall8').fadeIn();
+		
+				
+				});
+				$('.click110').click(function(){
+					$('.wall10').fadeOut();
+					$('.wall9').fadeIn();
+		
+				
+				});*/
+				
+				
+			$('.wallpaper1').hover(function(){
+			$('.box-txt1').slideToggle("slow");
+			});
+			$('.wallpaper2').hover(function(){
+			$('.box-txt2').slideToggle("slow");
+			});
+			$('.wallpaper3').hover(function(){
+			$('.box-txt3').slideToggle("slow");
+			});
+			$('.wallpaper4').hover(function(){
+			$('.box-txt4').slideToggle("slow");
+			});
+			$('.wallpaper5').hover(function(){
+			$('.box-txt5').slideToggle("slow");
+			});
+				
+			var monthNames = [ "January", "February", "March", "April", "May", "June",
+			"July", "August", "September", "October", "November", "December" ];
+			var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+
+			var newDate = new Date();
+			newDate.getDate();    
+			$('#Date').html("Date"+ " " + ":" + " " +dayNames[newDate.getDay()] + " " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
+		});
+	</script>
+	<link rel="stylesheet" type="text/css" href="style/mystyle.css"></link>
+	<link rel="stylesheet" type="text/css" href="style/gallery.css"></link>
+	</head>
+	<body>
+	
+	<div class="wrapper">
+		<header>
+		<div class="bar">
+			<img class="logo" src="images/logo.jpg" style="width:160px; height:110px;margin-left:10px;"/>
+			<div class="sitename">
+		
+			All in one Entertainment Stop!<br/>
+			Music! Masti! Love & Dosti!
+			
+			</div>
+			<div id="tfheader">
+				<form id="tfnewsearch" method="get" action="http://www.google.com">
+						<input type="text" id="tfq2b" class="tftextinput2" name="q" size="21" maxlength="120" placeholder="Search Google"><input type="submit" value=">" class="tfbutton2">
+				</form>
+				<div class="tfclear"></div>
+			</div>
+			<div id="Date" style="color:white;font-weight:bold;font-size:20px;font-style:italic;float:right; margin-top:-100px;width:260px;height:20px;"></div>
+			
+		</div>
+
+		<div class="nav" >
+		 <ul class="menu">
+			<li><a href="home.html">Home</a>
+				
+			<li>
+			<li><a href="music.html">Music</a>
+				<ul>
+					<li><a href="english.html">English</a></li>
+					<li><a href="bollywood.html">Bollywood</a></li>
+					<li><a href="punjabi.html">Punjabi</a></li>
+				</ul>
+			</li>
+			<li><a href="gallery.html">Gallery</a>
+				<ul>
+					<li><a href="videos.html">Videos</a></li>
+					<li><a href="wallpapers.html">Wallpapers</a></li>
+				</ul>
+			
+			</li>
+			<li><a href="books.html">Books</a>
+				<ul>
+					<li><a href="hp.html">HarryPotter</a></li>
+					<li><a href="twilight.html">Twilight</a></li>
+					<li><a href="tvd.html">TVD</a> </li>
+					<li><a href="hungergames.html">HungerGames</a></li>
+					
+					
+				</ul>
+			</li>
+			<li><a href="quotes.html">Quotes</a>
+				<ul>
+					<li><a href="frnshpq.html">Frienship</a></li>
+					<li><a href="loveq.html">Love</a></li>
+					<li><a href="brkupq.html">Breakup</a></li>
+					<li><a href="funnyq.html">Humour</a></li>
+				</ul>
+			</li>
+			<li><a href="hangouts.html">Hangouts</a>
+				<ul>
+					<li><a href="food.php">Food</a></li>
+					<li><a href="theatre.php">Theaters</a></li>
+					<li><a href="malls.php">Malls</a></li>
+					<li><a href="adventure.php">FunSpots</a></li>
+				</ul>
+			<li><a href="feedback.php">Feedback</a>
+				
+			</li>
+		</ul>
+		</div>
+		</header>
+		<div class="body">
+			<div class="slideshow">
+			
+				<img id="7" src="images/-1374330861-1296331193.jpg"/>
+				<img id="6" src="images/play_video.jpg"/>
+				<img id="5" src="images/youtube-for-android-lets-you-watch-videos-mostly-offline-updated--8bb4ae8a43.jpg"/>
+				<img id="4" src="images/spring_collage_wallpaper_spring_nature_wallpaper_1600_1200_1224.jpg"/>
+				<img id="3" src="images/348397_kollazh_okna_priroda_1920x1080_(www.GdeFon.ru).jpg"/>
+				<img id="2" src="images/images.jpg"/>
+				<img id="1" src="images/Entertainment_v5.jpg"/>
+				<div class="box-txt" style="top:226px;width:100%;height:54px;display: block;background:black;position:absolute;opacity:0.8;">
+					<p style="color:white; font-weight:bold;text-align:center;">DOWNLOAD WALLPAPERS AND WATCH VIDEOS</p>
+					</div>
+			</div>
+			<div class="content" >
+			
+				<div class="galleryintro">
+				
+						<p style="color:white; font-family:Forte;padding:20px;opacity:0.9;font-size:20px;text-align:center;box-shadow:0px 0px 10px white;border-radius:2px;">Beautiful HD Wallpapers</p>
+						<div class="wall1" style=";width:100%;height:100%;border-radius:2px;">
+							<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:		#1693E6;">
+							1. Nature HD Wallpapers &nbsp;&nbsp; &nbsp;<a  href="#"class="click1"style="text-decoration:none; color:black;"> Next<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+				
+								<div class="wallpaper1" style="margin:0px auto;width:100%;height:450px;">
+									<img src="images/green-leaves-wide-and-hd-nature-414439.jpg" style="border-radius:2px;width:100%; height:450px;">
+										<div class="box-txt1" style="top:487px;width:860px;height:56px;display: block;background:black;position:absolute;opacity:0.7;display:none;">
+											<p style="color:white; font-weight:bold;text-align:center;">Right Click-->Save As To Download</p>
+										</div>
+									
+									</img>
+								</div>
+								<div class="wallpaper2" style="margin-top:40px;width:100%;height:450px;">
+									<img src="images/nature hd hd wallpaper high defination.jpg" style="border-radius:2px;width:100%; height:450px;">
+										<div class="box-txt2" style="top:977px;width:860px;height:56px;display: block;background:black;position:absolute;opacity:0.7;display:none;">
+											<p style="color:white; font-weight:bold;text-align:center;">Right Click-->Save As To Download</p>
+										</div>
+									
+									</img>
+								</div>
+								<div class="wallpaper3" style="margin-top:40px;width:100%;height:450px;">
+									<img src="images/nature__hill_australia_hd_wallpaper_1100936459.jpg" style="border-radius:2px;width:100%; height:450px;">
+										<div class="box-txt3" style="top:1467px;width:860px;height:56px;display: block;background:black;position:absolute;opacity:0.7;display:none;">
+											<p style="color:white; font-weight:bold;text-align:center;">Right Click-->Save As To Download</p>
+										</div>
+									
+									</img>
+								</div>
+								<div class="wallpaper4" style="margin-top:40px;width:100%;height:450px;">
+									<img src="images/big_almaty_lake-1366x768.jpg" style="border-radius:2px;width:100%; height:450px;">
+										<div class="box-txt4" style="top:1957px;width:860px;height:56px;display: block;background:black;position:absolute;opacity:0.7;display:none;">
+											<p style="color:white; font-weight:bold;text-align:center;">Right Click-->Save As To Download</p>
+										</div>
+									
+									</img>
+								</div>
+								<div class="wallpaper5" style="margin-top:40px;width:100%;height:450px;">
+									<img src="images/Wallpaper-Nature-Pictures-HD.jpg" style="border-radius:2px;width:100%; height:450px;">
+										<div class="box-txt5" style="top:2447px;width:860px;height:56px;display: block;background:black;position:absolute;opacity:0.7;display:none;">
+											<p style="color:white; font-weight:bold;text-align:center;">Right Click-->Save As To Download</p>
+										</div>
+									
+									</img>
+								</div>
+						</div>
+						
+						
+						<div class="wall2" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+								<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#1693E6;">
+								<a  href="#"class="click12"style="text-decoration:none; color:black;">
+								<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>
+								&nbsp; &nbsp;&nbsp;2. Cars HD Wallpapers &nbsp;&nbsp; &nbsp; <a  href="#"class="click2"style="text-decoration:none; color:black;"> 
+								Next<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+								
+								<div class="wallpaper1" style="margin:0px auto;width:100%;height:450px;">
+									<img src="images/lamborghini_gallardo_supercar-1366x768.jpg" style="border-radius:2px;width:100%; height:450px;">
+										<div class="box-txt1" style="top:487px;width:860px;height:56px;display: block;background:black;position:absolute;opacity:0.7;display:none;">
+											<p style="color:white; font-weight:bold;text-align:center;">Right Click-->Save As To Download</p>
+										</div>
+									
+									</img>
+								</div>
+								<div class="wallpaper2" style="margin-top:40px;width:100%;height:450px;">
+									<img src="images/Very-Cool-Cars-Wallpapers.jpg" style="border-radius:2px;width:100%; height:450px;">
+										<div class="box-txt2" style="top:977px;width:860px;height:56px;display: block;background:black;position:absolute;opacity:0.7;display:none;">
+											<p style="color:white; font-weight:bold;text-align:center;">Right Click-->Save As To Download</p>
+										</div>
+									
+									</img>
+								</div>
+								<div class="wallpaper3" style="margin-top:40px;width:100%;height:450px;">
+									<img src="images/lamborghini-police-car-1366-768-6181.jpg" style="border-radius:2px;width:100%; height:450px;">
+										<div class="box-txt3" style="top:1467px;width:860px;height:56px;display: block;background:black;position:absolute;opacity:0.7;display:none;">
+											<p style="color:white; font-weight:bold;text-align:center;">Right Click-->Save As To Download</p>
+										</div>
+									
+									</img>
+								</div>
+								<div class="wallpaper4" style="margin-top:40px;width:100%;height:450px;">
+									<img src="images/2017-Lamborghini-Urus-8.jpg" style="border-radius:2px;width:100%; height:450px;">
+										<div class="box-txt4" style="top:1957px;width:860px;height:56px;display: block;background:black;position:absolute;opacity:0.7;display:none;">
+											<p style="color:white; font-weight:bold;text-align:center;">Right Click-->Save As To Download</p>
+										</div>
+									
+									</img>
+								</div>
+								<div class="wallpaper5" style="margin-top:40px;width:100%;height:450px;">
+									<img src="images/Gt-by-citro-n-race-car-hd-desktop-wallpaper-widescreen-high-1024x575.jpg" style="border-radius:2px;width:100%; height:450px;">
+										<div class="box-txt5" style="top:2447px;width:860px;height:56px;display: block;background:black;position:absolute;opacity:0.7;display:none;">
+											<p style="color:white; font-weight:bold;text-align:center;">Right Click-->Save As To Download</p>
+										</div>
+									
+									</img>
+								</div>
+						</div>
+						<div class="wall3" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+								<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#1693E6;">
+								<a  href="#"class="click13"style="text-decoration:none; color:black;">
+								<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>
+								&nbsp; &nbsp;&nbsp;3. Abstract HD Wallpapers &nbsp;&nbsp; &nbsp; <a  href="#"class="click3"style="text-decoration:none; color:black;"> 
+								Next<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+								
+								
+								<div class="wallpaper1" style="margin:0px auto;width:100%;height:450px;">
+									<img src="images/amazing-abstract-wallpaper,1366x768,58768.jpg" style="border-radius:2px;width:100%; height:450px;">
+										<div class="box-txt1" style="top:487px;width:860px;height:56px;display: block;background:black;position:absolute;opacity:0.7;display:none;">
+											<p style="color:white; font-weight:bold;text-align:center;">Right Click-->Save As To Download</p>
+										</div>
+									
+									</img>
+								</div>
+								<div class="wallpaper2" style="margin-top:40px;width:100%;height:450px;">
+									<img src="images/Abstract-Wallpapers-For-Computers-Desktop-640x359.jpg" style="border-radius:2px;width:100%; height:450px;">
+										<div class="box-txt2" style="top:977px;width:860px;height:56px;display: block;background:black;position:absolute;opacity:0.7;display:none;">
+											<p style="color:white; font-weight:bold;text-align:center;">Right Click-->Save As To Download</p>
+										</div>
+									
+									</img>
+								</div>
+								<div class="wallpaper3" style="margin-top:40px;width:100%;height:450px;">
+									<img src="images/3D_Abstract_60872.jpg" style="border-radius:2px;width:100%; height:450px;">
+										<div class="box-txt3" style="top:1467px;width:860px;height:56px;display: block;background:black;position:absolute;opacity:0.7;display:none;">
+											<p style="color:white; font-weight:bold;text-align:center;">Right Click-->Save As To Download</p>
+										</div>
+									
+									</img>
+								</div>
+								<div class="wallpaper4" style="margin-top:40px;width:100%;height:450px;">
+									<img src="images/abstract-wallpaper-pack-17-1920x1080-monitor-78-1024x575.jpg" style="border-radius:2px;width:100%; height:450px;">
+										<div class="box-txt4" style="top:1957px;width:860px;height:56px;display: block;background:black;position:absolute;opacity:0.7;display:none;">
+											<p style="color:white; font-weight:bold;text-align:center;">Right Click-->Save As To Download</p>
+										</div>
+									
+									</img>
+								</div>
+								<div class="wallpaper5" style="margin-top:40px;width:100%;height:450px;">
+									<img src="images/electric-digital-hd-abstract-102206.jpg" style="border-radius:2px;width:100%; height:450px;">
+										<div class="box-txt5" style="top:2447px;width:860px;height:56px;display: block;background:black;position:absolute;opacity:0.7;display:none;">
+											<p style="color:white; font-weight:bold;text-align:center;">Right Click-->Save As To Download</p>
+										</div>
+									
+									</img>
+								</div>
+						</div>
+						<div class="wall4" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+								<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#1693E6;">
+								<a  href="#"class="click14"style="text-decoration:none; color:black;">
+								<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>
+								&nbsp; &nbsp;&nbsp;4. Bikes HD Wallpapers &nbsp;&nbsp; &nbsp; <a  href="#"class="click4"style="text-decoration:none; color:black;"> 
+								Next<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+								
+								<div class="wallpaper1" style="margin:0px auto;width:100%;height:450px;">
+									<img src="images/3-nice-bikes-hd-wallpaper-for-1366x768-hd-14-1906.jpg" style="border-radius:2px;width:100%; height:450px;">
+										<div class="box-txt1" style="top:487px;width:860px;height:56px;display: block;background:black;position:absolute;opacity:0.7;display:none;">
+											<p style="color:white; font-weight:bold;text-align:center;">Right Click-->Save As To Download</p>
+										</div>
+									
+									</img>
+								</div>
+								<div class="wallpaper2" style="margin-top:40px;width:100%;height:450px;">
+									<img src="images/2013_ducati_superbike_1199_panigale_r-1366x768.jpg" style="border-radius:2px;width:100%; height:450px;">
+										<div class="box-txt2" style="top:977px;width:860px;height:56px;display: block;background:black;position:absolute;opacity:0.7;display:none;">
+											<p style="color:white; font-weight:bold;text-align:center;">Right Click-->Save As To Download</p>
+										</div>
+									
+									</img>
+								</div>
+								<div class="wallpaper3" style="margin-top:40px;width:100%;height:450px;">
+									<img src="images/sports-mountainbike-1366x768.jpg" style="border-radius:2px;width:100%; height:450px;">
+										<div class="box-txt3" style="top:1467px;width:860px;height:56px;display: block;background:black;position:absolute;opacity:0.7;display:none;">
+											<p style="color:white; font-weight:bold;text-align:center;">Right Click-->Save As To Download</p>
+										</div>
+									
+									</img>
+								</div>
+								<div class="wallpaper4" style="margin-top:40px;width:100%;height:450px;">
+									<img src="images/1600x900_suzuki-gsxr-motorcycle-HD-Wallpaper.jpg" style="border-radius:2px;width:100%; height:450px;">
+										<div class="box-txt4" style="top:1957px;width:860px;height:56px;display: block;background:black;position:absolute;opacity:0.7;display:none;">
+											<p style="color:white; font-weight:bold;text-align:center;">Right Click-->Save As To Download</p>
+										</div>
+									
+									</img>
+								</div>
+								<div class="wallpaper5" style="margin-top:40px;width:100%;height:450px;">
+									<img src="images/KTM-1290-SuperDukeR_007.jpg" style="border-radius:2px;width:100%; height:450px;">
+										<div class="box-txt5" style="top:2447px;width:860px;height:56px;display: block;background:black;position:absolute;opacity:0.7;display:none;">
+											<p style="color:white; font-weight:bold;text-align:center;">Right Click-->Save As To Download</p>
+										</div>
+									
+									</img>
+								</div>
+						</div>
+						<div class="wall5" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+								<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#1693E6;">
+								<a  href="#"class="click15"style="text-decoration:none; color:black;">
+								<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>
+								&nbsp; &nbsp;&nbsp;5. Cute HD Wallpapers &nbsp;&nbsp; &nbsp; <a  href="#"class="click5"style="text-decoration:none; color:black;"> 
+								Next<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+								
+								<div class="wallpaper1" style="margin:0px auto;width:100%;height:450px;">
+									<img src="images/cute-wallpapers-hd-5.jpg" style="border-radius:2px;width:100%; height:450px;">
+										<div class="box-txt1" style="top:487px;width:860px;height:56px;display: block;background:black;position:absolute;opacity:0.7;display:none;">
+											<p style="color:white; font-weight:bold;text-align:center;">Right Click-->Save As To Download</p>
+										</div>
+									
+									</img>
+								</div>
+								<div class="wallpaper2" style="margin-top:40px;width:100%;height:450px;">
+									<img src="images/Cute-Baby-Teddy-768x1366.jpg" style="border-radius:2px;width:100%; height:450px;">
+										<div class="box-txt2" style="top:977px;width:860px;height:56px;display: block;background:black;position:absolute;opacity:0.7;display:none;">
+											<p style="color:white; font-weight:bold;text-align:center;">Right Click-->Save As To Download</p>
+										</div>
+									
+									</img>
+								</div>
+								<div class="wallpaper3" style="margin-top:40px;width:100%;height:450px;">
+									<img src="images/Cute-Baby-Skullcaps-768x1366.jpg" style="border-radius:2px;width:100%; height:450px;">
+										<div class="box-txt3" style="top:1467px;width:860px;height:56px;display: block;background:black;position:absolute;opacity:0.7;display:none;">
+											<p style="color:white; font-weight:bold;text-align:center;">Right Click-->Save As To Download</p>
+										</div>
+									
+									</img>
+								</div>
+								<div class="wallpaper4" style="margin-top:40px;width:100%;height:450px;">
+									<img src="images/cute-baby-kittens-sleep-wallpaper.jpg" style="border-radius:2px;width:100%; height:450px;">
+										<div class="box-txt4" style="top:1957px;width:860px;height:56px;display: block;background:black;position:absolute;opacity:0.7;display:none;">
+											<p style="color:white; font-weight:bold;text-align:center;">Right Click-->Save As To Download</p>
+										</div>
+									
+									</img>
+								</div>
+								<div class="wallpaper5" style="margin-top:40px;width:100%;height:450px;">
+									<img src="images/Cute Little Girl With Blue Eyes HD Wallpaper-1366x768-cutelittlebabies.blogspot.com.jpg" style="border-radius:2px;width:100%; height:450px;">
+										<div class="box-txt5" style="top:2447px;width:860px;height:56px;display: block;background:black;position:absolute;opacity:0.7;display:none;">
+											<p style="color:white; font-weight:bold;text-align:center;">Right Click-->Save As To Download</p>
+										</div>
+									
+									</img>
+								</div>
+						</div>
+				
+				
+				
+				
+				
+				</div>
+				<div class="box1">
+					<a href="wallpapers.html" style="color:white; text-decoration:none;font-family:Forte;font-size:20px;text-align:center;">
+					View Beautiful HD Wallpapers
+					</a>
+				</div>
+				<div class="box2">
+				<a href="videos.html" style="color:white; text-decoration:none;font-family:Forte;font-size:20px;text-align:center;">
+					View top 10 Youtube Videos
+					</a>
+				
+				</div>
+				
+			
+			</div>
+		
+		</div>
+		<footer style="margin-top:10%">
+				<hr/>
+				<b style="color:white">YUNGISTAAN  copyright &copy; Surbhi Zalpuri 2014</b>
+
+		</footer>
+	</div>
+</body>
+</html>
+			

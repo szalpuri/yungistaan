@@ -1,0 +1,261 @@
+<!Doctype html>
+<html>
+	<head>
+	<script src="jquery.min.js"/>
+	
+	<script type="text/javascript">
+	
+	$(function() {
+			$("#tfq2b").click(function() {
+				if ($("#tfq2b").val() == "Search Google"){
+					$("#tfq2b").val(""); 
+				}
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+
+			function loop(){
+		  $('#1').fadeOut(4000, function(){
+			$('#2').fadeOut(4000, function(){
+				$('#3').fadeOut(4000, function(){
+					$('#4').fadeOut(4000, function(){
+						$('#5').fadeOut(4000, function(){
+							$('#6').fadeOut(4000, function(){
+								
+									$('#1').fadeIn().css({"z-index":"0"});
+									$('#7').fadeOut(2000, function(){
+											$('#2').fadeIn();
+											$('#3').fadeIn();
+											$('#4').fadeIn();
+											$('#5').fadeIn();
+											$('#6').fadeIn();
+											$('#7').fadeIn();
+										loop();
+									});
+								
+							});
+						});	
+					});
+				});
+			});
+		  });
+		}
+		loop();
+			var monthNames = [ "January", "February", "March", "April", "May", "June",
+			"July", "August", "September", "October", "November", "December" ];
+			var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+
+			var newDate = new Date();
+				newDate.getDate();    
+			$('#Date').html("Date"+ " " + ":" + " " +dayNames[newDate.getDay()] + " " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
+		});
+	</script>
+	<link rel="stylesheet" type="text/css" href="style/mystyle.css"></link>
+	<link rel="stylesheet" type="text/css" href="style/quotes.css"></link>
+	</head>
+	<body>
+	
+	<div class="wrapper">
+		<header>
+		<div class="bar">
+			<img class="logo" src="images/logo.jpg" style="width:160px; height:110px;margin-left:10px;"/>
+			<div class="sitename">
+		
+			All in one Entertainment Stop!<br/>
+			Music! Masti! Love & Dosti!
+			
+			</div>
+			<div id="tfheader">
+				<form id="tfnewsearch" method="get" action="http://www.google.com">
+						<input type="text" id="tfq2b" class="tftextinput2" name="q" size="21" maxlength="120" placeholder="Search Google"><input type="submit" value=">" class="tfbutton2">
+				</form>
+				<div class="tfclear"></div>
+			</div>
+			<div id="Date" style="color:white;font-weight:bold;font-size:20px;font-style:italic;float:right; margin-top:-100px;width:260px;height:20px;"></div>
+			
+		</div>
+
+		<div class="nav" >
+		 <ul class="menu">
+			<li><a href="home.html">Home</a>
+				
+			<li>
+			<li><a href="music.html">Music</a>
+				<ul>
+					<li><a href="english.html">English</a></li>
+					<li><a href="bollywood.html">Bollywood</a></li>
+					<li><a href="punjabi.html">Punjabi</a></li>
+				</ul>
+			</li>
+			<li><a href="gallery.html">Gallery</a>
+				<ul>
+					<li><a href="videos.html">Videos</a></li>
+					<li><a href="wallpapers.html">Wallpapers</a></li>
+				</ul>
+			
+			</li>
+			<li><a href="books.html">Books</a>
+				<ul>
+					<li><a href="hp.html">HarryPotter</a></li>
+					<li><a href="twilight.html">Twilight</a></li>
+					<li><a href="tvd.html">TVD</a> </li>
+					<li><a href="hungergames.html">HungerGames</a></li>
+					
+					
+				</ul>
+			</li>
+			<li><a href="quotes.html">Quotes</a>
+				<ul>
+					<li><a href="frnshpq.html">Frienship</a></li>
+					<li><a href="loveq.html">Love</a></li>
+					<li><a href="brkupq.html">Breakup</a></li>
+					<li><a href="funnyq.html">Humour</a></li>
+				</ul>
+			</li>
+			<li><a href="hangouts.html">Hangouts</a>
+				<ul>
+					<li><a href="food.php">Food</a></li>
+					<li><a href="theatre.php">Theaters</a></li>
+					<li><a href="malls.php">Malls</a></li>
+					<li><a href="adventure.php">FunSpots</a></li>
+				</ul>
+			<li><a href="feedback.php">Feedback</a>
+				
+			</li>
+		</ul>
+		</div>
+		</header>
+		<div class="body">
+			<div class="slideshow">
+			
+				<img id="7" src="images/A-Real-Friend.jpg"/>
+				<img id="6" src="images/friendship-quotes-facebook-cover.jpg"/>
+				<img id="5" src="images/let_them_go-3940.jpg"/>
+				<img id="4" src="images/Love-Quote-Facebook-Timeline-Cover-Image.png"/>
+				<img id="3" src="images/quote-breakup-lonely-women-crying-window-hot-facebook-timeline-cover-banner-photo-fb.jpg"/>
+				<img id="2" src="images/relationships quotes the top best free tumblr danbo little robot box people friendship friends facebook timeline cover photo banner for fb profile.jpg"/>
+				<img id="1" src="images/true_love_doesnt_end-3431.jpg"/>
+				<div class="box-txt" style="top:226px;width:100%;height:54px;display: block;background:black;position:absolute;opacity:0.8;">
+					<p style="color:white; font-weight:bold;text-align:center;">SEND QUOTES AS MESSAGES TO YOUR BUDDIES
+					</div>
+			</div>
+			<div class="content" ">
+			
+				<div class="quotesintro">
+				<p style="color:white; font-family:Forte;padding:10px;background:#00CEA9
+				;font-size:23px;text-align:center;box-shadow:0px 0px 5px cyan;border-radius:2px;">Love Quotes - Sweet And Touching</p>
+				
+				<div class="quotes1">
+				There is never a time or place for true love. It happens accidentally, in a heartbeat, in a single flashing, throbbing moment. 
+				</div><br/><br/>
+				<div class="quotes1">
+				Love me or hate me, I like it both. Because if you hate me, I'll be always on your mind and when you love me, I'll always be on your heart.
+				</div><br/><br/><div class="quotes1">
+				The worlds best moment:<br/>
+				An insecure girl nervously asks her guy to describe her in one word..!<br/>
+				She silently prays that he would say something nice like...<br/>
+				Sweet,<br/>
+
+				Cute,<br/>
+
+				Beautiful, etc....<br/><br/><br/>
+
+				The guy looks up, meets her eyes and with a half crooked smile says.....<br/>
+
+				"MINE".....!!
+
+				</div><br/><br/><div class="quotes1">
+				Wants you to know that<br/>
+				every time I take a breath,<br/>
+				every time my heart beats,<br/>
+				I think of you. I am helplessly<br/>
+				in Love with you
+				</div><br/><br/><div class="quotes1">
+				I can't even begin to explain the feeling I get when I see you.<br/>
+				It's like the second I lay eyes on you,<br/> everyone else disappears and it's just me and you.<br/>
+				Every time I talk to you, I wish it
+				would last forever.<br/>
+				I never want to see you walk away....<br/>
+				All I know is, you're the one I want to spend the restof my life with.<br/>
+				I've never been so sure of anything before.<br/>
+				And I want you to know that I love you so much
+				</div><br/><br/><div class="quotes1">
+				If I had the Strength , i would take you to all those moons,<br/>
+				All those planets , all Those stars In those Beautiful galaxies.<br/>
+				And Guess what?<br/>
+				They still wouldn’t be as pretty as you..
+				</div><br/><br/><div class="quotes1">
+				"Sometimes We Lose Somone<br/>
+				By Saying I Love You...<br/>
+				But<br/>
+				More Often We Lose Someone,<br/>
+				By Fearing to Say I Love You".
+
+				</div><br/><br/><div class="quotes1">
+								My eyes know that<br/>
+				i m not perfect match 4 him.<br/>
+				But<br/>
+				my heart has no eyes or ears,<br/>
+				So it's been beating 4 her..
+				</div><br/><br/>
+				<div class="quotes1">
+				You don't really need some one to complete you;<br/>
+				You just need sumone to accept you completely..<br/>
+				That is the beauty of a relation
+
+				</div><br/><br/>
+				<div class="quotes1">
+				The
+				Person Who Love U,<br/>
+				Will fight With U More<br/>
+				But<br/>
+				If<br/>
+				...u Drop A Tear<br/>
+				He Wil fight The World to<br/>
+				Stop Ur Tears.<br/>
+				So
+				Never Lose the Loving
+				Persons..
+				</div><br/><br/>
+
+				
+				
+				</div>
+				<div class="box1">
+					<a href="frnshpq.html" style="color:white; text-decoration:none;font-family:Forte;font-size:20px;">
+					Friendship Quotes
+					</a>
+				</div>
+				<div class="box2">
+				<a href="loveq.html" style="color:white; text-decoration:none;font-family:Forte;font-size:20px;">
+					Love Quotes
+					</a>
+				
+				</div>
+				<div class="box3">
+				<a href="brkupq.html" style="color:white; text-decoration:none;font-family:Forte;font-size:20px;">
+					Breakup Quotes
+					</a>
+				
+				</div>
+				<div class="box4">
+				<a href="funnyq.html" style="color:white; text-decoration:none;font-family:Forte;font-size:20px;">
+					Humour Quotes
+					</a>
+				
+				</div>
+			
+			</div>
+		
+		</div>
+		<footer style="margin-top:10%">
+				<hr/>
+				<b style="color:white">YUNGISTAAN  copyright &copy; Surbhi Zalpuri 2014</b>
+
+		</footer>
+	</div>
+</body>
+</html>
+			

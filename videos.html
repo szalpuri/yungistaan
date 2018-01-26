@@ -1,0 +1,498 @@
+<!Doctype html>
+<html>
+	<head>
+	<script src="jquery.min.js"/>
+	<meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+	<script type="text/javascript">
+	
+	$(function() {
+			$("#tfq2b").click(function() {
+				if ($("#tfq2b").val() == "Search Google"){
+					$("#tfq2b").val(""); 
+				}
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+
+			function loop(){
+		  $('#1').fadeOut(4000, function(){
+			$('#2').fadeOut(4000, function(){
+				$('#3').fadeOut(4000, function(){
+					$('#4').fadeOut(4000, function(){
+						$('#5').fadeOut(4000, function(){
+							$('#6').fadeOut(4000, function(){
+								
+									$('#1').fadeIn().css({"z-index":"0"});
+									$('#7').fadeOut(2000, function(){
+											$('#2').fadeIn();
+											$('#3').fadeIn();
+											$('#4').fadeIn();
+											$('#5').fadeIn();
+											$('#6').fadeIn();
+											$('#7').fadeIn();
+										loop();
+									});
+								
+							});
+						});	
+					});
+				});
+			});
+		  });
+		}
+		loop();
+		
+		//next and back code
+		
+		$('.click1').click(function(){
+					$('.wall1').fadeOut();
+					$('.wall2').fadeIn();
+		
+				
+				});
+				$('.click2').click(function(){
+					$('.wall2').fadeOut();
+					$('.wall3').fadeIn();
+		
+				
+				});
+				$('.click3').click(function(){
+					$('.wall3').fadeOut();
+					$('.wall4').fadeIn();
+		
+				
+				});
+				$('.click4').click(function(){
+					$('.wall4').fadeOut();
+					$('.wall5').fadeIn();
+		
+				
+				});
+				$('.click5').click(function(){
+					$('.wall5').fadeOut();
+					$('.wall6').fadeIn();
+		
+				
+				});
+				$('.click6').click(function(){
+					$('.wall6').fadeOut();
+					$('.wall7').fadeIn();
+		
+				
+				});
+				$('.click7').click(function(){
+					$('.wall7').fadeOut();
+					$('.wall8').fadeIn();
+		
+				
+				});
+				$('.click8').click(function(){
+					$('.wall8').fadeOut();
+					$('.wall9').fadeIn();
+		
+				
+				});
+				
+				$('.click9').click(function(){
+					$('.wall9').fadeOut();
+					$('.wall10').fadeIn();
+		
+				
+				});
+				$('.click10').click(function(){
+					$('.wall10').fadeOut();
+					$('.wall1').fadeIn();
+		
+				
+				});
+					$('.click12').click(function(){
+					$('.wall2').fadeOut();
+					$('.wall1').fadeIn();
+		
+				
+				});
+				$('.click13').click(function(){
+					$('.wall3').fadeOut();
+					$('.wall2').fadeIn();
+		
+				
+				});
+			
+				$('.click14').click(function(){
+					$('.wall4').fadeOut();
+					$('.wall3').fadeIn();
+		
+				
+				});
+				$('.click15').click(function(){
+					$('.wall5').fadeOut();
+					$('.wall4').fadeIn();
+		
+				
+				});
+				$('.click16').click(function(){
+					$('.wall6').fadeOut();
+					$('.wall5').fadeIn();
+		
+				
+				});
+				$('.click17').click(function(){
+					$('.wall7').fadeOut();
+					$('.wall6').fadeIn();
+		
+				
+				});
+				$('.click18').click(function(){
+					$('.wall8').fadeOut();
+					$('.wall7').fadeIn();
+		
+				
+				});
+				
+				$('.click19').click(function(){
+					$('.wall9').fadeOut();
+					$('.wall8').fadeIn();
+		
+				
+				});
+				$('.click110').click(function(){
+					$('.wall10').fadeOut();
+					$('.wall9').fadeIn();
+		
+				
+				});
+				
+	
+				
+			var monthNames = [ "January", "February", "March", "April", "May", "June",
+			"July", "August", "September", "October", "November", "December" ];
+			var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+
+			var newDate = new Date();
+			newDate.getDate();    
+			$('#Date').html("Date"+ " " + ":" + " " +dayNames[newDate.getDay()] + " " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
+		});
+	</script>
+	<link rel="stylesheet" type="text/css" href="style/mystyle.css"></link>
+	<link rel="stylesheet" type="text/css" href="style/gallery.css"></link>
+	</head>
+	<body>
+	
+	<div class="wrapper">
+		<header>
+		<div class="bar">
+			<img class="logo" src="images/logo.jpg" style="width:160px; height:110px;margin-left:10px;"/>
+			<div class="sitename">
+		
+			All in one Entertainment Stop!<br/>
+			Music! Masti! Love & Dosti!
+			
+			</div>
+			<div id="tfheader">
+				<form id="tfnewsearch" method="get" action="http://www.google.com">
+						<input type="text" id="tfq2b" class="tftextinput2" name="q" size="21" maxlength="120" placeholder="Search Google"><input type="submit" value=">" class="tfbutton2">
+				</form>
+				<div class="tfclear"></div>
+			</div>
+			<div id="Date" style="color:white;font-weight:bold;font-size:20px;font-style:italic;float:right; margin-top:-100px;width:260px;height:20px;"></div>
+			
+		</div>
+
+		<div class="nav" >
+		 <ul class="menu">
+			<li><a href="home.html">Home</a>
+				
+			<li>
+			<li><a href="music.html">Music</a>
+				<ul>
+					<li><a href="english.html">English</a></li>
+					<li><a href="bollywood.html">Bollywood</a></li>
+					<li><a href="punjabi.html">Punjabi</a></li>
+				</ul>
+			</li>
+			<li><a href="gallery.html">Gallery</a>
+				<ul>
+					<li><a href="videos.html">Videos</a></li>
+					<li><a href="wallpapers.html">Wallpapers</a></li>
+				</ul>
+			
+			</li>
+			<li><a href="books.html">Books</a>
+				<ul>
+					<li><a href="hp.html">HarryPotter</a></li>
+					<li><a href="twilight.html">Twilight</a></li>
+					<li><a href="tvd.html">TVD</a> </li>
+					<li><a href="hungergames.html">HungerGames</a></li>
+					
+					
+				</ul>
+			</li>
+			<li><a href="quotes.html">Quotes</a>
+				<ul>
+					<li><a href="frnshpq.html">Frienship</a></li>
+					<li><a href="loveq.html">Love</a></li>
+					<li><a href="brkupq.html">Breakup</a></li>
+					<li><a href="funnyq.html">Humour</a></li>
+				</ul>
+			</li>
+			<li><a href="hangouts.html">Hangouts</a>
+				<ul>
+					<li><a href="food.php">Food</a></li>
+					
+					<li><a href="theatre.php">Theaters</a></li>
+					<li><a href="malls.php">Malls</a></li>
+					<li><a href="adventure.php">FunSpots</a></li>
+				</ul>
+			<li><a href="feedback.php">Feedback</a>
+				
+			</li>
+		</ul>
+		</div>
+		</header>
+		<div class="body">
+			<div class="slideshow">
+			
+				<img id="7" src="images/-1374330861-1296331193.jpg"/>
+				<img id="6" src="images/play_video.jpg"/>
+				<img id="5" src="images/youtube-for-android-lets-you-watch-videos-mostly-offline-updated--8bb4ae8a43.jpg"/>
+				<img id="4" src="images/spring_collage_wallpaper_spring_nature_wallpaper_1600_1200_1224.jpg"/>
+				<img id="3" src="images/348397_kollazh_okna_priroda_1920x1080_(www.GdeFon.ru).jpg"/>
+				<img id="2" src="images/images.jpg"/>
+				<img id="1" src="images/Entertainment_v5.jpg"/>
+				<div class="box-txt" style="top:226px;width:100%;height:54px;display: block;background:black;position:absolute;opacity:0.8;">
+					<p style="color:white; font-weight:bold;text-align:center;">DOWNLOAD WALLPAPERS AND WATCH VIDEOS</p>
+					</div>
+			</div>
+			<div class="content" >
+			
+				<div class="galleryintro">
+				
+						<p style="color:white; font-family:Forte;padding:20px;opacity:0.9;font-size:20px;text-align:center;box-shadow:0px 0px 10px white;border-radius:2px;">Watch Top Videos</p>
+						<div class="wall1" style=";width:100%;height:100%;border-radius:2px;">
+							<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:		#1693E6;">
+							1. Soch By Hardy Sandhu &nbsp;&nbsp; &nbsp;<a  href="#"class="click1"style="text-decoration:none; color:black;"> Next<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+							<div class="v1" style="width:95%;margin:0px auto;">
+							<video    style="width:100%;height:80%" controls>
+								<source src="videos/'Soch Hardy Sandhu' Full Video Song _ Romantic Punjabi Song 2013_HD.mp4">
+							</video>
+									<br/>
+									<div style="margin:0px auto;width:390px;">
+										<a style="text-decoration:none;border-radius:2px;color:white;font-family:Forte;font-size:25px;margin:0px auto;padding:5px;background:black;" href="videos/'Soch Hardy Sandhu' Full Video Song _ Romantic Punjabi Song 2013_HD.mp4">Click Here To download This Video</a>
+								
+									</div>
+							</div>
+								
+									
+						</div>
+						
+						
+						<div class="wall2" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+								<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#1693E6;">
+								<a  href="#"class="click12"style="text-decoration:none; color:black;">
+								<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>
+								&nbsp; &nbsp;&nbsp;2. Enrique Iglesias - Heart Attack &nbsp;&nbsp; &nbsp; <a  href="#"class="click2"style="text-decoration:none; color:black;"> 
+								Next<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+									<div class="v2" style="width:95%;margin:0px auto;">
+							<video    style="width:100%;height:80%" controls>
+								<source src="videos/Enrique Iglesias - Heart Attack_HD.mp4">
+							</video>
+									<br/>
+									<div style="margin:0px auto;width:390px;">
+										<a style="text-decoration:none;border-radius:2px;color:white;font-family:Forte;font-size:25px;margin:0px auto;padding:5px;background:black;" 
+										href="videos/Enrique Iglesias - Heart Attack_HD.mp4">Click Here To download This Video</a>
+								
+									</div>
+							</div>
+								
+						</div>
+						<div class="wall3" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+								<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#1693E6;">
+								<a  href="#"class="click13"style="text-decoration:none; color:black;">
+								<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>
+								&nbsp; &nbsp;&nbsp;3. Imran Khan - Satisfya  &nbsp;&nbsp; &nbsp; <a  href="#"class="click3"style="text-decoration:none; color:black;"> 
+								Next<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+								<div class="v3" style="width:95%;margin:0px auto;">
+							<video    style="width:100%;height:80%" controls>
+								<source src="videos/Imran Khan - Satisfya (Official Music Video)_HD.mp4">
+							</video>
+									<br/>
+									<div style="margin:0px auto;width:390px;">
+										<a style="text-decoration:none;border-radius:2px;color:white;font-family:Forte;font-size:25px;margin:0px auto;padding:5px;background:black;"
+										href="videos/Imran Khan - Satisfya (Official Music Video)_HD.mp4">Click Here To download This Video</a>
+								
+									</div>
+							</div>
+								
+								
+								
+						</div>
+						<div class="wall4" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+								<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#1693E6;">
+								<a  href="#"class="click14"style="text-decoration:none; color:black;">
+								<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>
+								&nbsp; &nbsp;&nbsp;4. Blue Eyes By Yo Yo Honey Singh  &nbsp;&nbsp; &nbsp; <a  href="#"class="click4"style="text-decoration:none; color:black;"> 
+								Next<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+								
+								<div class="v4" style="width:95%;margin:0px auto;">
+							<video    style="width:100%;height:80%" controls>
+								<source src="videos/Blue Eyes Full Video Song Yo Yo Honey Singh _ Blockbuster Song Of 2013_HD.mp4">
+							</video>
+									<br/>
+									<div style="margin:0px auto;width:390px;">
+										<a style="text-decoration:none;border-radius:2px;color:white;font-family:Forte;font-size:25px;margin:0px auto;padding:5px;background:black;"
+										href="videos/Blue Eyes Full Video Song Yo Yo Honey Singh _ Blockbuster Song Of 2013_HD.mp4">Click Here To download This Video</a>
+								
+									</div>
+							</div>
+						</div>
+						<div class="wall5" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+								<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#1693E6;">
+								<a  href="#"class="click15"style="text-decoration:none; color:black;">
+								<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>
+								&nbsp; &nbsp;&nbsp;5. Gangnam Style-PSY &nbsp;&nbsp; &nbsp; <a  href="#"class="click5"style="text-decoration:none; color:black;"> 
+								Next<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+								
+								<div class="v5" style="width:95%;margin:0px auto;">
+							<video    style="width:100%;height:80%" controls>
+								<source src="videos/PSY - Gangnam Style.mp4">
+							</video>
+									<br/>
+									<div style="margin:0px auto;width:390px;">
+										<a style="text-decoration:none;border-radius:2px;color:white;font-family:Forte;font-size:25px;margin:0px auto;padding:5px;background:black;"
+										href="videos/PSY - Gangnam Style.mp4">Click Here To download This Video</a>
+								
+									</div>
+							</div>
+						</div>
+						<div class="wall6" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+								<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#1693E6;">
+								<a  href="#"class="click16"style="text-decoration:none; color:black;">
+								<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>
+								&nbsp; &nbsp;&nbsp;6. Come And Get It-Selena Gomez &nbsp;&nbsp; &nbsp; <a  href="#"class="click6"style="text-decoration:none; color:black;"> 
+								Next<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+								<div class="v6" style="width:95%;margin:0px auto;">
+							<video    style="width:100%;height:80%" controls>
+								<source src="videos/Selena Gomez - Come & Get It_HD.mp4">
+							</video>
+									<br/>
+									<div style="margin:0px auto;width:390px;">
+										<a style="text-decoration:none;border-radius:2px;color:white;font-family:Forte;font-size:25px;margin:0px auto;padding:5px;background:black;" 
+										href="videos/Selena Gomez - Come & Get It_HD.mp4">Click Here To download This Video</a>
+								
+									</div>
+							</div>
+								
+						</div>
+						<div class="wall7" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+								<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#1693E6;">
+								<a  href="#"class="click17"style="text-decoration:none; color:black;">
+								<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>
+								&nbsp; &nbsp;&nbsp;7. We Own It- Fast & The Furious 6 &nbsp;&nbsp; &nbsp; <a  href="#"class="click7"style="text-decoration:none; color:black;"> 
+								Next<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+								<div class="v7" style="width:95%;margin:0px auto;">
+							<video    style="width:100%;height:80%" controls>
+								<source src="videos/2 Chainz, Wiz Khalifa - We Own It (Fast & Furious)_HD.mp4">
+							</video>
+									<br/>
+									<div style="margin:0px auto;width:390px;">
+										<a style="text-decoration:none;border-radius:2px;color:white;font-family:Forte;font-size:25px;margin:0px auto;padding:5px;background:black;" 
+										href="videos/2 Chainz, Wiz Khalifa - We Own It (Fast & Furious)_HD.mp4">Click Here To download This Video</a>
+								
+									</div>
+							</div>
+								
+						</div>
+						<div class="wall8" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+								<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#1693E6;">
+								<a  href="#"class="click18"style="text-decoration:none; color:black;">
+								<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>
+								&nbsp; &nbsp;&nbsp;8. High Heels By Yo Yo Honey Singh &nbsp;&nbsp; &nbsp; <a  href="#"class="click8"style="text-decoration:none; color:black;"> 
+								Next<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+								<div class="v8" style="width:95%;margin:0px auto;">
+							<video    style="width:100%;height:80%" controls>
+								<source src="videos/HIGH HEELS OFFICIAL VIDEO - JAZ DHAMI FT YO YO HONEY SINGH.mp4">
+							</video>
+									<br/>
+									<div style="margin:0px auto;width:390px;">
+										<a style="text-decoration:none;border-radius:2px;color:white;font-family:Forte;font-size:25px;margin:0px auto;padding:5px;background:black;"
+										href="videos/HIGH HEELS OFFICIAL VIDEO - JAZ DHAMI FT YO YO HONEY SINGH.mp4">Click Here To download This Video</a>
+								
+									</div>
+							</div>
+								
+						</div>
+						<div class="wall9" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+								<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#1693E6;">
+								<a  href="#"class="click19"style="text-decoration:none; color:black;">
+								<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>
+								&nbsp; &nbsp;&nbsp;9. Party In The USA- Miley Cyrus &nbsp;&nbsp; &nbsp; <a  href="#"class="click9"style="text-decoration:none; color:black;"> 
+								Next<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+								
+								<div class="v9" style="width:95%;margin:0px auto;">
+							<video    style="width:100%;height:80%" controls>
+								<source src="videos/Miley Cyrus - Party In The U.S.A._HD.mp4">
+							</video>
+									<br/>
+									<div style="margin:0px auto;width:390px;">
+										<a style="text-decoration:none;border-radius:2px;color:white;font-family:Forte;font-size:25px;margin:0px auto;padding:5px;background:black;"
+										href="videos/Miley Cyrus - Party In The U.S.A._HD.mp4">Click Here To download This Video</a>
+								
+									</div>
+							</div>
+						</div>
+						<div class="wall10" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+								<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#1693E6;">
+								<a  href="#"class="click110"style="text-decoration:none; color:black;">
+								<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>
+								&nbsp; &nbsp;&nbsp;10. Proper Patola- Diljit Dosanjh &nbsp;&nbsp; &nbsp; <a  href="#"class="click10"style="text-decoration:none; color:black;"> 
+								Next<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+								
+								<div class="v2" style="width:95%;margin:0px auto;">
+							<video    style="width:100%;height:80%" controls>
+								<source src="videos/Diljit Dosanjh - Proper Patola feat. Badshah New Full Lyr..._HD.mp4">
+							</video>
+									<br/>
+									<div style="margin:0px auto;width:390px;">
+										<a style="text-decoration:none;border-radius:2px;color:white;font-family:Forte;font-size:25px;margin:0px auto;padding:5px;background:black;" href="videos/Diljit Dosanjh - Proper Patola feat. Badshah New Full Lyr..._HD.mp4">Click Here To download This Video</a>
+								
+									</div>
+							</div>
+						</div>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				</div>
+				<div class="box1">
+					<a href="wallpapers.html" style="color:white; text-decoration:none;font-family:Forte;font-size:20px;text-align:center;">
+					View Beautiful HD Wallpapers
+					</a>
+				</div>
+				<div class="box2">
+				<a href="videos.html" style="color:white; text-decoration:none;font-family:Forte;font-size:20px;text-align:center;">
+					View top 10 Youtube Videos
+					</a>
+				
+				</div>
+				
+			
+			</div>
+		
+		</div>
+		<footer style="margin-top:10%">
+				<hr/>
+				<b style="color:white">YUNGISTAAN  copyright &copy; Surbhi Zalpuri 2014</b>
+
+		</footer>
+	</div>
+</body>
+</html>
+			

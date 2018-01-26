@@ -1,0 +1,938 @@
+<!Doctype html>
+<html>
+	<head>
+	<script src="jquery.min.js"/>
+	<meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+	<script type="text/javascript">
+	
+	$(function() {
+			$("#tfq2b").click(function() {
+				if ($("#tfq2b").val() == "Search Google"){
+					$("#tfq2b").val(""); 
+				}
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+
+			function loop(){
+		  $('#1').fadeOut(4000, function(){
+			$('#2').fadeOut(4000, function(){
+				$('#3').fadeOut(4000, function(){
+					$('#4').fadeOut(4000, function(){
+						$('#5').fadeOut(4000, function(){
+							$('#6').fadeOut(4000, function(){
+								
+									$('#1').fadeIn().css({"z-index":"0"});
+									$('#7').fadeOut(2000, function(){
+											$('#2').fadeIn();
+											$('#3').fadeIn();
+											$('#4').fadeIn();
+											$('#5').fadeIn();
+											$('#6').fadeIn();
+											$('#7').fadeIn();
+										loop();
+									});
+								
+							});
+						});	
+					});
+				});
+			});
+		  });
+		}
+		loop();
+				
+				
+				$('.click1').click(function(){
+					$('.song1').fadeOut();
+					$('.song2').fadeIn();
+		
+				
+				});
+				$('.click2').click(function(){
+					$('.song2').fadeOut();
+					$('.song3').fadeIn();
+		
+				
+				});
+				$('.click3').click(function(){
+					$('.song3').fadeOut();
+					$('.song4').fadeIn();
+		
+				
+				});
+				$('.click4').click(function(){
+					$('.song4').fadeOut();
+					$('.song5').fadeIn();
+		
+				
+				});
+				$('.click5').click(function(){
+					$('.song5').fadeOut();
+					$('.song6').fadeIn();
+		
+				
+				});
+				$('.click6').click(function(){
+					$('.song6').fadeOut();
+					$('.song7').fadeIn();
+		
+				
+				});
+				$('.click7').click(function(){
+					$('.song7').fadeOut();
+					$('.song8').fadeIn();
+		
+				
+				});
+				$('.click8').click(function(){
+					$('.song8').fadeOut();
+					$('.song9').fadeIn();
+				
+				});
+				
+				$('.click9').click(function(){
+					$('.song9').fadeOut();
+					$('.song10').fadeIn();
+		
+				
+				});
+				$('.click10').click(function(){
+					$('.song10').fadeOut();
+					$('.song1').fadeIn();
+		
+				
+				});
+					$('.click12').click(function(){
+					$('.song2').fadeOut();
+					$('.song1').fadeIn();
+		
+				
+				});
+				$('.click13').click(function(){
+					$('.song3').fadeOut();
+					$('.song2').fadeIn();
+		
+				
+				});
+			
+				$('.click14').click(function(){
+					$('.song4').fadeOut();
+					$('.song3').fadeIn();
+		
+				
+				});
+				$('.click15').click(function(){
+					$('.song5').fadeOut();
+					$('.song4').fadeIn();
+		
+				
+				});
+				$('.click16').click(function(){
+					$('.song6').fadeOut();
+					$('.song5').fadeIn();
+		
+				
+				});
+				$('.click17').click(function(){
+					$('.song7').fadeOut();
+					$('.song6').fadeIn();
+		
+				
+				});
+				$('.click18').click(function(){
+					$('.song8').fadeOut();
+					$('.song7').fadeIn();
+		
+				
+				});
+				
+				$('.click19').click(function(){
+					$('.song9').fadeOut();
+					$('.song8').fadeIn();
+		
+				
+				});
+				$('.click110').click(function(){
+					$('.song10').fadeOut();
+					$('.song9').fadeIn();
+		
+				
+				});
+		
+				
+				
+		
+			var monthNames = [ "January", "February", "March", "April", "May", "June",
+			"July", "August", "September", "October", "November", "December" ];
+			var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+
+			var newDate = new Date();
+				newDate.getDate();    
+			$('#Date').html("Date"+ " " + ":" + " " +dayNames[newDate.getDay()] + " " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
+		});
+	</script>
+	<link rel="stylesheet" type="text/css" href="style/mystyle.css"></link>
+	<link rel="stylesheet" type="text/css" href="style/music.css"></link>
+	</head>
+	<body>
+	
+	<div class="wrapper">
+		<header>
+		<div class="bar">
+			<img class="logo" src="images/logo.jpg" style="width:160px; height:110px;margin-left:10px;"/>
+			<div class="sitename">
+		
+			All in one Entertainment Stop!<br/>
+			Music! Masti! Love & Dosti!
+			
+			</div>
+			<div id="tfheader">
+				<form id="tfnewsearch" method="get" action="http://www.google.com">
+						<input type="text" id="tfq2b" class="tftextinput2" name="q" size="21" maxlength="120" placeholder="Search Google"><input type="submit" value=">" class="tfbutton2">
+				</form>
+				<div class="tfclear"></div>
+			</div>
+			<div id="Date" style="color:white;font-weight:bold;font-size:20px;font-style:italic;float:right; margin-top:-100px;width:260px;height:20px;"></div>
+			
+		</div>
+
+		<div class="nav" >
+		 <ul class="menu">
+			<li><a href="home.html">Home</a>
+				
+			<li>
+			<li><a href="music.html">Music</a>
+				<ul>
+					<li><a href="english.html">English</a></li>
+					<li><a href="bollywood.html">Bollywood</a></li>
+					<li><a href="punjabi.html">Punjabi</a></li>
+				</ul>
+			</li>
+			<li><a href="gallery.html">Gallery</a>
+				<ul>
+					<li><a href="videos.html">Videos</a></li>
+					<li><a href="wallpapers.html">Wallpapers</a></li>
+				</ul>
+			
+			</li>
+			<li><a href="books.html">Books</a>
+				<ul>
+					<li><a href="hp.html">HarryPotter</a></li>
+					<li><a href="twilight.html">Twilight</a></li>
+					<li><a href="tvd.html">TVD</a> </li>
+					<li><a href="hungergames.html">HungerGames</a></li>
+					
+					
+				</ul>
+			</li>
+			<li><a href="quotes.html">Quotes</a>
+				<ul>
+					<li><a href="frnshpq.html">Frienship</a></li>
+					<li><a href="loveq.html">Love</a></li>
+					<li><a href="brkupq.html">Breakup</a></li>
+					<li><a href="funnyq.html">Humour</a></li>
+				</ul>
+			</li>
+			<li><a href="hangouts.html">Hangouts</a>
+				<ul>
+					<li><a href="food.php">Food</a></li>
+					<li><a href="theatre.php">Theaters</a></li>
+					<li><a href="malls.php">Malls</a></li>
+					<li><a href="adventure.php">FunSpots</a></li>
+				</ul>
+			<li><a href="feedback.php">Feedback</a>
+				
+			</li>
+		</ul>
+		</div>
+		</header>
+		<div class="body">
+			<div class="slideshow">
+			
+				<img id="7" src="images/11.jpg"/>
+				<img id="6" src="images/22.jpg"/>
+				<img id="5" src="images/33.jpg"/>
+				<img id="4" src="images/44.jpg"/>
+				<img id="3" src="images/55.jpg"/>
+				<img id="2" src="images/66.jpg"/>
+				<img id="1" src="images/77.jpg"/>
+				<div class="box-txt" style="top:226px;width:100%;height:54px;display: block;background:black;position:absolute;opacity:0.8;">
+					<p style="color:white; font-weight:bold;text-align:center;">LISTEN TO MUSIC AND MEMORIZE LYRICS</p>
+					</div>
+			</div>
+			<div class="content">
+			
+				<div class="musicintro" style="height:100%;">
+						<p style="color:white; font-family:Forte;padding:20px;background:black;opacity:0.9;font-size:20px;text-align:center;box-shadow:0px 0px 10px white;border-radius:2px;">Top Ten Bollywood Songs With Lyrics</p>
+						<div class="song1" style="background:black;width:100%;height:100%;border-radius:2px;">
+							<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#FF47A3;">1.  Tum Hi Ho From Aashiqui 2 &nbsp;&nbsp; &nbsp;<a  href="#"class="click1"style="text-decoration:none; color:black;"> Next<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+							<img style="width:80%;height:280px;margin-left:85px;"src="images/aashiqui-2-song-tum-hi-ho-is-a-hit.jpg"></img>
+
+							<audio style="margin-top:5px;width:80%;margin-left:85px;"src="music/01 - A2 - Tum Hi Ho [DJMaza].mp3" controls>
+							</audio>
+							
+							<p style="color:white; font-family:Forte;font-size:20px;text-align:center;padding:30px;">
+												Hum tere bin ab reh nahi sakte<br/>
+												Tere bina kya wajood mera (x2)<br/><br/>
+
+												Tujhse juda gar ho jaayenge<br/>
+												Toh khud se hi ho jaayenge judaa<br/><br/>
+
+												Kyunki tum hi ho<br/>
+												Ab tum hi ho<br/>
+												Zindagi ab tum hi ho<br/>
+												Chain bhi, mera dard bhi<br/>
+												Meri aashiqui ab tum hi ho<br/><br/>
+
+												Tera mera rishta hai kaisa<br/>
+												Ik pal door gawara nahi<br/>
+												Tere liye har roz hai jeete<br/>
+												Tujh ko diya mera waqt sabhi<br/>
+												Koi lamha mera na ho tere bina<br/>
+												Har saans pe naam tera<br/><br/>
+
+												Kyunki tum hi ho<br/>
+												Ab tum hi ho<br/>
+												Zindagi ab tum hi ho<br/>
+												Chain bhi, mera dard bhi<br/>
+												Meri aashiqui ab tum hi ho<br/><br/>
+
+												Tumhi ho... Tumhi ho...<br/>
+												Tere liye hi jiya main<br/>
+												Khud ko jo yun de diya hai<br/>
+												Teri wafa ne mujhko sambhala<br/>
+												Saare ghamon ko dil se nikala<br/>
+												Tere saath mera hai naseeb juda<br/>
+												Tujhe paake adhoora naa raha hmm..<br/><br/>
+
+												Kyunki tum hi ho<br/>
+												Ab tum hi ho<br/>
+												Zindagi ab tum hi ho..<br/>
+												Chain bhi, mera dard bhi<br/>
+												Meri aashiqui ab tum hi ho (x2)<br/><br/>
+
+
+							</p>
+							
+
+						</div>
+							<div class="song2" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+							<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#FF47A3;"><a  href="#"class="click12"style="text-decoration:none; color:black;"><img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>&nbsp; &nbsp;&nbsp;2. Baarish From Yaariaan &nbsp;&nbsp; &nbsp; <a  href="#"class="click2"style="text-decoration:none; color:black;"> Next<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+							<img style="width:80%;height:280px;margin-left:85px;"src="images/1538788_626783564054730_736058610_n.jpg"></img>
+
+							<audio style="margin-top:5px;width:80%;margin-left:85px;"src="music/Baarish (Yaariyan) -320Kbps [DJMaza].mp3" controls>
+							</audio>
+							
+							<p style="color:white; font-family:Forte;font-size:20px;text-align:center;padding:30px;">
+									Yaariyan ve... Yaariyan<br/>
+									Yaariyan ve... yaariyan ve..<br/>
+									Yaariyaan... yaa....<br/><br/>
+
+									Dil mera hai nasamajh kitna<br/>
+									Besabar ye bewkoof bada<br/>
+									Chahta hai kitna tujhe<br/>
+									Khud magar nahi jaan sakaa<br/><br/>
+
+									Is dard-e-dil ki sifarish<br/>
+									Ab kar de koi yahaan<br/>
+									Ki mill jaaye isey woh baarish<br/>
+									Jo bhigaa de poori tarah (x2)<br/><br/>
+
+									Yaariyan ve... Yaariyan...<br/>
+
+									Kya huaa asar tere saath reh kar naa jaane<br/>
+									Ki hosh mujhe naa raha<br/>
+									Lafz mere thhe zubaan pe aake ruke<br/>
+									Par ho na sake woh bayaan<br/>
+									Dhadkan tera hi naam jo le<br/>
+									Aankhein bhi paighaam ye de<br/>
+									Teri nazar ka hi ye asar hai<br/>
+									Mujh pe jo huaa<br/><br/>
+
+									Is dard-e-dil ki sifaarish<br/>
+									Ab kar de koi yahaan<br/>
+									Ki mill jaaye isey woh baarish<br/>
+									Jo bhiga de poori tarah (x2)<br/><br/>
+
+									Tu jo mila<br/>
+									Toh zindagi hai badli<br/>
+									Main poora naya ho gaya<br/>
+									Hai be-asar duniya ki baatein badi<br/>
+									Ab teri sunu main sadaa<br/><br/>
+
+									Milne ko tujhse, bahaane karun<br/>
+									Tu muskuraaye, wajah main banun<br/>
+									Roz bitaana saath mein tere, saara din mera<br/><br/>
+
+									Is dard-e-dil ki sifaarish<br/>
+									Ab kar de koi yahaan<br/>
+									Ki mill jaaye isey woh baarish<br/>
+									Jo bhiga de poori tarah (x4)<br/><br/>
+							</p>
+							
+
+						</div>
+							<div class="song3" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+							<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#FF47A3;"><a  href="#"class="click13"style="text-decoration:none; color:black;"><img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>&nbsp; &nbsp;&nbsp;3.Gandi Baat From R Rajkumar &nbsp;&nbsp; &nbsp; <a  href="#"class="click3"style="text-decoration:none; color:black;"> Next<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+							<img style="width:80%;height:280px;margin-left:85px;"src="images/maxresdefault-1-1038x576.jpg"></img>
+
+							<audio style="margin-top:5px;width:80%;margin-left:85px;"src="music/01 - R Rajkumar - Gandi Baat [MP3Khan.Net].mp3" controls>
+							</audio>
+							
+							<p style="color:white; font-family:Forte;font-size:20px;text-align:center;padding:30px;">
+									Beedi peeke nukkad pe wait tera kiya re<br/>
+									Khali-peeli 18 cup chai bhi toh piya re (x3)<br/><br/>
+
+									Raja beta banke maine jab sharafat dikhayi<br/>
+									Tune bola 'hatt mawaali' bhaav nahi diya re<br/><br/>
+
+									ABCD padhli bohot<br/>
+									Thandi aahein bhar li bohot<br/>
+									Acchi baatein kar li bohot<br/>
+									Ab karunga tere saath<br/><br/>
+
+									Gandi baat...<br/>
+									Gandi-gandi gandi gandi gandi baat.. (x4)<br/><br/>
+
+									Aise kyun kyun kyun<br/>
+									Karta tu tu tu<br/>
+									Munh pe thu thu thu<br/> pyar me
+									Jab se hu hu hu<br/>
+									Laila ki ki ki<br/>
+									Into to to to pyar me<br/><br/>
+
+									Aise kyun kyun kyun<br/>
+									Karti tu tu tu<br/>
+									Munh pe thu thu thu pyaar me<br/>
+									Jab se hu hu hu<br/>
+									Majnu ka ka ka<br/>
+									Into to to to pyar me<br/><br/>
+
+									ABCD padhali bohot<br/>
+									Thandi aahein bhar li bohot<br/>
+									Acchi baatein karli bohot<br/>
+									Ab karungi tere saath<br/><br/>
+
+									Gandi baat...<br/>
+									Gandi gandi gandi gandi gandi baat.. (x4)<br/><br/>
+
+									Gul-badan dan dan<br/>
+									Deal done done done<br/>
+									One Two One One One ho gaya<br/><br/>
+
+									Muh se kya kya kya<br/>
+									Bol na na na..<br/>
+									Mann to mann mann mann ho gaya<br/><br/>
+
+									Dikhne mein thi tu kadak<br/>
+									Dheere dheere pighli bahut<br/>
+									Acchi baatein karli bahut<br/>
+									Ab karunga tere saath<br/><br/>
+
+									Gandi baat...<br/>
+									Gandi gandi gandi gandi gandi baat.. (x4)<br/>
+
+							</p>
+						
+						</div>
+							<div class="song4" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+							<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#FF47A3;"><a  href="#"class="click14"style="text-decoration:none; color:black;"><img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>&nbsp; &nbsp;&nbsp;4. Sunny Sunny ft Yo Yo Honey Singh &nbsp;&nbsp; &nbsp;  <a  href="#"class="click4"style="text-decoration:none; color:black;"> Next<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+							<img style="width:80%;height:280px;margin-left:85px;"src="images/Sunny-Sunny-Yaariyan-780x400.jpg"></img>
+
+							<audio style="margin-top:5px;width:80%;margin-left:85px;"src="music/Sunny Sunny (Yaariyan) -320Kbps [DJMaza].mp3" controls>
+							</audio>
+							
+							<p style="color:white; font-family:Forte;font-size:20px;text-align:center;padding:30px;">
+									Aaj blue hai paani<br/>
+									Paani pani paani paani paani<br/>
+									Aur din bhi sunny<br/>
+									Sunny sunny sunny sunny sunny<br/>
+									Aajaao on the beach yaar<br/>
+									Photo meri kheench, phooti kismat hogi teri<br/>
+									Gar tune ye baat na maani (x2)<br/><br/>
+
+									O ho... O ho...<br/>
+
+									Sunset ka time ho<br/>
+									Thandi-thandi ret ho<br/>
+									Let's go to party yaara<br/>
+									Mujhse na ab wait ho<br/>
+									Music chala do<br/>
+									Shuru karo party ho gayi der<br/>
+									Bottle pila do mujhko<br/>
+									Bas phir yaara, i don't care<br/><br/>
+
+									Aaj blue hai paani<br/>
+									Paani pani paani paani paani<br/>
+									Aur din bhi sunny<br/>
+									Sunny sunny sunny sunny sunny<br/>
+									Aajaao on the beach yaar<br/>
+									Photo meri kheench<br/>
+									Phooti kismat hogi teri<br/>
+									Agar tune ye baat na maani (x2)<br/><br/>
+
+									O ho... O ho...<br/>
+
+									Ehe he he..<br/>
+									Tera pyaar.. that's all i need<br/>
+									O mere yaar!<br/><br/>
+
+									Ek tu ho, main hoon<br/>
+									Aur sea-side pe paani ka shor<br/>
+									Aaja meri baahon me Girl what you waiting for<br/>
+									Tujhko me leke chalun phir pyari si yacht pe<br/>
+									Ho jaayenge hum talli Malibu ke shot pe<br/><br/>
+
+									Aaj blue hai paani<br/>
+									Paani pani paani paani paani<br/>
+									Aur din bhi sunny<br/>
+									Sunny sunny sunny sunny sunny<br/>
+									Aajaao on the beach yaar<br/>
+									Photo meri kheench phooti kismat hogi teri<br/>
+									Gar tune ye baat na maani (x2)<br/>
+
+
+
+							</p>
+						
+						</div>
+							<div class="song5" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+							<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#FF47A3;"><a  href="#"class="click15"style="text-decoration:none; color:black;"><img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>&nbsp; &nbsp;&nbsp;5. Baby Doll From Ragini MMS 2 &nbsp;&nbsp; &nbsp; <a  href="#"class="click5"style="text-decoration:none; color:black;"> Next<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+							<img style="width:80%;height:280px;margin-left:85px;"src="images/Baby Doll (Ragini MMS 2) - DJ Jitesh Remix.jpg"></img>
+
+							<audio style="margin-top:5px;width:80%;margin-left:85px;"src="music/[Songs.PK] Baby Doll - Ragini MMS 2 - 320Kbps.mp3" controls>
+							</audio>
+							
+							<p style="color:white; font-family:Forte;font-size:20px;text-align:center;padding:30px;">
+									Sone sone patole lakhaan<br/>
+									Sone sone patole yeah...<br/>
+									Ae takdiyaan rehndiyaan aankhaan<br/>
+									Ae takdiyaan rehndiyaan..<br/><br/>
+
+									Yeah...<br/>
+									Ho...<br/>
+									Wassup!<br/><br/>
+
+									You soniyo, she put up a show<br/>
+									Unless I’m impress, Baby I gotta go<br/>
+									I won’t mind tell you that I take you floor<br/>
+									But tonight no bites<br/>
+									Cause the wife will know<br/><br/>
+
+									Sone sone patole lakkhan<br/>
+									Sone sone patole lakkhan yeah...<br/>
+									Ae takdiyaan rehndiyaan ankhaan<br/>
+									Ae takdiyaan rehndiyaan ankhaan<br/>
+									Main ki dassaan apni ve<br/>
+									Ae chan karda hai tareefa<br/>
+									Ho mere husn de kone... kone kone di<br/>
+									Ho kone kone di..<br/>
+									Ho Baby doll main sone di<br/>
+									Ho Baby doll main sone di<br/>
+									Ho Baby doll main sone di<br/>
+									Ho Baby doll main sone di<br/><br/>
+
+									Yeh duniya, yeh duniya pittal di<br/>
+									Yeh duniya pittal di<br/>
+									Yeh duniya pittal di..<br/>
+									Ho babydoll main sone di.. - x4<br/><br/>
+
+									Gore gore pairaan vich<br/>
+									Nachdi nu pain hove<br/>
+									Laawa Zandu balm soniye.. yeah!<br/>
+									Nach nach thak jaangi<br/>
+									Baanh vich meri aaj <br/>
+									Karle aaram soniye soniye.. (x2)<br/><br/>
+
+									Chamka chamka meriyaan<br/>
+									Main cham cham karke chamka<br/>
+									Laava Zandu Balm ji nachde<br/>
+									Nachde paijan damkaan (x2)<br/><br/>
+
+									Mere hi charche<br/>
+									Meri aahein gallaan<br/>
+									Jag sara karda ni baar baar ve<br/><br/>
+
+									Yeh duniya, yeh duniya pittal di<br/>
+									Yeh duniya pittal di<br/>
+									Yeh duniya pittal di<br/>
+									Ho baby doll main sone di.. - x4<br/><br/>
+
+									Hirni wargi chaal meri te<br/>
+									Naagin wargiyan guttan<br/>
+									Mainu vekh ke lang diyan<br/>
+									Ae saawan diya ruttan (x2)<br/><br/>
+
+									Khul jaavan sadke<br/>
+									Chum lende vadh ke<br/>
+									Main taan sharmavaan haay baar baar ve<br/><br/>
+
+									Yeh duniya, yeh duniya pittal di<br/>
+									Yeh duniya pittal di<br/>
+									Yeh duniya pittal di..<br/>
+									Ho baby doll main sone di<br/>
+									Ho baby doll main sone di...<br/>
+
+
+
+							</p>
+
+						</div>
+						
+				
+					<div class="song6" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+					<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#FF47A3;"><a  href="#"class="click16"style="text-decoration:none; color:black;"><img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>&nbsp; &nbsp;&nbsp;6. Sun Raha Hai From Aashiqui 2 &nbsp;&nbsp; &nbsp; <a  href="#"class="click6"style="text-decoration:none; color:black;"> Next<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+					<img style="width:80%;height:280px;margin-left:85px;"src="images/aashiqui-2-song-sunn-raha-hai-na-tu-teaser-aditya-roy-kapur-shraddha-kapoor.jpg"></img>
+
+					<audio style="margin-top:5px;width:80%;margin-left:85px;"src="music/02_-_A2_-_Sunn_Raha_Hai__DJMaza_.mp3" controls>
+					</audio>
+					
+					<p style="color:white; font-family:Forte;font-size:20px;text-align:center;padding:30px;">
+								Apne karam ki kar adaayein<br/>
+								Yaara, Yaaraa... yaara!<br/><br/>
+
+								Mujhko iraade de<br/>
+								Kasamein de, waade de<br/>
+								Meri duaaon ke ishaaron ko sahaare de<br/>
+								Dil ko thikaane de<br/>
+								Naye bahaane de<br/>
+								Khaabon ki baarishon ko<br/>
+								Mausam ke paimane de<br/>
+								Apne karam ki kar adaayein<br/>
+								Kar de idhar bhi tu nigaahein<br/><br/>
+
+								Sun raha hai naa tu<br/>
+								Ro raha hun main<br/>
+								Sun raha hai naa tu<br/>
+								Kyun ro raha hun main (x2)<br/><br/>
+
+								Manzilein ruswa hain<br/>
+								Khoya hai raasta<br/>
+								Aaye le jaaye<br/>
+								Itni si iltejaa<br/>
+								Ye meri zamanat hai<br/>
+								Tu meri amaanat hai haan...<br/><br/>
+
+								Apne karam ki kar adayein<br/>
+								Kar de idhar bhi tu nigaahein<br/>
+								Sun raha hai naa tu<br/>
+								Ro raha hoon main<br/>
+								Sun raha hai naa tu<br/>
+								Kyun ro raha hun main<br/><br/>
+
+								Waqt bhi thehara hai<br/>
+								Kaise kyun ye huaa<br/>
+								Kaash tu aise aaye<br/>
+								Jaise koi duaa<br/>
+								Tu rooh ki raahat hai<br/>
+								Tu meri ibaadat hai<br/><br/>
+
+								Apne karam ki kar adaayein<br/>
+								Kar de idhar bhi tu nigaahein<br/><br/>
+
+								Sun raha hai naa tu<br/>
+								Ro raha hoon main<br/>
+								Sun raha hai naa tu<br/>
+								Kyun ro raha hun main (x2)<br/>
+
+
+					</p>
+
+				
+
+				
+				
+				</div>
+				<div class="song7" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+					<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#FF47A3;"><a  href="#"class="click17"style="text-decoration:none; color:black;"><img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>&nbsp; &nbsp;&nbsp;7. Kamli From Dhoom 3&nbsp;&nbsp; &nbsp; <a  href="#"class="click7"style="text-decoration:none; color:black;"> Next<img style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+					<img style="width:80%;height:280px;margin-left:85px;"src="images/kamli.jpg"></img>
+
+					<audio style="margin-top:5px;width:80%;margin-left:85px;"src="music/02 - Dhoom 3 - Kamli [DJMaza.Info].mp3" controls>
+					</audio>
+					
+					<p style="color:white; font-family:Forte;font-size:20px;text-align:center;padding:30px;">
+									Main ruthiya yaar manawangi<br/>
+									Har chilman phoonk jalawangi<br/>
+									Jad patthar Ranjha pighlega<br/>
+									Tad main Kamli kehlawangi<br/>
+									Tad main Kamli kehlawangi<br/><br/>
+
+									Mere maahiya sanam jaanam<br/>
+									Ki main kariya nami danam<br/>
+									Shab guzri te jag soya<br/>
+									Ni main jagiya nami danam (x2)<br/><br/>
+
+									Ni main Kamli Kamli<br/>
+									Ni main Kamli Kamli<br/>
+									Ni main Kamli Kamli mere yaar di (x2)<br/><br/>
+
+									Jheel dil ko kar gaya tu<br/>
+									Dariya dariya mere yaara<br/>
+									Akhiyan de mohalle mein har shaam tera aalam<br/>
+									Shab guzri te jag soya<br/>
+									Ni main jagiya nami danam<br/><br/>
+
+									Mere mahiya sanam jaanam<br/>
+									Ki main kariya nami danam<br/>
+									Shab guzri te jag soya<br/>
+									Ni main jagiya nami danam<br/><br/>
+
+									Main toh pehan ke saafa kesariya<br/>
+									Jugni jogan ban jaaun<br/>
+									Surme de kale jadu se keh de to jog bhulaun<br/>
+									Ni main kamli kamli<br/>
+									Ni main kamli kamli..<br/><br/>
+
+									Main tan seher di thandi shabnam ha<br/>
+									Gulshan ka itar churaaun<br/>
+									Rukh badlun toh sailaab hu main<br/>
+									Parbat bhi cheer dikhaaun<br/><br/>
+
+									Ni main Kamli Kamli<br/>
+									Ni main Kamli Kamli<br/>
+									Ni main Kamli Kamli mere yaar di (x2)<br/><br/>
+
+									Bekhudi me tu khudi ka zariya zariya mere yara<br/>
+									Jhaalar main sitaro ka, chand warga tu yaaram<br/>
+									Shab guzri te jag soya<br/>
+									Ni main jagiya nami danam<br/><br/>
+
+									Mere maahiya sanam jaanam<br/>
+									Ki main kariya nami danam<br/>
+									Shab guzri te jag soya<br/>
+									Ni main jagiya nami danam<br/><br/>
+
+									Ni main Kamli Kamli<br/>
+									Ni main Kamli Kamli<br/>
+									Ni main Kamli Kamli mere yaar di (x2)<br/><br/>
+
+									Ni main Kamli Kamli...<br/>
+
+
+					</p>
+
+				
+
+				
+				
+				</div>
+				<div class="song8" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+					<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#FF47A3;"><a  href="#"class="click18"style="text-decoration:none; color:black;"><img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>&nbsp; &nbsp;&nbsp;8.Mai Dhundne ko Zamane From Heartless &nbsp;&nbsp; &nbsp; <a  href="#"class="click8"style="text-decoration:none; color:black;"> Next<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+					<img style="width:80%;height:280px;margin-left:85px;"src="images/timthumb.jpg"></img>
+
+					<audio style="margin-top:5px;width:80%;margin-left:85px;"src="music/02 - Heartless - Main Dhoondne Ko Zamaane Mein [DJMaza.Info].mp3" controls>
+					</audio>
+					
+					<p style="color:white; font-family:Forte;font-size:20px;text-align:center;padding:30px;">
+									Aa ha.. aa.. ha.. <br/>
+									Aa ha.. aa...<br/><br/>
+
+									Main dhoondne ko zamane me jab wafa nikla<br/>
+									Main dhoondne ko zamane me jab wafa nikla<br/>
+									Pata chala ke ghalat leke main pata nikla<br/>
+									Pata chala ke ghalat leke main pata nikla<br/>
+									Main dhoondne ko zamane me jab wafa nikla<br/>
+									Main dhoondne ko zamane me jab wafa nikla..<br/><br/>
+
+									Aa.. Aa.. ha.. aa.. ha.. <br/>
+									Aa.. ha.. aa...<br/><br/>
+
+									Jiske aane se muqammal ho gayi thi zindagi<br/>
+									Dastakein khushiyon ne di thi,<br/>
+									Mit gayi thi har kami<br/>
+									Kyun bewajah di yeh saza<br/>
+									Kyun khwaab de ke woh le gayaa<br/>
+									Jiyein jo hum lage sitam<br/>
+									Azaab aise woh de gayaa (Azaab: pain)<br/>
+									Main dhoondne ko uske dil me jo Khuda nikla<br/>
+									Main dhoondne ko uske dil me jo Khuda nikla<br/>
+									Pataa chala ke ghalat leke main pata nikla<br/>
+									Pataa chala ke galat leke main pata nikla<br/>
+									Main dhoondne ko zamane me jab wafa nikla<br/>
+									Main dhoondne ko zamane me jab wafa nikla aa...<br/><br/>
+
+									Aa ha.. aa.. aaha.. <br/>
+									Aaha.. aa...<br/><br/>
+
+									Dhoondta tha ek pal me dil jise ye sau dafaa<br/>
+									Hai subah naraz us bin roothi shaame din khafa<br/>
+									Woh aayein na, le jaayein na<br/>
+									Haan uski yaadein jo yahaan<br/>
+									Na raasta, na kuchh pataa<br/>
+									Main usko dhoondhunga ab kahaan<br/>
+									Main dhoondne jo kabhi jeene ki wajah nikla<br/>
+									Main dhoondne jo kabhi jeene ki wajah nikla<br/>
+									Pata chala ke ghalat leke main pata nikla<br/>
+									Pata chala ke ghalat leke main pata nikla<br/>
+									Main dhoondne ko zamane mein jab wafa nikla<br/>
+									Main dhoondne ko zamane mein jab wafa nikla aa..<br/>
+
+
+
+					</p>
+
+				
+
+				
+				
+				</div>
+				<div class="song9" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+					<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#FF47A3;"><a  href="#"class="click19"style="text-decoration:none; color:black;"><img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>&nbsp; &nbsp;&nbsp;9. Allah Waariyaa From Yaariyaaa&nbsp;&nbsp; &nbsp;<a  href="#"class="click9"style="text-decoration:none; color:black;"> Next<img style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+					<img style="width:80%;height:280px;margin-left:85px;"src="images/ateen-39.jpg"></img>
+
+					<audio style="margin-top:5px;width:80%;margin-left:85px;"src="music/04 - Yaariyan - Allah Waariyan [DJMaza.Info].mp3" controls>
+					</audio>
+					
+					<p style="color:white; font-family:Forte;font-size:20px;text-align:center;padding:30px;">
+									Apne roothein, paraaye roothein<br/>
+									Yaar roothe naa<br/>
+									Khwaab tootein, waade tootein<br/>
+									Dil ye toote naa (x2)<br/><br/>
+
+									Roothe to khuda bhi roothe<br/>
+									Saath chhoote naa (x2)<br/><br/>
+
+									O Allah Waariyan<br/>
+									O main toh haariyan<br/>
+									O tooti yaariyan mila de oye! (x2)<br/><br/>
+
+									Udte patangon mein<br/>
+									Holi waale rangon mein<br/>
+									Jhoomenge phir se dono yaar (x2)<br/><br/>
+
+									Waapas to aaja yaar<br/>
+									Seene se laga ja yaar<br/>
+									Dil to huey hain zaar-zaar<br/><br/>
+
+									Ho apne roothein, paraaye roothein<br/>
+									Yaar roothe naa<br/>
+									Khwaab toote, waade toote<br/>
+									Dil yeh toote naa<br/>
+									Roothe toh khuda bhi roothe<br/>
+									Saath chhoote naa<br/>
+									Roothe to khuda bhi roothe<br/>
+									Saath chhoote naa<br/><br/>
+
+									O Allah waariyan<br/>
+									O main toh haariyan<br/>
+									O tooti yaariyan mila de oye! (x2)<br/><br/>
+
+									Reh bhi na paayein yaar<br/>
+									Seh bhi na paayein yaar<br/>
+									Behti hi jaaye dastaan (x2)<br/><br/>
+
+									Umr bhar ka intezaar<br/>
+									Ik pal bhi na qaraar<br/>
+									Ungli pe nachaaye dastaan<br/><br/>
+
+									Ho apne roothe, paraaye roothe<br/>
+									Yaar roothe naa...<br/>
+									Khwaab toote, waade toote<br/>
+									Dil yeh toote naa..<br/>
+									Roothe to khuda bhi roothe<br/>
+									Saath chhoote naa<br/>
+									Roothe to khuda bhi roothe<br/>
+									Saath chhoote naa<br/><br/>
+
+									O Allah wariyan<br/>
+									O main toh haariyan<br/>
+									O tooti yaariyan mila de oye! (x4)<br/>
+
+
+
+									
+					</p>
+
+				
+
+				
+				
+				</div>
+				<div class="song10" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+					<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#FF47A3;"><a  href="#"class="click110"style="text-decoration:none; color:black;"><img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>&nbsp; &nbsp;&nbsp;10. Kabhi Jo Badal Barse From Jackpot&nbsp;&nbsp; &nbsp;<a  href="#"class="click10"style="text-decoration:none; color:black;"> Back <img style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+					<img style="width:80%;height:280px;margin-left:85px;"src="images/Eggjactly-Mera-Bharat-Mahan.jpg"></img>
+
+					<audio style="margin-top:5px;width:80%;margin-left:85px;"src="music/05 - Kabhi Jo Baadal Barse (Remix by Maxi) - [rKmania.me].mp3" controls>
+					</audio>
+					
+					<p style="color:white; font-family:Forte;font-size:20px;text-align:center;padding:30px;">
+									Kabhi Jo Badal Barse <br/>
+									Main Dekhu Tujhe Aankhe Bhar Ke<br/>
+									Tu Lage Mujhe Pehli Barish Ki Du<br/><br/>
+
+									Tere Pehlu Me Rah Loon<br/>
+									Main Khud Ko Pagal Keh Loon<br/>
+									Tu Gam De Ya Khushiyan Sehlu Sathiyan<br/><br/>
+
+									Koi Nahi<br/>
+									Tere Siva Mera Yahan<br/>
+									Manzile Hai Meri To Sab Yahan<br/>
+									Mita De Sabhi Aaja Fasle Main <br/>
+									Chahoon Mujhe Mujhse Bant Le<br/>
+									Zara Sa Mujhme Tu Jhank Le<br/>
+									Main Hoon Kya<br/><br/>
+
+									Pehle Kabhi <br/>
+									Na Tune Mujhe Gam Diya<br/>
+									Phir Mujhe Kyun Tanha Kar Diya<br/>
+									Guzaare The Jo Lamhe Pyaar Ke<br/>
+									Humesha Tujhe Apna Maan Ke<br/>
+									To Fir Tune Badli Kyu Adaa <br/>
+									Yeh Kyu Kiya<br/><br/>
+
+									Oooo Ooooooo<br/>
+
+									Kabhi Jo Badal Barse<br/> 
+									Main Dekhu Tujhe Aankhe Bhar Ke<br/>
+									Tu Lage Mujhe Pehli Barish Ki Dua<br/>
+									Tere Pehlu Me Rah Loon<br/>
+									Main Khud Ko Pagal Keh Loon<br/>
+									Tu Gam De Ya Khushiyan Sehlu Sathiyan<br/>
+									Sathiyan<br/>
+
+									
+					</p>
+
+				
+
+				
+				
+				</div>
+			</div>
+				<div class="box1">
+					<a href="english.html" style="color:white; text-decoration:none;font-family:Forte;font-size:20px;text-align:center;">
+					Top 10 English Songs With Lyrics
+					</a>
+				</div>
+				<div class="box2">
+				<a href="bollywood.html" style="color:white; text-decoration:none;font-family:Forte;font-size:20px;text-align:center;">
+					Top 10 Hindi Songs With Lyrics
+					</a>
+				
+				</div>
+				<div class="box3">
+				<a href="punjabi.html" style="color:white; text-decoration:none;font-family:Forte;font-size:20px;text-align:center;">
+					Top 10 Punjabi Songs With Lyrics
+					</a>
+				
+				</div>
+			
+			</div>
+			
+			
+		
+		</div>
+		<footer style="margin-top:10%">
+				<hr/>
+				<b style="color:white">YUNGISTAAN  copyright &copy; Surbhi Zalpuri 2014</b>
+
+		</footer>
+			
+	</div>
+</body>
+
+</html>
+			

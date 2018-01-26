@@ -1,0 +1,219 @@
+<!Doctype html>
+<html>
+	<head>
+	<script src="jquery.min.js"/>
+	
+	<script type="text/javascript">
+	
+	$(function() {
+			$("#tfq2b").click(function() {
+				if ($("#tfq2b").val() == "Search Google"){
+					$("#tfq2b").val(""); 
+				}
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+
+			function loop(){
+		  $('#1').fadeOut(4000, function(){
+			$('#2').fadeOut(4000, function(){
+				$('#3').fadeOut(4000, function(){
+					$('#4').fadeOut(4000, function(){
+						$('#5').fadeOut(4000, function(){
+							$('#6').fadeOut(4000, function(){
+								
+									$('#1').fadeIn().css({"z-index":"0"});
+									$('#7').fadeOut(2000, function(){
+											$('#2').fadeIn();
+											$('#3').fadeIn();
+											$('#4').fadeIn();
+											$('#5').fadeIn();
+											$('#6').fadeIn();
+											$('#7').fadeIn();
+										loop();
+									});
+								
+							});
+						});	
+					});
+				});
+			});
+		  });
+		}
+		loop();
+			var monthNames = [ "January", "February", "March", "April", "May", "June",
+			"July", "August", "September", "October", "November", "December" ];
+			var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+
+			var newDate = new Date();
+				newDate.getDate();    
+			$('#Date').html("Date"+ " " + ":" + " " +dayNames[newDate.getDay()] + " " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
+		});
+	</script>
+	<link rel="stylesheet" type="text/css" href="style/mystyle.css"></link>
+	<link rel="stylesheet" type="text/css" href="style/books.css"></link>
+	</head>
+	<body>
+	
+	<div class="wrapper">
+		<header>
+		<div class="bar">
+			<img class="logo" src="images/logo.jpg" style="width:160px; height:110px;margin-left:10px;"/>
+			<div class="sitename">
+		
+			All in one Entertainment Stop!<br/>
+			Music! Masti! Love & Dosti!
+			
+			</div>
+			<div id="tfheader">
+				<form id="tfnewsearch" method="get" action="http://www.google.com">
+						<input type="text" id="tfq2b" class="tftextinput2" name="q" size="21" maxlength="120" placeholder="Search Google"><input type="submit" value=">" class="tfbutton2">
+				</form>
+				<div class="tfclear"></div>
+			</div>
+			<div id="Date" style="color:white;font-weight:bold;font-size:20px;font-style:italic;float:right; margin-top:-100px;width:260px;height:20px;"></div>
+			
+		</div>
+
+		<div class="nav" >
+		 <ul class="menu">
+			<li><a href="home.html">Home</a>
+				
+			<li>
+			<li><a href="music.html">Music</a>
+				<ul>
+					<li><a href="english.html">English</a></li>
+					<li><a href="bollywood.html">Bollywood</a></li>
+					<li><a href="punjabi.html">Punjabi</a></li>
+				</ul>
+			</li>
+			<li><a href="gallery.html">Gallery</a>
+				<ul>
+					<li><a href="videos.html">Videos</a></li>
+					<li><a href="wallpapers.html">Wallpapers</a></li>
+				</ul>
+			
+			</li>
+			<li><a href="books.html">Books</a>
+				<ul>
+					<li><a href="hp.html">HarryPotter</a></li>
+					<li><a href="twilight.html">Twilight</a></li>
+					<li><a href="tvd.html">TVD</a> </li>
+					<li><a href="hungergames.html">HungerGames</a></li>
+					
+					
+				</ul>
+			</li>
+			<li><a href="quotes.html">Quotes</a>
+				<ul>
+					<li><a href="frnshpq.html">Frienship</a></li>
+					<li><a href="loveq.html">Love</a></li>
+					<li><a href="brkupq.html">Breakup</a></li>
+					<li><a href="funnyq.html">Humour</a></li>
+				</ul>
+			</li>
+			<li><a href="hangouts.html">Hangouts</a>
+				<ul>
+					<li><a href="food.php">Food</a></li>
+					
+					<li><a href="theatre.php">Theaters</a></li>
+					<li><a href="malls.php">Malls</a></li>
+					<li><a href="adventure.php">FunSpots</a></li>
+					
+				</ul>
+			<li><a href="feedback.php">Feedback</a>
+				
+			</li>
+		</ul>
+		</div>
+		</header>
+		<div class="body">
+			<div class="slideshow">
+			
+				<img id="7" src="images/2676_1322797460715_full.jpg"/>
+				<img id="6" src="images/895320Twilight_Fell_In_Love.png"/>
+				<img id="5" src="images/5142012111150157644.png"/>
+				<img id="4" src="images/Facebook covers Twilight saga photo  s.jpg"/>
+				<img id="3" src="images/PCQBKaeJrMy6aoRg.jpg"/>
+				<img id="2" src="images/twilight_breaking_dawn_edward_cullen_quote.jpg"/>
+				<img id="1" src="images/twilight-the-cullens-facebook-cover-timeline-banner-for-fb.jpg"/>
+				<div class="box-txt" style="top:226px;width:100%;height:54px;display: block;background:black;position:absolute;opacity:0.8;">
+					<p style="color:white; font-weight:bold;text-align:center;">DOWNLOAD AND READ BOOKS</p>
+					</div>
+			</div>
+			<div class="content" >
+			
+				<div class="booksintro">
+						<div class="t1" style=" text-align:center;padding:10px;margin:0px auto; width:100%">
+							<a href="books/stephenie_meyer_-_twilight.pdf" style="text-align:center;
+							text-decoration:none;color:white;margin:0px auto;border-radius:2px;font-family:forte;font-size:20px;">
+							<p style="margin:0px auto;background:#F20000;padding:10px;width:500px;border-radius:2px;color:white;box-shadow:0px 0px 5px white;">1. Twilight Saga</p><br/>
+								<img src="images/twilight_wallpaper_1024x768-1.jpg" style="border-radius:2px;width:700px;height:450px;"/></a>
+								<br/>
+						</div><br/><br/><br/>
+						<div class="t2" style=" text-align:center;padding:10px;margin:0px auto; width:100%">
+							<a href="books/stephenie_meyer_-_new_moon.pdf" style="text-align:center;
+							text-decoration:none;color:white;margin:0px auto;border-radius:2px;font-family:forte;font-size:20px;">
+							<p style="margin:0px auto;background:#F20000;padding:10px;width:500px;border-radius:2px;color:white;box-shadow:0px 0px 5px white;">2. Twilight Saga - New Moon</p><br/>
+								<img src="images/twilight-saga-new-moon-new-moon-movie-7970602-1200-900.gif" style="width:700px;height:450px;border-radius:2px;"/></a>
+								<br/>
+						</div><br/><br/><br/>
+						
+						<div class="t3" style=" text-align:center;padding:10px;margin:0px auto; width:100%">
+							<a href="books/Stephenie_Meyer_-_Eclipse.pdf" style="text-align:center;
+							text-decoration:none;color:white;margin:0px auto;border-radius:2px;font-family:forte;font-size:20px;">
+							<p style="margin:0px auto;background:#F20000;padding:10px;width:500px;border-radius:2px;color:white;box-shadow:0px 0px 5px white;">3. Twilight Saga - The Eclipse</p><br/>
+								<img src="images/Eclipse Movie Twilight 3.jpg" style="width:700px;height:450px;border-radius:2px;"/></a>
+								<br/>
+						</div><br/><br/><br/>
+						
+						<div class="t4" style=" text-align:center;padding:10px;margin:0px auto; width:100%">
+							<a href="books/Twilight+4+-+Breaking+Dawn.pdf" style="text-align:center;
+							text-decoration:none;color:white;margin:0px auto;border-radius:2px;font-family:forte;font-size:20px;">
+							<p style="margin:0px auto;background:#F20000;padding:10px;width:500px;border-radius:2px;color:white;box-shadow:0px 0px 5px white;">4. Twilight Saga - Breaking Dawn</p><br/>
+								<img src="images/twilight-breaking-dawn-2-wallpaper.jpg" style="width:700px;height:450px;border-radius:2px;"/></a>
+								<br/>
+						</div><br/>
+					
+						
+						
+				
+				</div>
+				<div class="box1">
+					<a href="hp.html" style="color:white; text-decoration:none;font-family:Forte;font-size:20px;">
+					The Harry Potter
+					</a>
+				</div>
+				<div class="box2">
+				<a href="twilight.html" style="color:white; text-decoration:none;font-family:Forte;font-size:20px;">
+					The Twilight Saga
+					</a>
+				
+				</div>
+				<div class="box3">
+				<a href="tvd.html" style="color:white; text-decoration:none;font-family:Forte;font-size:20px;">
+					The Vampire Diaries
+					</a>
+				
+				</div>
+				<div class="box4">
+				<a href="hungergames.html" style="color:white; text-decoration:none;font-family:Forte;font-size:20px;">
+					The Hunger Games
+					</a>
+				
+				</div>
+			
+			</div>
+		
+		</div>
+		<footer style="margin-top:10%">
+				<hr/>
+				<b style="color:white">YUNGISTAAN  copyright &copy; Surbhi Zalpuri 2014</b>
+
+		</footer>
+	</div>
+</body>
+</html>
+			

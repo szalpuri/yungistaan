@@ -1,0 +1,190 @@
+<!Doctype html>
+<html>
+	<head>
+	<script src="jquery.min.js"/>
+	
+	<script type="text/javascript">
+	
+		$(function() {
+			$("#tfq2b").click(function() {
+				if ($("#tfq2b").val() == "Search Google"){
+					$("#tfq2b").val(""); 
+				}
+			});
+		});
+		
+	</script>
+	<script>
+		$(document).ready(function(){
+			$('.1').hover(function(){
+			$('.box-txt1').slideToggle("slow");
+			});
+			$('.2').hover(function(){
+			$('.box-txt2').slideToggle("slow");
+			});
+			$('.3').hover(function(){
+			$('.box-txt3').slideToggle("slow");
+			});
+			$('.4').hover(function(){
+			$('.box-txt4').slideToggle("slow");
+			});
+			$('.5').hover(function(){
+			$('.box-txt5').slideToggle("slow");
+			});
+			
+			$('.6').hover(function(){
+			$('.box-txt6').slideToggle("slow");
+			});
+			$('.7').hover(function(){
+			$('.box-txt7').slideToggle("slow");
+			});
+			
+			
+			var monthNames = [ "January", "February", "March", "April", "May", "June",
+			"July", "August", "September", "October", "November", "December" ];
+			var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+
+			var newDate = new Date();
+			newDate.getDate();    
+			$('#Date').html("Date"+ " " + ":" + " " +dayNames[newDate.getDay()] + " " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
+		});
+	</script>
+	<link rel="stylesheet" type="text/css" href="style/mystyle.css"></link>
+	</head>
+	<body>
+	
+	<div class="wrapper">
+		<header>
+		<div class="bar">
+			<img class="logo" src="images/logo.jpg" style="width:160px; height:110px;margin-left:10px;"/>
+			<div class="sitename">
+		
+			All in one Entertainment Stop!<br/>
+			Music! Masti! Love & Dosti!
+			
+			</div>
+			<div id="tfheader">
+				<form id="tfnewsearch" method="get" action="http://www.google.com">
+						<input type="text" id="tfq2b" class="tftextinput2" name="q" size="21" maxlength="120" placeholder="Search Google"><input type="submit" value=">" class="tfbutton2">
+				</form>
+				<div class="tfclear"></div>
+			</div>
+			<div id="Date" style="color:white;font-weight:bold;font-size:20px;font-style:italic;float:right; margin-top:-100px;width:260px;height:20px;"></div>
+			
+		</div>
+
+		<div class="nav" >
+		 <ul class="menu">
+			<li><a href="home.html">Home</a>
+				
+			<li>
+			<li><a href="music.html">Music</a>
+				<ul>
+					<li><a href="english.html">English</a></li>
+					<li><a href="bollywood.html">Bollywood</a></li>
+					<li><a href="punjabi.html">Punjabi</a></li>
+				</ul>
+			</li>
+			<li><a href="gallery.html">Gallery</a>
+				<ul>
+					<li><a href="videos.html">Videos</a></li>
+					<li><a href="wallpapers.html">Wallpapers</a></li>
+				</ul>
+			
+			</li>
+			<li><a href="books.html">Books</a>
+				<ul>
+					<li><a href="hp.html">HarryPotter</a></li>
+					<li><a href="twilight.html">Twilight</a></li>
+					<li><a href="tvd.html">TVD</a> </li>
+					<li><a href="hungergames.html">HungerGames</a></li>
+					
+					
+				</ul>
+			</li>
+			<li><a href="quotes.html">Quotes</a>
+				<ul>
+					<li><a href="frnshpq.html">Frienship</a></li>
+					<li><a href="loveq.html">Love</a></li>
+					<li><a href="brkupq.html">Breakup</a></li>
+					<li><a href="funnyq.html">Humour</a></li>
+				</ul>
+			</li>
+			<li><a href="hangouts.html">Hangouts</a>
+				<ul>
+					<li><a href="food.php">Food</a></li>
+					<li><a href="theatre.php">Theaters</a></li>
+					<li><a href="malls.php">Malls</a></li>
+					<li><a href="adventure.php">FunSpots</a></li>
+				</ul>
+			<li><a href="feedback.php">Feedback</a>
+				
+			</li>
+		</ul>
+		</div>
+		</header>
+		
+		
+			<div class="box1">
+				<img class="1" src="images/1.jpg" style="width:975px; height:280px;position:absolute;margin:3px;top:162px">
+					<div class="box-txt1" style="margin:3px;top:162px;width:975px;height:56px;display: block;background:black;position:absolute;opacity:0.8;display:none;">
+					<p style="color:white; font-weight:bold;text-align:center;">WELCOME TO ALL IN ONE ENTERTAINMENT WEBSITE</p>
+					</div>
+				</img>
+			<div>
+			
+			<div class="box1">
+				<img class="2" src="images/2.jpg" style="width:550px; height:400px;position:absolute;top:446px;margin:3px;">
+				<div class="box-txt2" style="margin:3px;top:446px;width:550px;height:56px;display: block;background:black;opacity:0.8;position:absolute;display:none;">
+					<p style="color:white; font-weight:bold;text-align:center;">LISTEN AND MEMORIZE SONGS</p>
+					</div>
+				</img>
+				
+			</div>
+			<div class="box1">
+				<img class="3" src="images/5.jpg" style="width:420.5px; height:200px;position:absolute;top:446px;margin:3px;left:555px;">
+				<div class="box-txt3" style="margin:3px;top:446px;;width:420.5px;height:56px;display: block;background:black;opacity:0.8;position:absolute;left:555px;display:none">
+					<p style="color:white; font-weight:bold;text-align:center;">READ YOUR FAVOURITE BOOKS</p>
+					</div>
+				</img>
+			</div>
+			<div class="box1">
+				<img class="4" src="images/6.jpg" style="width:420.5px;background:red; height:196px;position:absolute;top:650px;margin:3px;left:555px;">
+				<div class="box-txt4" style="margin:3px;top:650px;width:420.5px;height:56px;display: block;background:black;opacity:0.8;position:absolute;left:555px;display:none">
+					<p style="color:white; font-weight:bold;text-align:center;">VIEW AMAZING PICTURES & VIDEOS</p>
+					</div>
+				</img>
+			</div>
+			<div class="box1">
+				<img class="5" src="images/7.jpg" style="width:350px; height:250px;position:absolute;top:850px;margin:3px;">
+				<div class="box-txt5" style="margin:3px;top:850px;width:350px;height:56px;display: block;background:black;opacity:0.8;position:absolute;display:none">
+					<p style="color:white; font-weight:bold;text-align:center;">FIND WONDERFUL HANGOUT SPOTS</p>
+					</div>
+				</img>
+			</div>
+			<div class="box1">
+				<img class="6" src="images/8.jpg" style="width:340px; height:250px;position:absolute;top:850px;margin:3px;left:355px;">
+				<div class="box-txt6" style="margin:3px;top:850px;width:340px;height:56px;display: block;background:black;opacity:0.8;position:absolute;left:355px;display:none">
+					<p style="color:white; font-weight:bold;text-align:center;">FIND NEAREST CINEMAS</p>
+					</div>
+				</img>
+			</div>
+			<div class="box1">
+				<img class="7" src="images/9.jpg" style="width:278px; height:250px;position:absolute;top:850px;margin:3px;left:699px;">
+				<div class="box-txt7" style="margin:3px;top:850px;width:278px;height:56px;display: block;background:black;opacity:0.8;position:absolute;left:699px;display:none">
+				<p style="color:white; font-weight:bold;text-align:center;">FIND NEAREST FOOD SPOTS </p>
+					</div>
+				</img>
+			</div>
+			
+		
+		
+		<footer style="margin-top:100%">
+				<hr/>
+				<b style="color:white">YUNGISTAAN  copyright &copy; Surbhi Zalpuri 2014</b>
+
+		</footer>
+	</div>
+</body>
+</html>
+			
