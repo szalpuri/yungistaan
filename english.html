@@ -1,0 +1,1140 @@
+<!Doctype html>
+<html>
+	<head>
+	<script src="jquery.min.js"/>
+	<meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+	<script type="text/javascript">
+	
+	$(function() {
+			$("#tfq2b").click(function() {
+				if ($("#tfq2b").val() == "Search Google"){
+					$("#tfq2b").val(""); 
+				}
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+
+			function loop(){
+		  $('#1').fadeOut(4000, function(){
+			$('#2').fadeOut(4000, function(){
+				$('#3').fadeOut(4000, function(){
+					$('#4').fadeOut(4000, function(){
+						$('#5').fadeOut(4000, function(){
+							$('#6').fadeOut(4000, function(){
+								
+									$('#1').fadeIn().css({"z-index":"0"});
+									$('#7').fadeOut(2000, function(){
+											$('#2').fadeIn();
+											$('#3').fadeIn();
+											$('#4').fadeIn();
+											$('#5').fadeIn();
+											$('#6').fadeIn();
+											$('#7').fadeIn();
+										loop();
+									});
+								
+							});
+						});	
+					});
+				});
+			});
+		  });
+		}
+		loop();
+				$('.click1').click(function(){
+					$('.song1').fadeOut();
+					$('.song2').fadeIn();
+		
+				
+				});
+				$('.click2').click(function(){
+					$('.song2').fadeOut();
+					$('.song3').fadeIn();
+		
+				
+				});
+				$('.click3').click(function(){
+					$('.song3').fadeOut();
+					$('.song4').fadeIn();
+		
+				
+				});
+				$('.click4').click(function(){
+					$('.song4').fadeOut();
+					$('.song5').fadeIn();
+		
+				
+				});
+				$('.click5').click(function(){
+					$('.song5').fadeOut();
+					$('.song6').fadeIn();
+		
+				
+				});
+				$('.click6').click(function(){
+					$('.song6').fadeOut();
+					$('.song7').fadeIn();
+		
+				
+				});
+				$('.click7').click(function(){
+					$('.song7').fadeOut();
+					$('.song8').fadeIn();
+		
+				
+				});
+				$('.click8').click(function(){
+					$('.song8').fadeOut();
+					$('.song9').fadeIn();
+				
+				});
+				
+				$('.click9').click(function(){
+					$('.song9').fadeOut();
+					$('.song10').fadeIn();
+		
+				
+				});
+				$('.click10').click(function(){
+					$('.song10').fadeOut();
+					$('.song1').fadeIn();
+		
+				
+				});
+					$('.click12').click(function(){
+					$('.song2').fadeOut();
+					$('.song1').fadeIn();
+		
+				
+				});
+				$('.click13').click(function(){
+					$('.song3').fadeOut();
+					$('.song2').fadeIn();
+		
+				
+				});
+			
+				$('.click14').click(function(){
+					$('.song4').fadeOut();
+					$('.song3').fadeIn();
+		
+				
+				});
+				$('.click15').click(function(){
+					$('.song5').fadeOut();
+					$('.song4').fadeIn();
+		
+				
+				});
+				$('.click16').click(function(){
+					$('.song6').fadeOut();
+					$('.song5').fadeIn();
+		
+				
+				});
+				$('.click17').click(function(){
+					$('.song7').fadeOut();
+					$('.song6').fadeIn();
+		
+				
+				});
+				$('.click18').click(function(){
+					$('.song8').fadeOut();
+					$('.song7').fadeIn();
+		
+				
+				});
+				
+				$('.click19').click(function(){
+					$('.song9').fadeOut();
+					$('.song8').fadeIn();
+		
+				
+				});
+				$('.click110').click(function(){
+					$('.song10').fadeOut();
+					$('.song9').fadeIn();
+		
+				
+				});
+		
+			var monthNames = [ "January", "February", "March", "April", "May", "June",
+			"July", "August", "September", "October", "November", "December" ];
+			var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+
+			var newDate = new Date();
+				newDate.getDate();     
+			$('#Date').html("Date"+ " " + ":" + " " +dayNames[newDate.getDay()] + " " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
+		});
+	</script>
+	<link rel="stylesheet" type="text/css" href="style/mystyle.css"></link>
+	<link rel="stylesheet" type="text/css" href="style/music.css"></link>
+	</head>
+	<body>
+	
+	<div class="wrapper">
+		<header>
+		<div class="bar">
+			<img class="logo" src="images/logo.jpg" style="width:160px; height:110px;margin-left:10px;"/>
+			<div class="sitename">
+		
+			All in one Entertainment Stop!<br/>
+			Music! Masti! Love & Dosti!
+			
+			</div>
+			<div id="tfheader">
+				<form id="tfnewsearch" method="get" action="http://www.google.com">
+						<input type="text" id="tfq2b" class="tftextinput2" name="q" size="21" maxlength="120" placeholder="Search Google"><input type="submit" value=">" class="tfbutton2">
+				</form>
+				<div class="tfclear"></div>
+			</div>
+			<div id="Date" style="color:white;font-weight:bold;font-size:20px;font-style:italic;float:right; margin-top:-100px;width:260px;height:20px;"></div>
+			
+		</div>
+
+		<div class="nav" >
+		 <ul class="menu">
+			<li><a href="home.html">Home</a>
+				
+			<li>
+			<li><a href="music.html">Music</a>
+				<ul>
+					<li><a href="english.html">English</a></li>
+					<li><a href="bollywood.html">Bollywood</a></li>
+					<li><a href="punjabi.html">Punjabi</a></li>
+				</ul>
+			</li>
+			<li><a href="gallery.html">Gallery</a>
+				<ul>
+					<li><a href="videos.html">Videos</a></li>
+					<li><a href="wallpapers.html">Wallpapers</a></li>
+				</ul>
+			
+			</li>
+			<li><a href="books.html">Books</a>
+				<ul>
+					<li><a href="hp.html">HarryPotter</a></li>
+					<li><a href="twilight.html">Twilight</a></li>
+					<li><a href="tvd.html">TVD</a> </li>
+					<li><a href="hungergames.html">HungerGames</a></li>
+					
+					
+				</ul>
+			</li>
+			<li><a href="quotes.html">Quotes</a>
+				<ul>
+					<li><a href="frnshpq.html">Frienship</a></li>
+					<li><a href="loveq.html">Love</a></li>
+					<li><a href="brkupq.html">Breakup</a></li>
+					<li><a href="funnyq.html">Humour</a></li>
+				</ul>
+			</li>
+			<li><a href="hangouts.html">Hangouts</a>
+				<ul>
+					<li><a href="food.php">Food</a></li>
+					<li><a href="theatre.php">Theaters</a></li>
+					<li><a href="malls.php">Malls</a></li>
+					<li><a href="adventure.php">FunSpots</a></li>
+				</ul>
+			<li><a href="feedback.php">Feedback</a>
+				
+			</li>
+		</ul>
+		</div>
+		</header>
+		<div class="body">
+			<div class="slideshow">
+			
+				<img id="7" src="images/11.jpg"/>
+				<img id="6" src="images/22.jpg"/>
+				<img id="5" src="images/33.jpg"/>
+				<img id="4" src="images/44.jpg"/>
+				<img id="3" src="images/55.jpg"/>
+				<img id="2" src="images/66.jpg"/>
+				<img id="1" src="images/77.jpg"/>
+				<div class="box-txt" style="top:226px;width:100%;height:54px;display: block;background:black;position:absolute;opacity:0.8;">
+					<p style="color:white; font-weight:bold;text-align:center;">LISTEN TO MUSIC AND MEMORIZE LYRICS</p>
+					</div>
+			</div>
+			<div class="content">
+			
+				<div class="musicintro" style="height:100%;">
+						<p style="color:white; font-family:Forte;padding:20px;background:black;opacity:0.9;font-size:20px;text-align:center;box-shadow:0px 0px 10px white;border-radius:2px;">Top Ten English Songs With Lyrics</p>
+						<div class="song1" style="background:black;width:100%;height:100%;border-radius:2px;">
+							<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#FF47A3;">1.  The Monster Eminem FT Rihanna &nbsp;&nbsp; &nbsp;<a  href="#"class="click1"style="text-decoration:none; color:black;"> Next<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+							<img style="width:80%;height:280px;margin-left:85px;"src="images/Listen-Eminem-The-Monster-ft-Rihanna.jpg"></img>
+
+							<audio style="margin-top:5px;width:80%;margin-left:85px;"src="music/The Monster Eminem FT Rihamma-(SongsPK.AT)128.mp3" controls>
+							</audio>
+							
+							<p style="color:white; font-family:Forte;font-size:20px;text-align:center;padding:30px;">
+												[Hook: Rihanna]<br/>
+							I'm friends with the monster that's under my bed<br/>
+							Get along with the voices inside of my head<br/>
+							You're trying to save me, stop holdin' your breath<br/>
+							And you think I'm crazy, yeah, you think I'm crazy<br/><br/>
+
+							[Verse 1: Eminem]<br/>
+							I wanted the fame, but not the cover of Newsweek<br/>
+							Oh well, guess beggars can't be choosey<br/>
+							Wanted to receive attention for my music<br/>
+							Wanted to be left alone in public excuse me<br/>
+							For wanting my cake, and eat it too, and wanting it both ways<br/>
+							Fame made me a balloon cause my ego inflated when I blew, see<br/>
+							But it was confusing, cause all I wanted to do's be<br/>
+							The Bruce Lee of loose leaf<br/>
+							Abused ink, used it as a tool when blew steam<br/>
+							Hit the lottery, ooh-wee<br/>
+							But with what I gave up to get it was bittersweet<br/>
+							It was like winning a used mink<br/>
+							Ironic cause I think I'm getting so huge I need a shrink<br/>
+							I'm beginning to lose sleep<br/>
+							One sheep, two sheep<br/>
+							Going coo-coo and kooky as Kool Keith<br/>
+							But I'm actually weirder than you think<br/>
+							Cause I'm...<br/><br/>
+
+							[Bridge: Rihanna] X2<br/>
+							Well, that's nothing<br/><br/>
+
+							[Verse 2: Eminem]<br/>
+							Now, I ain't much of a poet but I know somebody once told me to seize the moment and don't squander it<br/>
+							Cause you never know when it all could be over tomorrow, so I keep conjuring<br/>
+							Sometimes I wonder where these thoughts spawn from<br/>
+							(Yeah, pondering'll do you wonders<br/>
+							No wonder you're losing your mind, the way it wanders)<br/>
+							Yodel-odel-ay-hee-hoo!<br/>
+							I think it went wandering off down yonder<br/>
+							And stumbled onto Jeff VanVonderen<br/>
+							Cause I need an interventionist to intervene between me and this monster<br/>
+							And save me from myself and all this conflict<br/>
+							Cause the very thing that I love's killing me and I can't conquer it<br/>
+							My OCD is conking me in the head, keep knockin'<br/>
+							Nobody's home, I'm sleepwalkin'<br/>
+							I'm just relaying what the voice in my head is saying<br/>
+							Don't shoot the messenger, I'm just friends with the...<br/><br/>
+
+							[Verse 3: Eminem]<br/>
+							Call me crazy, but I have this vision<br/>
+							One day that I'll walk amongst you a regular civilian<br/>
+							But until then drums get killed and I'm<br/>
+							Coming straight at MCs, blood gets spilled and I'll<br/>
+							Take it back to the days that I'd get on a Dre track<br/>
+							Give every kid who got played that, pumped up feelin'<br/>
+							And shit to say back to the kids who played him<br/>
+							I ain't here to save the fucking children<br/>
+							But if one kid out of a hundred million<br/>
+							Who are going through a struggle feels it and<br/>
+							Relates, that's great, it's payback, Russell Wilson<br/>
+							Falling way back in the draft, turn nothing into something, still can<br/>
+							Make that, straw into gold chump, I will spin<br/>
+							Rumpelstiltskin in a haystack<br/>
+							Maybe I need a straight jacket, face facts<br/>
+							I am nuts for real, but I'm okay with that<br/>
+							It's nothing, I'm still friends with the...<br/><br/>
+
+							</p>
+							
+
+						</div>
+							<div class="song2" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+							<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#FF47A3;"><a  href="#"class="click12"style="text-decoration:none; color:black;"><img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>&nbsp; &nbsp;&nbsp;2. Wrecking Ball Ft Miley Cyrus&nbsp;&nbsp; &nbsp; <a  href="#"class="click2"style="text-decoration:none; color:black;"> Next<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+							<img style="width:80%;height:280px;margin-left:85px;"src="images/miley-cyrus-bangerz-review.jpg"></img>
+
+							<audio style="margin-top:5px;width:80%;margin-left:85px;"src="music/Miley_Cyrus_-_Wrecking_Ball.mp3" controls>
+							</audio>
+							
+							<p style="color:white; font-family:Forte;font-size:20px;text-align:center;padding:30px;">
+									We clawed, we chained, our hearts in vain</br>
+									We jumped, never asking why</br>
+									We kissed, I fell under your spell</br>
+									A love no one could deny</br></br>
+
+									Don't you ever say I just walked away</br>
+									I will always want you</br>
+									I can't live a lie, running for my life</br>
+									I will always want you</br></br>
+
+									I came in like a wrecking ball</br>
+									I never hit so hard in love</br>
+									All I wanted was to break your walls</br>
+									All you ever did was break me</br>
+									Yeah, you wreck me</br></br>
+
+									I put you high up in the sky</br>
+									And now, you're not coming down</br>
+									It slowly turned, you let me burn</br>
+									And now, we're ashes on the ground</br></br>
+
+									Don't you ever say I just walked away</br>
+									I will always want you
+									I can't live a lie, running for my life</br>
+									I will always want you</br></br>
+
+									I came in like a wrecking ball</br>
+									I never hit so hard in love</br>
+									All I wanted was to break your walls</br>
+									All you ever did was break me</br></br>
+
+									I came in like a wrecking ball</br>
+									Yeah, I just closed my eyes and swung</br>
+									Left me crouching in a blaze and fall</br>
+									All you ever did was break me</br>
+									Yeah, you wreck me</br></br>
+
+									I never meant to start a war</br>
+									I just wanted you to let me in</br>
+									And instead of using force</br>
+									I guess I should've let you in</br>
+									I never meant to start a war</br>
+									I just wanted you to let me in</br>
+									I guess I should've let you in</br></br>
+
+									Don't you ever say I just walked away</br>
+									I will always want you</br></br>
+
+									I came in like a wrecking ball</br>
+									I never hit so hard in love</br>
+									All I wanted was to break your walls</br>
+									All you ever did was break me</br></br>
+
+									I came in like a wrecking ball</br>
+									Yeah, I just closed my eyes and swung</br>
+									Left me crouching in a blaze and fall</br>
+									All you ever did was break me</br>
+									Yeah, you, you wreck me</br>
+
+									Yeah, you, you wreck me</br>
+
+							</p>
+							
+
+						</div>
+							<div class="song3" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+							<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#FF47A3;"><a  href="#"class="click13"style="text-decoration:none; color:black;"><img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>&nbsp; &nbsp;&nbsp;3. One More Night By Maroon 5&nbsp;&nbsp; &nbsp; <a  href="#"class="click3"style="text-decoration:none; color:black;"> Next<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+							<img style="width:80%;height:280px;margin-left:85px;"src="images/Maroon-5-maroon-5-50772_1280_800.jpg"></img>
+
+							<audio style="margin-top:5px;width:80%;margin-left:85px;"src="music/Maroon-5---One-more-night-[320kbps].mp3" controls>
+							</audio>
+							
+							<p style="color:white; font-family:Forte;font-size:20px;text-align:center;padding:30px;">
+									You and I go hard at each other like we're going to war.<br/>
+									You and I go rough, we keep throwing things and slamming the door.<br/>
+									You and I get so damn dysfunctional, we start keeping score.<br/>
+									You and I get sick, yeah, I know that we can't do this no more.<br/><br/>
+
+									Yeah, but baby there you go again, there you go again, making me love you<br/>
+									Yeah, I stopped using my head, using my head, let it all go.<br/>
+									Got you stuck on my body, on my body, like a tattoo.<br/>
+									And now I'm feeling stupid, feeling stupid, crawling back to you.<br/><br/>
+
+									So I cross my heart and I hope to die<br/>
+									That I'll only stay with you one more night<br/>
+									And I know I said it a million times<br/>
+									But I'll only stay with you one more night<br/><br/>
+
+									Try to tell you "no" but my body keeps on telling you "yes".<br/>
+									Try to tell you "stop", but your lipstick got me so out of breath.<br/>
+									I'll be waking up in the morning, probably hating myself.<br/>
+									And I'll be waking up, feeling satisfied but guilty as hell.<br/><br/>
+
+									Yeah, but baby there you go again, there you go again, making me love you.<br/>
+									(Making me love you)<br/>
+									Yeah, I stopped using my head, using my head, let it all go.<br/>
+									(I let it all go)<br/>
+									Got you stuck on my body, on my body, like a tattoo.<br/>
+									(Like a tattoo, yeah)<br/>
+									And now I'm feeling stupid, feeling stupid, crawling back to you.<br/><br/>
+
+									So I cross my heart and I hope to die
+									(Yeah)<br/>
+									That I'll only stay with you one more night
+									(Oh)<br/>
+									And I know I said it a million times
+									(Yeah)<br/>
+									But I'll only stay with you one more night
+									(Yeah)<br/><br/>
+
+									Yeah, baby, give me one more night<br/>
+									Yeah, baby, give me one more night (whoa, yeah)<br/>
+									Yeah, baby, give me one more night (oh, yeah, yeah)<br/>
+
+									Yeah, but baby there you go again, there you go again making me love you.<br/>
+									Yeah, I stopped using my head, using my head, let it all go.<br/>
+									Got you stuck on my body, on my body like a tattoo.<br/>
+									Yeah, yeah, yeah, yeah<br/>
+
+									So I cross my heart and I hope to die<br/>
+									(Oh oh oh oh, oh oh oh oh)<br/>
+									That I'll only stay with you one more night
+									(Oh oh oh oh oh oh)
+									And I know I said it a million times<br/>
+									(Oh, I said it a million times)<br/>
+									But I'll only stay with you one more night<br/>
+									(Yeah, baby give me one more night)<br/><br/>
+
+									So I cross my heart and I hope to die (yeah, yeah)<br/>
+									That I'll only stay with you one more night (yeah, yeah)<br/>
+									And I know I said it a million times (yeah, yeah)<br/>
+									But I'll only stay with you one more night (yeah, yeah)<br/>
+
+									I don't know, whatever.<br/>
+							</p>
+						
+						</div>
+							<div class="song4" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+							<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#FF47A3;"><a  href="#"class="click14"style="text-decoration:none; color:black;"><img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>&nbsp; &nbsp;&nbsp;4. Heart Attack By Enrique Iglesias&nbsp;&nbsp; &nbsp;  <a  href="#"class="click4"style="text-decoration:none; color:black;"> Next<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+							<img style="width:80%;height:280px;margin-left:85px;"src="images/enrique-iglesias-heart-attack-lyric-video-1024x576.jpg"></img>
+
+							<audio style="margin-top:5px;width:80%;margin-left:85px;"src="music/Enrique Iglesias - Heart Attack_HD.mp3" controls>
+							</audio>
+							
+							<p style="color:white; font-family:Forte;font-size:20px;text-align:center;padding:30px;">
+									Loving you was easy, <br/>
+									Thought you'd never leave me
+									Yeah, yeah<br/>
+									Wrapped around my finger, see you when I see you
+									Yeah, yeah<br/>
+									Now. I'm hearing around that you've been runnin' around<br/>
+									I didn't think I miss you, now I'm feeling like a fool, uuh<br/><br/>
+
+									It hit me like a heart attack<br/>
+									When you finally loved me girl<br/>
+									I thought I never want you back,<br/>
+									But I don't wanna live in a world without you<br/>
+									I don't wanna live in a world without you<br/>
+									I don't wanna live in a world without you<br/>
+									I don't wanna live in a world without you<br/><br/>
+
+									Never really noticed all the little things you did, you did<br/>
+									Never bought you roses, always was around my friends, my friends<br/>
+									And now I'm hearing around that you've been runnin' around<br/>
+									I didn't think I miss you, now I'm feeling like a fool, uuh<br/><br/>
+
+									It hit me like a heart attack<br/>
+									When you finally loved me girl<br/>
+									I thought I never want you back,<br/>
+									But I don't wanna live in a world without you<br/>
+									I don't wanna live in a world without you<br/>
+									I don't wanna live in a world without you<br/><br/>
+
+									Never should've let you slip away<br/>
+									Living in a world that's turned to grey<br/>
+									Little did I know it hurts so bad, uuh<br/><br/>
+
+									'Cause it hit me like a heart attack<br/>
+									when you finally loved me girl<br/>
+									I thought I never want you back,<br/>
+									But I don't wanna live in a world without you<br/>
+									I don't wanna live in a world without you<br/>
+									I don't wanna live in a world without you, uuu-uu<br/>
+									I don't wanna live in a world without you, uuu-uu<br/>
+									I don't wanna live in a world without you, uuu-uu<br/>
+
+									Now I'm hearing around that you've been runnin' around<br/>
+									I didn't think I miss you,now I'm feeling like a fool, uuh<br/>
+
+							</p>
+						
+						</div>
+							<div class="song5" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+							<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#FF47A3;"><a  href="#"class="click15"style="text-decoration:none; color:black;"><img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>&nbsp; &nbsp;&nbsp;5. Roar By Katy Perry&nbsp;&nbsp; &nbsp; <a  href="#"class="click5"style="text-decoration:none; color:black;"> Next<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+							<img style="width:80%;height:280px;margin-left:85px;"src="images/katy-perry-roar-music-video-06.jpg"></img>
+
+							<audio style="margin-top:5px;width:80%;margin-left:85px;"src="music/tumblr_mrfcsed8sw1rp6szto1.mp3" controls>
+							</audio>
+							
+							<p style="color:white; font-family:Forte;font-size:20px;text-align:center;padding:30px;">
+									I used to bite my tongue and hold my breath<br/>
+									Scared to rock the boat and make a mess<br/>
+									So I sat quietly, agreed politely<br/>
+									I guess that I forgot I had a choice<br/>
+									I let you push me past the breaking point<br/>
+									I stood for nothing, so I fell for everything<br/><br/>
+
+									You held me down, but I got up<br/>
+									Already brushing off the dust<br/>
+									You hear my voice, you hear that sound<br/>
+									Like thunder, gonna shake the ground<br/>
+									You held me down, but I got up<br/>
+									Get ready cause I’ve had enough<br/>
+									I see it all, I see it now<br/><br/>
+
+									I got the eye of the tiger, a fighter, dancing through the fire<br/>
+									Cause I am a champion and you’re gonna hear me ROAR<br/>
+									Louder, louder than a lion<br/>
+									Cause I am a champion and you’re gonna hear me ROAR<br/>
+									Oh oh oh oh oh oh<br/>
+									You’re gonna hear me roar<br/><br/>
+
+									Now I’m floating like a butterfly<br/>
+									Stinging like a bee I earned my stripes<br/>
+									I went from zero, to my own hero<br/><br/>
+
+									You held me down, but I got up<br/>
+									Already brushing off the dust<br/>
+									You hear my voice, you hear that sound<br/>
+									Like thunder, gonna shake the ground<br/>
+									You held me down, but I got up<br/>
+									Get ready ’cause I’ve had enough<br/>
+									I see it all, I see it now<br/><br/>
+
+									I got the eye of the tiger, a fighter, dancing through the fire<br/>
+									‘Cause I am a champion and you’re gonna hear me ROAR<br/>
+									Louder, louder than a lion<br/>
+									‘Cause I am a champion and you’re gonna hear me ROAR<br/>
+									Oh oh oh oh oh oh<br/>
+									You’re gonna hear me roar<br/>
+									Oh oh oh oh oh oh<br/>
+									You'll hear me ROAR
+									Oh oh oh oh oh oh
+									You're gonna hear me ROAR<br/><br/>
+
+									Roar-or, roar-or, roar-or, roar-or, roar-or<br/>
+
+									I got the eye of the tiger, a fighter, dancing through the fire<br/>
+									‘Cause I am a champion and you’re gonna hear me ROAR<br/>
+									Louder, louder than a lion<br/>
+									‘Cause I am a champion and you’re gonna hear me ROAR<br/>
+
+							</p>
+
+						</div>
+						
+				
+					<div class="song6" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+					<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#FF47A3;"><a  href="#"class="click16"style="text-decoration:none; color:black;"><img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>&nbsp; &nbsp;&nbsp;6. Boyfriend By Justin Bieber&nbsp;&nbsp; &nbsp; <a  href="#"class="click6"style="text-decoration:none; color:black;"> Next<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+					<img style="width:80%;height:280px;margin-left:85px;"src="images/justinbieber-04.jpg"></img>
+
+					<audio style="margin-top:5px;width:80%;margin-left:85px;"src="music/Justin Bieber Boyfriend (Main Version)-(DJmaza.in).mp3" controls>
+					</audio>
+					
+					<p style="color:white; font-family:Forte;font-size:20px;text-align:center;padding:30px;">
+								If I was your boyfriend I'd never let you go <br/>
+								I could take you places you ain't ever been before <br/>
+								Baby take a chance or you'll never ever know <br/>
+								I got money in my hands that I'd really like to blow <br/>
+								Swag, swag, swag on you <br/>
+								Chillin' by the fire while we eatin' fondue <br/>
+								I don't know about me, but I know about you <br/>
+								So say hello to falsetto in 3, 2, swag <br/><br/>
+
+								I'd like to be everything you want <br/>
+								Hey girl let me talk to you <br/>
+								If I was your boyfriend, never let you go <br/>
+								Keep you on my arm girl, you'll never be alone <br/>
+								And I can be a gentleman, anything you want <br/>
+								If I was your boyfriend, never let you go, never let you go <br/><br/>
+
+								Tell me what you like yeah tell me what you don't <br/>
+								I could be your buzz lightyear fly across the globe <br/>
+								I don't ever wanna fight yeah you already know <br/>
+								Imma make you shine bright like your layin' in the snow 
+								<br/>
+								Girlfriend, girlfriend, you could be my girlfriend <br/>
+								You could be my girlfriend until the w-world ends<br/> 
+								Make you dance, do a spin and a twirl <br/>
+								And voice goin crazy on this hook like a whirlwind, swaggie <br/><br/>
+
+								I'd like to be everything you want <br/>
+								Hey girl let me talk to you <br/>
+								If I was your boyfriend, never let you go <br/>
+								Keep you on my arm girl, you'll never be alone<br/> 
+								And I can be a gentleman, anything you want <br/>
+								If I was your boyfriend, never let you go, never let you go <br/><br/>
+
+								So give me a chance cause you're all I need girl <br/>
+								Spend a week with your boy I'll be callin you my girlfriend <br/>
+								If I was your man, then I'd never leave girl <br/>
+								I just wanna love and treat you right <br/><br/>
+
+								If I was your boyfriend, never let you go <br/>
+								Keep you on my arm girl, you'll never be alone <br/>
+								If I can be a gentleman, anything you want <br/>
+								If I was your boyfriend, never let you go, never let you go <br/><br/>
+
+								Na na na, na na na, na na na, yeah girl <br/>
+								Na na na, na na na, if I was your boyfriend <br/>
+								Na na na, na na na, na na na, yeah girl <br/>
+								Na na na, na na na, if I was your boyfriend<br/><br/>
+					</p>
+
+				
+
+				
+				
+				</div>
+				<div class="song7" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+					<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#FF47A3;"><a  href="#"class="click17"style="text-decoration:none; color:black;"><img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>&nbsp; &nbsp;&nbsp;7. Dark Horse By Katy Perry&nbsp;&nbsp; &nbsp; <a  href="#"class="click7"style="text-decoration:none; color:black;"> Next<img style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+					<img style="width:80%;height:280px;margin-left:85px;"src="images/Dark-Horse-Katy-Perry-ft.-Juicy-J.jpg"></img>
+
+					<audio style="margin-top:5px;width:80%;margin-left:85px;"src="music/Katy Perry - Dark Horse (feat. Juicy J) 128.mp3" controls>
+					</audio>
+					
+					<p style="color:white; font-family:Forte;font-size:20px;text-align:center;padding:30px;">
+									I knew you were
+									You were gonna come to me<br/>
+									& here you are
+									But you better choose carefully<br/>
+									Cause I... 
+									I'm capable of anything<br/>
+									Of anything
+									& everything<br/><br/>
+
+									Make me your Aphrodite<br/>
+									Make me your one and only<br/>
+									But don't make me your enemy
+									Your enemy
+									Your enemy<br/><br/>
+
+									So you wanna play with magic<br/>
+									Boy you should know what you're fallin' for<br/>
+									Baby do you dare to do this<br/>
+									Cause I'm comin' at you like a dark horse<br/><br/>
+
+									Are you ready for
+									Ready for<br/>
+									A perfect storm
+									Perfect storm<br/>
+									Cause once you're mine
+									Once you're mine<br/>
+									There's no goin' back<br/><br/>
+
+									Mark my words
+									This love will make you levitate<br/>
+									Like a bird
+									Like a bird without a cage
+									We're down to earth<br/>
+									If you choose to walk away
+									Don't walk away<br/><br/>
+
+									It's in the palm of your hand now baby<br/>
+									It's a yes or a no
+									No maybe<br/>
+									So just be sure
+									Before you give it up to me<br/>
+									Up to me
+									Give it up to me<br/><br/>
+
+									So you wanna play with magic<br/>
+									Boy you should know what you're fallin' for<br/>
+									Baby do you dare to do this<br/>
+									Cause I'm comin' at you like a dark horse<br/><br/>
+
+									Are you ready for
+									Ready for<br/>
+									A perfect storm
+									Perfect storm<br/>
+									Cause once you're mine
+									Once you're mine<br/>
+									There's no goin' back<br/><br/>
+
+									She's a beast
+									I call her Karma<br/>
+									She eat your heart out
+									Like Jeffrey Dahmer<br/>
+									Be careful
+									Try not to lead her on<br/>
+									Shawty's heart was on steroids<br/>
+									Cause her love was so strong<br/>
+									You may fall in love<br/>
+									When you meet her<br/>
+									If you get the chance you better keep her<br/>
+									She swears by it but if you break her heart<br/>
+									She turn cold as a freezer<br/>
+									That fairy tale ending with a knight in shining armor<br/>
+									She can be my Sleeping Beauty<br/>
+									I'm gon' put her in a coma
+									Woo! <br/>
+									Damn I think I love her<br/>
+									Shawty so bad<br/>
+									I'm sprung and I don't care<br/>
+									She got me like a roller coaster<br/>
+									Turn the bedroom into a fair<br/>
+									Her love is like a drug<br/>
+									I was tryna hit it and quit it<br/>
+									But lil'mama so dope<br/>
+									I messed around and got addicted<br/><br/>
+
+									So you wanna play with magic<br/>
+									Boy you should know what you're fallin' for<br/>
+									(You should know)<br/>
+									Baby do you dare to do this<br/>
+									Cause I'm comin' at you like a dark horse<br/>
+									(Like a dark horse)<br/><br/>
+
+									Are you ready for
+									Ready for (Ready for)<br/>
+									A perfect storm
+									Perfect storm (A perfect storm)<br/>
+									Cause once you're mine
+									Once you're mine (ohhhh)<br/>
+									There's no goin' back<br/>
+					</p>
+
+				
+
+				
+				
+				</div>
+				<div class="song8" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+					<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#FF47A3;"><a  href="#"class="click18"style="text-decoration:none; color:black;"><img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>&nbsp; &nbsp;&nbsp;8. Drunk In Love Ft Jay-Z Beyonce&nbsp;&nbsp; &nbsp; <a  href="#"class="click8"style="text-decoration:none; color:black;"> Next<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+					<img style="width:80%;height:280px;margin-left:85px;"src="images/Beyonce-Drunk-in-Love.jpg"></img>
+
+					<audio style="margin-top:5px;width:80%;margin-left:85px;"src="music/Drunk-In-Love-(feat.-Jay-Z)_(webmusic.in).mp3" controls>
+					</audio>
+					
+					<p style="color:white; font-family:Forte;font-size:20px;text-align:center;padding:30px;">
+									I've been drinking, I've been drinking<br/>
+									I get filthy when that liquor get into me<br/>
+									I've been thinking, I've been thinking<br/>
+									Why can't I keep my fingers off it, baby?
+									I want you, na na<br/>
+									Why can't I keep my fingers off you, baby?
+									I want you, na na<br/><br/>
+
+									
+									Cigars on ice, cigars on ice<br/>
+									Feeling like an animal with these cameras all in my grill<br/>
+									Flashing lights, flashing lights<br/>
+									You got me faded, faded, faded<br/>
+									Baby, I want you, na na<br/>
+									Can't keep your eyes off my fatty<br/>
+									Daddy, I want you, na na<br/>
+									Drunk in love, I want you<br/><br/>
+
+									
+									We woke up in the kitchen saying<br/>
+									"How the hell did this shit happen?", oh baby<br/>
+									Drunk in love, we be all night<br/>
+									Last thing I remember is our<br/>
+									Beautiful bodies grinding off in that club<br/>
+									Drunk in love<br/><br/>
+
+									
+									We be all night, love, love<br/>
+									We be all night, love, love<br/><br/>
+
+							
+									We be all night, and everything alright<br/>
+									No complaints for my body, so fluorescent under these lights<br/>
+									Boy, I'm drinking, park it in my lot, 7-11<br/>
+									I'm rubbing on it, rub-rubbing<br/>
+									If you scared, call that reverend<br/>
+									Boy, I'm drinking, get my brain right<br/>
+									Armand de Brignac, gangster wife<br/>
+									Louis sheets, he sweat it out like washed rags, he wet it up<br/>
+									Boy, I'm drinking, I'm singing on the mic 'til my voice hoarse<br/>
+									Then I fill the tub up halfway then ride it with my surfboard<br/>
+									Surfboard, surfboard<br/>
+									Graining on that wood, graining, graining on that wood<br/>
+									I'm swerving on that, swerving, swerving on that big body Benz<br/>
+									Serving all this, swerve, surfing all of this good good<br/><br/>
+
+									
+									We woke up in the kitchen saying<br/>
+									"How the hell did this shit happen?", oh baby<br/>
+									Drunk in love, we be all night<br/>
+									Last thing I remember is our<br/>
+									Beautiful bodies grinding off in that club<br/>
+									Drunk in love<br/><br/>
+
+									We be all night, love, love<br/>
+									We be all night, love, love<br/><br/>
+
+									
+									Hold up<br/>
+									That D'USSÉ is the shit if I do say so myself<br/>
+									If I do say so myself, if I do say so myself<br/>
+									Hold up, stumble all in the house time to back up all that mouth<br/>
+									That you had all in the car, talking 'bout you the baddest bitch thus far<br/>
+									Talking 'bout you be repping that 3rd, wanna see all that shit that I heard<br/>
+									Know I sling Clint Eastwood, hope you can handle this curve, uh<br/>
+									Foreplay in a foyer, fucked up my Warhol<br/>
+									Slid the panties right to the side<br/>
+									Ain't got the time to take drawers off, on sight<br/>
+									Catch a charge I might, beat the box up like Mike<br/>
+									In '97 I bite, I'm Ike Turner, turn up<br/>
+									Baby know I don't play, now eat the cake, Anna Mae<br/>
+									Said, "Eat the cake, Anna Mae!"<br/>
+									I'm nice, for y'all to reach these heights you gon' need G3<br/>
+									4, 5, 6 flights, sleep tight<br/>
+									We sex again in the morning, your breasteses is my breakfast<br/>
+									We going in, we be all night<br/><br/>
+
+									
+									We be all night, love, love<br/>
+									We be all night, love, love<br/><br/>
+
+									
+									Never tired, never tired<br/>
+									I been sippin', that's the only thing<br/>
+									That's keeping me on fire, me on fire<br/>
+									Didn't mean to spill that liquor all on my attire<br/>
+									I've been drinking, watermelon<br/>
+									(I want your body right here, daddy, I want you, right now)<br/>
+									Can't keep your eyes off my fatty<br/>
+									Daddy, I want you<br/><br/>
+
+								
+									We be all night, love, love<br/>
+									We be all night, love, love<br/>
+					</p>
+
+				
+
+				
+				
+				</div>
+				<div class="song9" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+					<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#FF47A3;"><a  href="#"class="click19"style="text-decoration:none; color:black;"><img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>&nbsp; &nbsp;&nbsp;9. Counting Stars By One Republic&nbsp;&nbsp; &nbsp;<a  href="#"class="click9"style="text-decoration:none; color:black;"> Next<img style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+					<img style="width:80%;height:280px;margin-left:85px;"src="images/maxresdefault4.jpg"></img>
+
+					<audio style="margin-top:5px;width:80%;margin-left:85px;"src="music/One_Republic_-_Counting_Stars.mp3" controls>
+					</audio>
+					
+					<p style="color:white; font-family:Forte;font-size:20px;text-align:center;padding:30px;">
+									Lately, I've been, I've been losing sleep <br/>
+									Dreaming about the things that we could be <br/>
+									But baby, I've been, I've been praying hard, <br/>
+									Said no more counting dollars <br/>
+									We'll be counting stars, yeah we'll be counting stars <br/><br/>
+
+									I see this life like a swinging vine <br/>
+									Swing my heart across the line <br/>
+									In my face is flashing signs <br/>
+									Seek it out and ye shall find <br/>
+									Old, but I'm not that old <br/>
+									Young, but I'm not that bold <br/>
+									I don't think the world is sold <br/>
+									I'm just doing what we're told <br/>
+									I feel something so right <br/>
+									Doing the wrong thing <br/>
+									I feel something so wrong <br/>
+									Doing the right thing <br/>
+									I could lie, could lie, could lie <br/>
+									Everything that kills me makes me feel alive <br/><br/>
+
+									Lately, I've been, I've been losing sleep <br/>
+									Dreaming about the things that we could be <br/>
+									But baby, I've been, I've been praying hard, <br/>
+									Said no more counting dollars <br/>
+									We'll be counting stars <br/><br/>
+
+									Lately, I've been, I've been losing sleep <br/>
+									Dreaming about the things that we could be <br/>
+									But baby, I've been, I've been praying hard, <br/>
+									Said no more counting dollars <br/>
+									We'll be, we'll be counting stars <br/><br/>
+
+									I feel your love and I feel it burn <br/>
+									Down this river, every turn <br/>
+									Hope is a four-letter word <br/>
+									Make that money, watch it burn <br/>
+									Old, but I'm not that old <br/>
+									Young, but I'm not that bold <br/>
+									I don't think the world is sold <br/>
+									I'm just doing what we're told <br/>
+									I feel something so wrong <br/>
+									Doing the right thing <br/>
+									I could lie, could lie, could lie <br/>
+									Everything that downs me, makes me wanna fly <br/><br/>
+
+									Lately, I've been, I've been losing sleep <br/>
+									Dreaming about the things that we could be <br/>
+									But baby, I've been, I've been praying hard, <br/>
+									Said no more counting dollars <br/>
+									We'll be counting stars <br/><br/>
+
+									Lately, I've been, I've been losing sleep<br/> 
+									Dreaming about the things that we could be <br/>
+									But baby, I've been, I've been praying hard, <br/>
+									Said no more counting dollars <br/>
+									We'll be, we'll be counting stars <br/><br/>
+
+									Take that money <br/>
+									Watch it burn <br/>
+									Sink in the river <br/>
+									The lessons I learned <br/><br/>
+
+									Take that money <br/>
+									Watch it burn <br/>
+									Sink in the river <br/>
+									The lessons I learned <br/><br/>
+
+									Take that money <br/>
+									Watch it burn <br/>
+									Sink in the river <br/>
+									The lessons I learned <br/><br/>
+
+									Take that money <br/>
+									Watch it burn <br/>
+									Sink in the river <br/>
+									The lessons I learned <br/><br/>
+
+									Everything that kills me... makes me feel alive <br/><br/>
+
+									Lately, I've been, I've been losing sleep <br/>
+									Dreaming about the things that we could be <br/>
+									But baby, I've been, I've been praying hard,<br/> 
+									Said no more counting dollars <br/>
+									We'll be counting stars <br/><br/>
+
+									Lately, I've been, I've been losing sleep <br/>
+									Dreaming about the things that we could be <br/>
+									But baby, I've been, I've been praying hard,<br/> 
+									Said no more counting dollars <br/>
+									We'll be, we'll be, counting stars <br/><br/>
+
+									Take that money <br/>
+									Watch it burn <br/>
+									Sink in the river <br/>
+									The lessons I learned <br/>
+
+									
+					</p>
+
+				
+
+				
+				
+				</div>
+				<div class="song10" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+					<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#FF47A3;"><a  href="#"class="click110"style="text-decoration:none; color:black;"><img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>&nbsp; &nbsp;&nbsp;10. I'm A Freak By Enrique Ft Pitbull&nbsp;&nbsp; &nbsp;<a  href="#"class="click10"style="text-decoration:none; color:black;"> Back <img style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+					<img style="width:80%;height:280px;margin-left:85px;"src="images/5 (1).jpg"></img>
+
+					<audio style="margin-top:5px;width:80%;margin-left:85px;"src="music/Im-A-Freak-Ft.-Pitbull_(webmusic.in).mp3" controls>
+					</audio>
+					
+					<p style="color:white; font-family:Forte;font-size:20px;text-align:center;padding:30px;">
+									Enrique Iglesias <br/>
+									Pitbull <br/>
+									Mr. Worldwide <br/>
+									Let's go <br/><br/>
+
+									I tried to let it go <br/>
+									But I'm addicted to your chemicals <br/>
+									I got a piece, I want an overdose <br/>
+									I love the way she gets so physical <br/>
+									F*cks like an animal <br/><br/>
+
+									In night, I just imagine how you put your love on me <br/>
+									Lights off, lightd on <br/>
+									Ready for some action <br/>
+									Baby, come and give it to me <br/><br/>
+
+
+									'Cause I'm a freak <br/>
+									The way you're poppin' and droppin' <br/>
+									All over me <br/>
+									No, I don't want you to stop it <br/>
+									Yeah, I'm a freak <br/>
+									Baby, I can't lie <br/>
+									When you move like that <br/>
+									I got a one track mark <br/>
+									'Cause I'm a freak <br/>
+									Yeah, I'm a freak <br/>
+									'Cause I'm a freak <br/>
+									Yeah, I'm a freak <br/><br/>
+
+									Yeah, baby there you go <br/>
+									Stealing my heart just like a criminal <br/>
+									No turning back, this time is critical <br/>
+									You move your body like a miracle <br/>
+									Baby, here we go <br/><br/>
+
+									In night, I just imagine how you put your love on me <br/>
+									Lights off, lightd on <br/>
+									Ready for some action <br/>
+									Baby, come and give it to me <br/><br/>
+
+									'Cause I'm a freak <br/>
+									The way you're poppin' and droppin' <br/>
+									All over me <br/>
+									No, I don't want you to stop it <br/>
+									Yeah, I'm a freak <br/>
+									Baby, I can't lie <br/>
+									When you move like that <br/>
+									I got a one track mark <br/>
+									'Cause I'm a freak <br/>
+									Yeah, I'm a freak <br/>
+									'Cause I'm a freak <br/>
+									Yeah, I'm a freak <br/><br/>
+
+									
+									Baby you pop and lock it <br/>
+									Drop it, I watch it for sure <br/>
+									Baby you rollin and rocking <br/>
+									Move it, I use it, let's go <br/>
+									You know I leak it and do the things that they make you explode <br/>
+									You don't believe me, mami, just let me go low <br/>
+									Because I'm a freak, that's a no <br/>
+									Now can I get big, big, big, baby back it up nice and slow <br/>
+									I just wanna skip, skip, skip, ride out and go <br/>
+									I came, I saw, I conquered, on to the next, let's go <br/><br/>
+
+									'Cause I'm a freak <br/>
+									The way you're poppin' and droppin' <br/>
+									All over me <br/>
+									No, I don't want you to stop it <br/>
+									Yeah, I'm a freak <br/>
+									Baby, I can't lie <br/>
+									When you move like that <br/>
+									I got a one track mark <br/>
+									'Cause I'm a freak <br/>
+									Yeah, I'm a freak <br/>
+									'Cause I'm a freak <br/>
+									Yeah, I'm a freak <br/><br/>
+
+									It's The Cataracs <br/>
+
+									From the hotel room to the DJ booth <br/>
+									On the bathroom seat, yes, I'm just a freak<br/> 
+									An when the sun goes down, gotta let it out <br/>
+									Baby don't blame me, I'm just a freak<br/>
+
+									
+					</p>
+
+				
+
+				
+				
+				</div>
+			</div>
+				<div class="box1">
+					<a href="english.html" style="color:white; text-decoration:none;font-family:Forte;font-size:20px;text-align:center;">
+					Top 10 English Songs With Lyrics
+					</a>
+				</div>
+				<div class="box2">
+				<a href="bollywood.html" style="color:white; text-decoration:none;font-family:Forte;font-size:20px;text-align:center;">
+					Top 10 Hindi Songs With Lyrics
+					</a>
+				
+				</div>
+				<div class="box3">
+				<a href="punjabi.html" style="color:white; text-decoration:none;font-family:Forte;font-size:20px;text-align:center;">
+					Top 10 Punjabi Songs With Lyrics
+					</a>
+				
+				</div>
+			
+			</div>
+			
+			
+		
+		</div>
+		<footer style="margin-top:10%">
+				<hr/>
+				<b style="color:white">YUNGISTAAN  copyright &copy; Surbhi Zalpuri 2014</b>
+
+		</footer>
+			
+	</div>
+</body>
+
+</html>
+			

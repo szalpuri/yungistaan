@@ -1,0 +1,189 @@
+<!Doctype html>
+<html>
+	<head>
+	<script src="jquery.min.js"/>
+	<meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+	<script type="text/javascript">
+	
+	$(function() {
+			$("#tfq2b").click(function() {
+				if ($("#tfq2b").val() == "Search Google"){
+					$("#tfq2b").val(""); 
+				}
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+
+			function loop(){
+		  $('#1').fadeOut(3000, function(){
+			$('#2').fadeOut(3000, function(){
+				$('#3').fadeOut(3000, function(){
+					$('#4').fadeOut(3000, function(){
+						$('#5').fadeOut(3000, function(){
+							$('#6').fadeOut(3000, function(){
+								
+									$('#1').fadeIn().css({"z-index":"0"});
+									$('#7').fadeOut(2000, function(){
+											$('#2').fadeIn();
+											$('#3').fadeIn();
+											$('#4').fadeIn();
+											$('#5').fadeIn();
+											$('#6').fadeIn();
+											$('#7').fadeIn();
+										loop();
+									});
+								
+							});
+						});	
+					});
+				});
+			});
+		  });
+		}
+		loop();
+			var monthNames = [ "January", "February", "March", "April", "May", "June",
+			"July", "August", "September", "October", "November", "December" ];
+			var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+
+			var newDate = new Date();
+				newDate.getDate();    
+			$('#Date').html("Date"+ " " + ":" + " " +dayNames[newDate.getDay()] + " " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
+		});
+	</script>
+	<link rel="stylesheet" type="text/css" href="style/mystyle.css"></link>
+	<link rel="stylesheet" type="text/css" href="style/hangouts.css"></link>
+	</head>
+	<body>
+	
+	<div class="wrapper">
+		<header>
+		<div class="bar">
+			<img class="logo" src="images/logo.jpg" style="width:160px; height:110px;margin-left:10px;"/>
+			<div class="sitename">
+		
+			All in one Entertainment Stop!<br/>
+			Music! Masti! Love & Dosti!
+			
+			</div>
+			<div id="tfheader">
+				<form id="tfnewsearch" method="get" action="http://www.google.com">
+						<input type="text" id="tfq2b" class="tftextinput2" name="q" size="21" maxlength="120" placeholder="Search Google"><input type="submit" value=">" class="tfbutton2">
+				</form>
+				<div class="tfclear"></div>
+			</div>
+			<div id="Date" style="color:white;font-weight:bold;font-size:20px;font-style:italic;float:right; margin-top:-100px;width:260px;height:20px;"></div>
+			
+		</div>
+
+		<div class="nav" >
+		 <ul class="menu">
+			<li><a href="home.html">Home</a>
+				
+			<li>
+			<li><a href="music.html">Music</a>
+				<ul>
+					<li><a href="english.html">English</a></li>
+					<li><a href="bollywood.html">Bollywood</a></li>
+					<li><a href="punjabi.html">Punjabi</a></li>
+				</ul>
+			</li>
+			<li><a href="gallery.html">Gallery</a>
+				<ul>
+					<li><a href="videos.html">Videos</a></li>
+					<li><a href="wallpapers.html">Wallpapers</a></li>
+				</ul>
+			
+			</li>
+			<li><a href="books.html">Books</a>
+				<ul>
+					<li><a href="hp.html">HarryPotter</a></li>
+					<li><a href="twilight.html">Twilight</a></li>
+					<li><a href="tvd.html">TVD</a> </li>
+					<li><a href="hungergames.html">HungerGames</a></li>
+					
+					
+				</ul>
+			</li>
+			<li><a href="quotes.html">Quotes</a>
+				<ul>
+					<li><a href="frnshpq.html">Frienship</a></li>
+					<li><a href="loveq.html">Love</a></li>
+					<li><a href="brkupq.html">Breakup</a></li>
+					<li><a href="funnyq.html">Humour</a></li>
+				</ul>
+			</li>
+			<li><a href="hangouts.html">Hangouts</a>
+				<ul>
+					<li><a href="food.php">Food</a></li>
+					<li><a href="theatre.php">Theaters</a></li>
+					<li><a href="malls.php">Malls</a></li>
+					<li><a href="adventure.php">FunSpots</a></li>
+				</ul>
+			<li><a href="feedback.php">Feedback</a>
+				
+			</li>
+		</ul>
+		</div>
+		</header>
+		<div class="body">
+			<div class="slideshow">
+			
+				<img id="7" src="images/99coverphotos-friend-cover-photos2.jpg"/>
+				<img id="6" src="images/hangout-1188256.jpg"/>
+				<img id="5" src="images/hangout-music-festival .jpg"/>
+				<img id="4" src="images/have_friends_to_have_fun-851x3154.jpg"/>
+				<img id="3" src="images/large.jpg"/>
+				<img id="2" src="images/shopping_web.jpg"/>
+				<img id="1" src="images/vodafone-zoo-zoo-fun-hangout-icream-facebook-cover.jpg"/>
+				<div class="box-txt" style="top:226px;width:100%;height:54px;display: block;background:black;position:absolute;opacity:0.8;">
+					<p style="color:white; font-weight:bold;text-align:center;">CHILL OUT WITH YOUR BUDDIES</p>
+					</div>
+			</div>
+			<div class="content" style="background:#191919;">
+			
+				<div class="hangoutintro">
+				<p style="color:white; font-family:Forte;font-size:20px;text-align:center;">After a busy week or a stressful day, sometimes the most effective way to detox is by spending quality time with your best friends.
+				<br/><br/>Here are some ways you can do that---<br/><br/>
+				Stop by a local coffee shop or your favorite restaurant for a few hours of catching up.<br/><br/>
+				Bonding through music is a major best friend phenomenon. Find one of your mutually-favorite bands or artists and make a trip to see them live. In the summer especially, outdoor concerts are a great way to bring out the audiophile in all of us.
+				<br/><br/>Vacations are often times difficult to coordinate for those with school or jobs. To maximize your limited free time plan some shorter day trips or excursions with your BFF. This might involve driving a few hours to a new town on a day off, or staying the night in a hotel one state away. Perhaps you lack the time or money to take even a weekend road-trip. Instead, get together with your best friend to plan a longer trip for a future time off.
+				</p>
+				</div>
+				<div class="box1">
+					<a href="food.php" style="color:white; text-decoration:none;font-family:Forte;font-size:20px;text-align:center;">
+					Food Places
+					</a>
+				</div>
+				<div class="box2">
+				<a href="theatre.php" style="color:white; text-decoration:none;font-family:Forte;font-size:20px;text-align:center;">
+					Movie Cinemas
+					</a>
+				
+				</div>
+				<div class="box3">
+				<a href="malls.php" style="color:white; text-decoration:none;font-family:Forte;font-size:20px;text-align:center;">
+					Shopping Malls
+					</a>
+				
+				</div><div class="box4">
+				<a href="adventure.php" style="color:white; text-decoration:none;font-family:Forte;font-size:20px;">
+					Adventure Spots
+					</a>
+				
+				</div>
+				
+			
+			</div>
+		
+		</div>
+		<footer style="margin-top:10%">
+				<hr/>
+				<b style="color:white">YUNGISTAAN  copyright &copy; Surbhi Zalpuri 2014</b>
+
+		</footer>
+	</div>
+</body>
+</html>
+			

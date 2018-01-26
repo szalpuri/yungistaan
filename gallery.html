@@ -1,0 +1,180 @@
+<!Doctype html>
+<html>
+	<head>
+	<script src="jquery.min.js"/>
+	<meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+	<script type="text/javascript">
+	
+	$(function() {
+			$("#tfq2b").click(function() {
+				if ($("#tfq2b").val() == "Search Google"){
+					$("#tfq2b").val(""); 
+				}
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+
+			function loop(){
+		  $('#1').fadeOut(4000, function(){
+			$('#2').fadeOut(4000, function(){
+				$('#3').fadeOut(4000, function(){
+					$('#4').fadeOut(4000, function(){
+						$('#5').fadeOut(4000, function(){
+							$('#6').fadeOut(4000, function(){
+								
+									$('#1').fadeIn().css({"z-index":"0"});
+									$('#7').fadeOut(2000, function(){
+											$('#2').fadeIn();
+											$('#3').fadeIn();
+											$('#4').fadeIn();
+											$('#5').fadeIn();
+											$('#6').fadeIn();
+											$('#7').fadeIn();
+										loop();
+									});
+								
+							});
+						});	
+					});
+				});
+			});
+		  });
+		}
+		loop();
+			var monthNames = [ "January", "February", "March", "April", "May", "June",
+			"July", "August", "September", "October", "November", "December" ];
+			var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+
+			var newDate = new Date();
+			newDate.getDate();     
+			$('#Date').html("Date"+ " " + ":" + " " +dayNames[newDate.getDay()] + " " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
+		});
+	</script>
+	<link rel="stylesheet" type="text/css" href="style/mystyle.css"></link>
+	<link rel="stylesheet" type="text/css" href="style/gallery.css"></link>
+	</head>
+	<body>
+	
+	<div class="wrapper">
+		<header>
+		<div class="bar">
+			<img class="logo" src="images/logo.jpg" style="width:160px; height:110px;margin-left:10px;"/>
+			<div class="sitename">
+		
+			All in one Entertainment Stop!<br/>
+			Music! Masti! Love & Dosti!
+			
+			</div>
+			<div id="tfheader">
+				<form id="tfnewsearch" method="get" action="http://www.google.com">
+						<input type="text" id="tfq2b" class="tftextinput2" name="q" size="21" maxlength="120" placeholder="Search Google"><input type="submit" value=">" class="tfbutton2">
+				</form>
+				<div class="tfclear"></div>
+			</div>
+			<div id="Date" style="color:white;font-weight:bold;font-size:20px;font-style:italic;float:right; margin-top:-100px;width:260px;height:20px;"></div>
+			
+		</div>
+
+		<div class="nav" >
+		 <ul class="menu">
+			<li><a href="home.html">Home</a>
+				
+			<li>
+			<li><a href="music.html">Music</a>
+				<ul>
+					<li><a href="english.html">English</a></li>
+					<li><a href="bollywood.html">Bollywood</a></li>
+					<li><a href="punjabi.html">Punjabi</a></li>
+				</ul>
+			</li>
+			<li><a href="gallery.html">Gallery</a>
+				<ul>
+					<li><a href="videos.html">Videos</a></li>
+					<li><a href="wallpapers.html">Wallpapers</a></li>
+				</ul>
+			
+			</li>
+			<li><a href="books.html">Books</a>
+				<ul>
+					<li><a href="hp.html">HarryPotter</a></li>
+					<li><a href="twilight.html">Twilight</a></li>
+					<li><a href="tvd.html">TVD</a> </li>
+					<li><a href="hungergames.html">HungerGames</a></li>
+					
+					
+				</ul>
+			</li>
+			<li><a href="quotes.html">Quotes</a>
+				<ul>
+					<li><a href="frnshpq.html">Frienship</a></li>
+					<li><a href="loveq.html">Love</a></li>
+					<li><a href="brkupq.html">Breakup</a></li>
+					<li><a href="funnyq.html">Humour</a></li>
+				</ul>
+			</li>
+			<li><a href="hangouts.html">Hangouts</a>
+				<ul>
+					<li><a href="food.php">Food</a></li>
+					<li><a href="theatre.php">Theaters</a></li>
+					<li><a href="malls.php">Malls</a></li>
+					<li><a href="adventure.php">FunSpots</a></li>
+				</ul>
+			<li><a href="feedback.php">Feedback</a>
+				
+			</li>
+		</ul>
+		</div>
+		</header>
+		<div class="body">
+			<div class="slideshow">
+			
+				<img id="7" src="images/-1374330861-1296331193.jpg"/>
+				<img id="6" src="images/play_video.jpg"/>
+				<img id="5" src="images/youtube-for-android-lets-you-watch-videos-mostly-offline-updated--8bb4ae8a43.jpg"/>
+				<img id="4" src="images/spring_collage_wallpaper_spring_nature_wallpaper_1600_1200_1224.jpg"/>
+				<img id="3" src="images/348397_kollazh_okna_priroda_1920x1080_(www.GdeFon.ru).jpg"/>
+				<img id="2" src="images/images.jpg"/>
+				<img id="1" src="images/Entertainment_v5.jpg"/>
+				<div class="box-txt" style="top:226px;width:100%;height:54px;display: block;background:black;position:absolute;opacity:0.8;">
+					<p style="color:white; font-weight:bold;text-align:center;">DOWNLOAD WALLPAPERS AND WATCH VIDEOS</p>
+					</div>
+			</div>
+			<div class="content" >
+			
+				<div class="galleryintro">
+				
+						<div class="wallicon" style=" padding:10px;margin:0px auto; width:800px;height:320px;">
+								<img src="images/Pictures-Nikon-icon.png" style="width:300px;height:300px;"/><a href="wallpapers.html" style="text-align:center;border-radius:3px;width:300px;left:450px;top:430px;text-decoration:none;box-shadow:0px 0px 10px white;;position:absolute;padding:20px;color:white;margin:0px auto;font-family:forte;font-size:20px;">View Beautiful HD Wallpapers</a>
+						</div>
+						<div class="videoicon" style=" padding:10px;margin:0px auto; width:800px;height:320px;">
+						<img src="images/my-videos-folder.png" style="width:300px;height:300px;"/><a href="videos.html" style="border-radius:3px;text-align:center;width:300px;left:450px;background:black;text-decoration:none;top:750px;position:absolute;box-shadow:0px 0px 10px white;;padding:20px;color:white;margin:0px auto;font-family:forte;font-size:20px;">View top 10 Youtube Videos</a>
+				</div>
+				
+				</div>
+				<div class="box1">
+					<a href="wallpapers.html" style="color:white; text-decoration:none;font-family:Forte;font-size:20px;text-align:center;">
+					View Beautiful HD Wallpapers
+					</a>
+				</div>
+				<div class="box2">
+				<a href="videos.html" style="color:white; text-decoration:none;font-family:Forte;font-size:20px;text-align:center;">
+					View top 10 Youtube Videos
+					</a>
+				
+				</div>
+				
+			
+			</div>
+		
+		</div>
+		<footer style="margin-top:10%">
+				<hr/>
+				<b style="color:white">YUNGISTAAN  copyright &copy; Surbhi Zalpuri 2014</b>
+
+		</footer>
+	</div>
+</body>
+</html>
+			

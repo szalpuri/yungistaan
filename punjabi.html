@@ -1,0 +1,872 @@
+<!Doctype html>
+<html>
+	<head>
+	<script src="jquery.min.js"/>
+	
+	<script type="text/javascript">
+	
+	$(function() {
+			$("#tfq2b").click(function() {
+				if ($("#tfq2b").val() == "Search Google"){
+					$("#tfq2b").val(""); 
+				}
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+
+			function loop(){
+		  $('#1').fadeOut(4000, function(){
+			$('#2').fadeOut(4000, function(){
+				$('#3').fadeOut(4000, function(){
+					$('#4').fadeOut(4000, function(){
+						$('#5').fadeOut(4000, function(){
+							$('#6').fadeOut(4000, function(){
+								
+									$('#1').fadeIn().css({"z-index":"0"});
+									$('#7').fadeOut(2000, function(){
+											$('#2').fadeIn();
+											$('#3').fadeIn();
+											$('#4').fadeIn();
+											$('#5').fadeIn();
+											$('#6').fadeIn();
+											$('#7').fadeIn();
+										loop();
+									});
+								
+							});
+						});	
+					});
+				});
+			});
+		  });
+		}
+		loop();
+				
+				$('.click1').click(function(){
+					$('.song1').fadeOut();
+					$('.song2').fadeIn();
+		
+				
+				});
+				$('.click2').click(function(){
+					$('.song2').fadeOut();
+					$('.song3').fadeIn();
+		
+				
+				});
+				$('.click3').click(function(){
+					$('.song3').fadeOut();
+					$('.song4').fadeIn();
+		
+				
+				});
+				$('.click4').click(function(){
+					$('.song4').fadeOut();
+					$('.song5').fadeIn();
+		
+				
+				});
+				$('.click5').click(function(){
+					$('.song5').fadeOut();
+					$('.song6').fadeIn();
+		
+				
+				});
+				$('.click6').click(function(){
+					$('.song6').fadeOut();
+					$('.song7').fadeIn();
+		
+				
+				});
+				$('.click7').click(function(){
+					$('.song7').fadeOut();
+					$('.song8').fadeIn();
+		
+				
+				});
+				$('.click8').click(function(){
+					$('.song8').fadeOut();
+					$('.song9').fadeIn();
+				
+				});
+				
+				$('.click9').click(function(){
+					$('.song9').fadeOut();
+					$('.song10').fadeIn();
+		
+				
+				});
+				$('.click10').click(function(){
+					$('.song10').fadeOut();
+					$('.song1').fadeIn();
+		
+				
+				});
+					$('.click12').click(function(){
+					$('.song2').fadeOut();
+					$('.song1').fadeIn();
+		
+				
+				});
+				$('.click13').click(function(){
+					$('.song3').fadeOut();
+					$('.song2').fadeIn();
+		
+				
+				});
+			
+				$('.click14').click(function(){
+					$('.song4').fadeOut();
+					$('.song3').fadeIn();
+		
+				
+				});
+				$('.click15').click(function(){
+					$('.song5').fadeOut();
+					$('.song4').fadeIn();
+		
+				
+				});
+				$('.click16').click(function(){
+					$('.song6').fadeOut();
+					$('.song5').fadeIn();
+		
+				
+				});
+				$('.click17').click(function(){
+					$('.song7').fadeOut();
+					$('.song6').fadeIn();
+		
+				
+				});
+				$('.click18').click(function(){
+					$('.song8').fadeOut();
+					$('.song7').fadeIn();
+		
+				
+				});
+				
+				$('.click19').click(function(){
+					$('.song9').fadeOut();
+					$('.song8').fadeIn();
+		
+				
+				});
+				$('.click110').click(function(){
+					$('.song10').fadeOut();
+					$('.song9').fadeIn();
+		
+				
+				});
+		
+				
+				
+		
+			var monthNames = [ "January", "February", "March", "April", "May", "June",
+			"July", "August", "September", "October", "November", "December" ];
+			var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+
+			var newDate = new Date();
+				newDate.getDate();     
+			$('#Date').html("Date"+ " " + ":" + " " +dayNames[newDate.getDay()] + " " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
+		});
+	</script>
+	<link rel="stylesheet" type="text/css" href="style/mystyle.css"></link>
+	<link rel="stylesheet" type="text/css" href="style/music.css"></link>
+	</head>
+	<body>
+	
+	<div class="wrapper">
+		<header>
+		<div class="bar">
+			<img class="logo" src="images/logo.jpg" style="width:160px; height:110px;margin-left:10px;"/>
+			<div class="sitename">
+		
+			All in one Entertainment Stop!<br/>
+			Music! Masti! Love & Dosti!
+			
+			</div>
+			<div id="tfheader">
+				<form id="tfnewsearch" method="get" action="http://www.google.com">
+						<input type="text" id="tfq2b" class="tftextinput2" name="q" size="21" maxlength="120" placeholder="Search Google"><input type="submit" value=">" class="tfbutton2">
+				</form>
+				<div class="tfclear"></div>
+			</div>
+			<div id="Date" style="color:white;font-weight:bold;font-size:20px;font-style:italic;float:right; margin-top:-100px;width:260px;height:20px;"></div>
+			
+		</div>
+
+		<div class="nav" >
+		 <ul class="menu">
+			<li><a href="home.html">Home</a>
+				
+			<li>
+			<li><a href="music.html">Music</a>
+				<ul>
+					<li><a href="english.html">English</a></li>
+					<li><a href="bollywood.html">Bollywood</a></li>
+					<li><a href="punjabi.html">Punjabi</a></li>
+				</ul>
+			</li>
+			<li><a href="gallery.html">Gallery</a>
+				<ul>
+					<li><a href="videos.html">Videos</a></li>
+					<li><a href="wallpapers.html">Wallpapers</a></li>
+				</ul>
+			
+			</li>
+			<li><a href="books.html">Books</a>
+				<ul>
+					<li><a href="hp.html">HarryPotter</a></li>
+					<li><a href="twilight.html">Twilight</a></li>
+					<li><a href="tvd.html">TVD</a> </li>
+					<li><a href="hungergames.html">HungerGames</a></li>
+					
+					
+				</ul>
+			</li>
+			<li><a href="quotes.html">Quotes</a>
+				<ul>
+					<li><a href="frnshpq.html">Frienship</a></li>
+					<li><a href="loveq.html">Love</a></li>
+					<li><a href="brkupq.html">Breakup</a></li>
+					<li><a href="funnyq.html">Humour</a></li>
+				</ul>
+			</li>
+			<li><a href="hangouts.html">Hangouts</a>
+				<ul>
+					<li><a href="food.php">Food</a></li>
+					<li><a href="theatre.php">Theaters</a></li>
+					<li><a href="malls.php">Malls</a></li>
+					<li><a href="adventure.php">FunSpots</a></li>
+				</ul>
+			<li><a href="feedback.php">Feedback</a>
+				
+			</li>
+		</ul>
+		</div>
+		</header>
+		<div class="body">
+			<div class="slideshow">
+			
+				<img id="7" src="images/11.jpg"/>
+				<img id="6" src="images/22.jpg"/>
+				<img id="5" src="images/33.jpg"/>
+				<img id="4" src="images/44.jpg"/>
+				<img id="3" src="images/55.jpg"/>
+				<img id="2" src="images/66.jpg"/>
+				<img id="1" src="images/77.jpg"/>
+				<div class="box-txt" style="top:226px;width:100%;height:54px;display: block;background:black;position:absolute;opacity:0.8;">
+					<p style="color:white; font-weight:bold;text-align:center;">LISTEN TO MUSIC AND MEMORIZE LYRICS</p>
+					</div>
+			</div>
+			<div class="content">
+			
+				<div class="musicintro" style="height:100%;">
+						<p style="color:white; font-family:Forte;padding:20px;background:black;opacity:0.9;font-size:20px;text-align:center;box-shadow:0px 0px 10px white;border-radius:2px;">Top Ten Punjabi Songs With Lyrics</p>
+						<div class="song1" style="background:black;width:100%;height:100%;border-radius:2px;">
+							<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#FF47A3;">1.  Soch By Hardy Sandhu &nbsp;&nbsp; &nbsp;<a  href="#"class="click1"style="text-decoration:none; color:black;"> Next<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+							<img style="width:80%;height:280px;margin-left:85px;"src="images/Soch-Hardy-Sandhu-Remix-Dj-Siddharth.jpg"></img>
+
+							<audio style="margin-top:5px;width:80%;margin-left:85px;"src="music/Soch (Hardy Sandhu) (DjPunjab.Com).mp3" controls>
+							</audio>
+							
+							<p style="color:white; font-family:Forte;font-size:20px;text-align:center;padding:30px;">
+									Main Pyaar Ton Vadh Tainu Pyaar Karaan<br />
+									Tainu Sajjda Sohne Lakh Waar Karaan<br />
+									Main Pyaar Ton Vadh Tainu Pyaar Karaan<br />
+									Tainu Sajjda Sohne Lakh Waar Karaan<br />
+									Je Din Nu Keh Dein Tu Raat Maahi<br />
+									Ve Main Raat Samajh Aitbaar Karaan<br /> <br />
+									Main Tere Layi Duniya Nu Chhadeya<br />
+									Tere Layi Door Apne Kare<br />
+									Ve Main Tainu Kinna Chahuni Aa<br />
+									Eh Gall Teri Soch Ton Pareh<br /> <br />
+									Main Saah Tere Naal Ha<br />
+									Tere Bina Pal Vi Na Sarey<br />
+									Ve Main Tainu Kinna Chahuni Aa<br />
+									Eh Gall Teri Soch Ton Pareh<br /> <br />
+									Akhiyan Ch Har Wele Tera Mukh Ve<br />
+									Takk Tainu Tuttde Ne Saare Dukh Ve<br />
+									Deed Teri Ta Eh Nazara<br />
+									Pyaas Lagge Te Na Lagge Bhukh Ve<br />
+									Akhiyan Ch Har Wele Tera Mukh Ve<br />
+									Takk Tainu Tuttde Ne Saare Dukh Ve<br />
+									Deed Teri Ta Eh Nazara<br />
+									Pyaas Lagge Te Na Lagge Bhukh Ve<br />
+									Tere Bina Aaunn Na Supney<br />
+									Supney Vi Jhidak Ke Main Dharey<br />
+									Ve Main Tainu Kinna Chahuni Aa<br />
+									Eh Gall Teri Soch Ton Pareh<br /> <br />
+									Ve Tere Bina Raahan Mere Yaara<br />
+									Manzilan Nu Jaan Ton Ne Darey<br />
+									Ve Main Tainu Kinna Chahuni Aa<br />
+									Eh Gall Teri Soch Ton Pareh<br /> <br />
+									Zindagi De Ditte Tainu Saare Ha Oye<br />
+									Gairan Vall Takeya Na Akh Chakk Oye<br />
+									Kach Utte Vi Nach Jawangi<br />
+									Wafaa Meri Te Na Karin Shaq Oye<br />
+									Zindagi De Ditte Tainu Saare Ha Oye<br />
+									Gairan Vall Takkeya Na Akh Chakk Oye<br />
+									Kach Utte Vi Nach Jawangi<br />
+									Wafaa Meri Te Na Karin Shak Oye<br />
+									Ik Tainu Paun De Karke<br />
+									Na Ginnati Main Kinne Zakhm Zarey<br />
+									Ve Main Tainu Kinna Chahuni Aa<br />
+									Eh Gall Teri Soch Ton Pareh<br />
+									Tere Layi Jo Jazbaat Jaani<br />
+									Oh Sone Chandi Ton Vi Kharey<br />
+									Ve Main Tainu Kinna Chahuni Aa<br />
+									Eh Gall Teri Soch Ton Pareh<br />
+
+
+							</p>
+							
+
+						</div>
+							<div class="song2" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+							<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#FF47A3;"><a  href="#"class="click12"style="text-decoration:none; color:black;"><img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>&nbsp; &nbsp;&nbsp;2. Proper Patola By Diljit Dosanjh &nbsp;&nbsp; &nbsp; <a  href="#"class="click2"style="text-decoration:none; color:black;"> Next<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+							<img style="width:80%;height:280px;margin-left:85px;"src="images/Proper-Patola.jpg"></img>
+
+							<audio style="margin-top:5px;width:80%;margin-left:85px;"src="music/01 Diljit Dosanjh - Proper Patola [SongsPk.Fm].mp3" controls>
+							</audio>
+							
+							<p style="color:white; font-family:Forte;font-size:20px;text-align:center;padding:30px;">
+									Proper Patola . Nakhra Ae SWAG .<br />
+									Suit Patiala Shahi . Chuni Teri BLACK<br />
+									O Munde Haunke Bharde, Tenu Takk Takk Ke,<br />
+									Ture Jado Gutt Tu Lakk Utte Rakh Ke.....<br /> <br />
+									Just Another Day Aa,<br />
+									Launda C Main Gedian,<br />
+									Raah Jandi Vekhi Gaddi Karti Main Slow,<br />
+									Mastani Chaal Lagdi Kamal,<br />
+									Jandi Jandi Mera Mind Kargi Tu Block,<br />
+									10 Vicho 10 Tu, Kudi Tu Patola,<br />
+									Rabb Jane Khaure Kehda Khandi Tu Anaaz,<br />
+									Lagdi Tu Aagaz, Gundwa Sarir Tera,<br />
+									Lakk Lichkaundi Jiwe Jina K Tenu Naaz,<br /> <br />
+									Proper Patola . Nakhra Ae SWAG .<br />
+									Suit Patiala Shahi . Chuni Teri BLACK<br />
+									O Munde Haunke Bharde, Tenu Takk Takk Ke,<br />
+									Ture Jado Gutt Tu Lakk Utte Rakh Ke.....<br /> <br />
+									Rabb Ne Husna Di Rakhi Koi Thor Ni,<br />
+									Gallan Di Laali Nu Make Up Di Koi Lod Ni,<br />
+									Full Gulab De, Bull Janab De,<br />
+									Soh Lage Menu Mummy Di<br />
+									Tera Koi Tod Ni.<br />
+									Thodi Te Till Kala Kudiye Ni Baatan Pawe,<br />
+									Suit Patiala Guchi Muchi Nu Maatan Pawe,<br />
+									Aa Ghar Tera Ni Main Ape Lab Lu<br />
+									Sanu Bas Dasja Tu Naaa,<br /> <br />
+									Proper Patola . Nakhra Ae SWAG .<br />
+									Suit Patiala Shahi . Chuni Teri BLACK<br />
+									O Munde Haunke Bharde, Tenu Takk Takk Ke,<br />
+									Ture Jado Gutt Tu Lakk Utte Rakh Ke.....<br /> 
+							</p>
+							
+
+						</div>
+							<div class="song3" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+							<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#FF47A3;"><a  href="#"class="click13"style="text-decoration:none; color:black;"><img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>&nbsp; &nbsp;&nbsp;3.Blue Eyes By Yo Yo Honey SIngh &nbsp;&nbsp; &nbsp; <a  href="#"class="click3"style="text-decoration:none; color:black;"> Next<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+							<img style="width:80%;height:280px;margin-left:85px;"src="images/Blue-Eyes-bomb-lagdi-menu-By-Yo-Yo-Honey-Singh.jpg"></img>
+
+							<audio style="margin-top:5px;width:80%;margin-left:85px;"src="music/01 Yo Yo Honey Singh - Blue Eyes [MusikMaza.Com].mp3" controls>
+							</audio>
+							
+							<p style="color:white; font-family:Forte;font-size:20px;text-align:center;padding:30px;">
+									Blue EyeS HypNoTize Teri Kardi Eh MeNu<br />
+									I SweAr ChoTi DreSS Mein BomB LaGdi Menu<br />
+									Glossy LiPs uff yeh TricKs<br />
+									Baby Lagdi Eh KiLLeR<br />
+									oh YeHH oh YeHH<br />
+									kaTtl  KaRe TerA BomB FiGuRe <br />
+									Blue EyeS HypNoTize Teri Kardi Hh Menu<br />
+									I Swear Choti Dress Mein Bomb Lagdi Menu<br />
+									Bomb Lagdi Menu , Bomb Lagdi Menu<br /> <br />
+									Mere Aakhon Mein Dekh Kar<br />
+									Jadd Mein Baat Karta Hoon <br />
+									Mein Woh Lounda Nahi Hoon <br />
+									Jo Tere Sath Partha Hoon <br />
+									White Ginni Laayan Hoon <br />
+									Tujhe Pick Karlu <br />
+									Dekh Lau Ga Tere Asshiqo <br />
+									Aur Teri TeacHer Nu <br /> <br />
+									Laike Challu Ride Par <br />
+									PhiR Chat Khol Ke <br />
+									Sidhi Baat Karu Nah <br />
+									Karu Tol Mol ke <br />
+									ToNight I Gotta HoLD YoU TiGhT<br />
+									Ajj Haugi Ghar Late Fon Karke Bol De <br /> <br />
+									Blue EyeS HypNoTize Teri Kardi Eh MeNu<br />
+									I SweAr ChoTi DreSS Mein BomB LaGdi Menu<br />
+									Glossy LiPs uff yeh TricKs<br />
+									Baby Lagdi Eh KiLLeR<br />
+									oh YeHH oh YeHH<br />
+									kaTtel KaRe TerA BomB FiGuRe <br /> <br />
+									Ghar Pe ChaLnA Hai Ja PeHLe  JaYegi  CLuB<br />
+									Ni MeRa MaTLaB GhAr Ke CLuB<br />
+									TaBB Lau Ga LeFT NaHi To RighT <br />
+									CluB MeiN Hoga ShoR BaBy<br />
+									GhAr MeIn PilloW FiGhT <br />
+									DeCiDe ... Ke KiYa KaRna Hai<br />
+									TujKo Ton JaRa Sa Be DarNa Hai <br />
+									ChaMpaGne Ger Di Hai TuNNe Meri PenT Par<br />
+									KeHti Hai ChanGe KarLo <br />
+									HoTeL Lai Ke RenT Par <br /> <br />
+									Blue EyeS HypNoTize Teri Kardi Eh MeNu<br />
+									I SweAr ChoTi DreSS Mein BomB LaGdi Menu<br />
+									Glossy LiPs uff yeh TricKs<br />
+									Baby Lagdi Eh KiLLer <br />
+									oh YeHH oh YeHH<br />
+									kaTtel KaRe TerA BomB FiGuRe <br /> <br />
+									SuNa Tere CoLLegE Mein <br />
+									MeRe GaaNe BaN Hai<br />
+									PaDne LikhNe Ka TerA Na Koi Plan Hai <br />
+									PaSS Kra Du , FoNe GhuMa Du <br />
+									Teri PriNcipaL Be  BaBy Yo Yo Ki FaN Hain <br /> <br />
+									KehNdi <br />
+									Yo Yo HoneY SingH <br /> <br />
+									Blue EyeS HypNoTize Teri Kardi Eh MeNu<br />
+									I SweAr ChoTi DreSS Mein BomB LaGdi Menu<br />
+									Glossy LiPs uff yeh TricKs<br />
+									Baby Lagdi Eh KiLLeR<br />
+									oh YeHH oh YeHH<br />
+									kaTtel KaRe TerA BomB FiGuRe <br />
+									Blue EyeS HypNoTize Teri Kardi Eh MeNu<br />
+									I SweAr ChoTi DreSS Mein BomB LaGdi Menu<br />
+									I swear Choti Dress Mein Bomb Laggdi Mainu<br />
+									Bomb Laggdi Mainu , Bomb Laggdi Mainu <br />
+
+							</p>
+						
+						</div>
+							<div class="song4" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+							<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#FF47A3;"><a  href="#"class="click14"style="text-decoration:none; color:black;"><img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>&nbsp; &nbsp;&nbsp;4. Take Your Sandles Off By Girik Aman &nbsp;&nbsp; &nbsp;  <a  href="#"class="click4"style="text-decoration:none; color:black;"> Next<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+							<img style="width:80%;height:280px;margin-left:85px;"src="images/Take Your Sandals Off Girik Aman Ft Badshah.jpg"></img>
+
+							<audio style="margin-top:5px;width:80%;margin-left:85px;"src="music/Take_Your_Sandals_Off_-Girik Aman (DjPunjab.Com).mp3" controls>
+							</audio>
+							
+							<p style="color:white; font-family:Forte;font-size:20px;text-align:center;padding:30px;">
+										Disco vich ghaa pe gaya, Girik Aman<br
+									/> Disco vich ghaa pe gaya Ish Yo Boy Badshah<br/><br/>Din si ga shukarvaar da ban than ke ayen<br
+									/> Club da temperature vi tu kar da ni high<br
+									/> DJ nu kehke apna gaana lava leya<br
+									/> Coca cola de vich phir ohne kuch pa leya<br
+									/> Jadh madam aye floor vich, jadh madam aye floor vich<br
+									/> Phir agg vangu oh machi<br
+									/> Disco vich ghaa pe gaya, jadh sandal la ke nachi<br
+									/> Disco vich ghaa pe gaya, jadh sandal la ke nachi<br
+									/> Disco vich ghaa pe gaya&#8230;<br/><br/>Disco vich ghaa pe gaya<br
+									/> Disco vich ghaa pe gaya<br
+									/> Disco vich ghaa pe gaya<br
+									/> Disco vich ghaa pe gaya<br/><br/>Take your sandals off (take your sandals off)<br
+									/> Take your sandals off (take your sandals off)<br
+									/> Take your sandals off (take your sandals off)<br
+									/> Take your sandals off (take your sandals off)<br/><br/>Sandal hatha vich le ke oh table utte chad gayi<br
+									/> Jadhe si krde cha cha oh sabde naal si ladh gayi<br
+									/> Sandal hatha vich le ke oh table utte chad gayi<br
+									/> Jadhe si krde cha cha oh sabde naal si ladh gayi<br/><br/>Nakhre di pakki si oh<br
+									/> Nakhre di pakki so oh<br
+									/> Paave si umar di kachi<br
+									/> Disco vich ghaa pe gaya, jadh sandal la ke nachi<br
+									/> Disco vich ghaa pe gaya, jadh sandal la ke nachi<br
+									/> Disco vich ghaa pe gaya&#8230;<br/><br/>Disco vich ghaa pe gaya<br
+									/> Disco vich ghaa pe gaya<br
+									/> Disco vich ghaa pe gaya<br
+									/> Disco vich ghaa pe gaya<br/><br/><em>(Badshah Raps)</em><br/><br/>Arey koi naa roko, koi na toko<br
+									/> Aaj chori ne nachan diyo<br
+									/> DJ waale haath hatale<br
+									/> Iss gaane ne bajan diyo<br
+									/> Chori ne chad gayi ghani kasuti<br
+									/> Utaar ke apne pairan ki juti<br
+									/> Hath me le ke floor pe chadg gayi….<br
+									/> Sabke beech me badh gayi<br/><br/>Dance kare jami andy chori ghani tu trendy<br
+									/> Sandal leri jimmy tu aur purse tu le rahi friendy<br
+									/> Muje ni lagta tuje koi bhi fikar jamane ki<br
+									/> Arey bus itna bta de tu ke kya karwa ke manegi&#8230; hain!<br/><br/>Nachan te aye ta phir nachi oh senti hoke<br
+									/> Nakhro phir nak chadaundi mundeya te anti hoke<br
+									/> Nachan te aye ta phir nachi oh senti hoke<br
+									/> Nakhro phir nak chadaundi mundeya te anti hoke<br/><br/>Badshah likhda yaaro<br
+									/> Badshah likhda yaaro<br
+									/> Gal karda mein vi sachchi<br/><br/>Disco vich ghaa pe gaya, jadh sandal la k nachi<br
+									/> Disco vich ghaa pe gaya, jadh sandal la k nachi<br
+									/> Disco vich ghaa pe gaya&#8230;<br/><br/>Disco vich ghaa pe gaya<br
+									/> Disco vich ghaa pe gaya<br
+									/> Disco vich ghaa pe gaya<br
+									/> Disco vich ghaa pe gaya<br/><br/>Take your sandals off (take your sandals off)<br
+									/> Take your sandals off (take your sandals off)<br
+									/> Take your sandals off (take your sandals off)<br
+									/> Take your sandals off (take your sandals off)
+
+
+
+							</p>
+						
+						</div>
+							<div class="song5" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+							<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#FF47A3;"><a  href="#"class="click15"style="text-decoration:none; color:black;"><img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>&nbsp; &nbsp;&nbsp;5. 12 Saal By Bilal Saeed &nbsp;&nbsp; &nbsp; <a  href="#"class="click5"style="text-decoration:none; color:black;"> Next<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+							<img style="width:80%;height:280px;margin-left:85px;"src="images/67787_429684520432571_1135654523_n.jpg"></img>
+
+							<audio style="margin-top:5px;width:80%;margin-left:85px;"src="music/12_-_12_Saal__www.mp3" controls>
+							</audio>
+							
+							<p style="color:white; font-family:Forte;font-size:20px;text-align:center;padding:30px;">
+									o Ranjhay majhiyan charayan baara saal<br />Doli lay gaiay par khairhay aa kay naal<br /><br />Phar mirzay vi puchya sawaal ka sahba<br />Dus kairi galon chali ye tu chaal<br /><br />Haal majnu da hoya bay haal<br />o Sassi punnu di ki devaan men misaal<br /><br />o Waikho jairhay v zamaanay o naven ya puranay<br />ishq walyan da hoya bura haal<br /><br />yooooo o sun lo<br />o ishq bay parwah<br />o ishq bay parwahahah<br />o ishq bay parwah<br /><br />Jehra karda wafa tay onu milni saza o main kya<br /><br />o ishq bay parwah<br />o ishq bay parwahahah<br />o ishq bay parwah<br /><br /><br />Dubh gayaan wich thalan day sassiyan ranjhay jogi hoiay<br />Seenay wich jaagay jairhay aag ishq di o na sovay<br />Akhiyan wich lay kay sapnay raatan nu jagraatay kerday<br /><br />Gaanday o geet hijar day her wailay o hokay parday<br />Sokhi ay yaari laani laa kay phair nibhani okhi<br /><br />Jagh wairi ho jaiay saara taanay mainay dainday loki<br />Wakhri ay reet zamanay ishq walyan laie banaie<br /><br />Laikhan wich aina day bus likhi yaaro kyoun judaie<br />Ho jaavay ishq tay neender v udh jaaway<br /><br />Seenay chon saa dil darhkan ruk jaavay<br />Laggay fana her dunya di than tay <br />Akhiyan chon was was athru vi suk jaavay<br /><br />ho jaavay ishq tay duniya v pull jaavay<br />saari jawani wich mityan day rull jaavay<br /><br />jaanay khda kis gal ton bhala ay ishq walyan nu kadi milay na wafa<br /><br />o ranjhay majhiyan charayan baara saal<br />Doli lay gaiay par khairhay aa kay naal<br /><br />Phar mirzay vi puchya sawaal ka sahba<br />Dus kairi galon chali ye tu chaal<br /><br />Haal majnu da hoya bay haal<br />o sassi punnu di ki devaan men misaal<br /><br />o Wikho jairhay v zamaanay o naven ya puranay<br />Ishq walyan da hoya bura haal<br /><br />o ishq bay parwah<br />o ishq bay parwahahah<br />o ishq bay parwah<br /><br />jehra karda wafa tay onu milni saza o main kya ...2x<br />
+
+
+
+							</p>
+
+						</div>
+						
+				
+					<div class="song6" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+					<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#FF47A3;"><a  href="#"class="click16"style="text-decoration:none; color:black;"><img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>&nbsp; &nbsp;&nbsp;6. Aaja Ve Aaja By A-bazz &nbsp;&nbsp; &nbsp; <a  href="#"class="click6"style="text-decoration:none; color:black;"> Next<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+					<img style="width:80%;height:280px;margin-left:85px;"src="images/front-cover1.jpg"></img>
+
+					<audio style="margin-top:5px;width:80%;margin-left:85px;"src="music/07 Aaja Ve Aaja Ve.mp3" controls>
+					</audio>
+					
+					<p style="color:white; font-family:Forte;font-size:20px;text-align:center;padding:30px;">
+							Sach mai kehndiya dur mai ni rehna<br />
+							Manga mai pyar tera duniya to ki lena<br />
+							Sach mai kehndiya dur mai ni rehna<br />
+							Manga mai pyar tera duniya to ki lena<br />
+							<br />
+							Lag gayia sadiya pave tenu mai yaad kara<br />
+							Tak tak ke raha sajna aah teri mai bhara<br />
+							Bhulaya nu kar nu aaya badla ne ni barsaya<br />
+							Sacche dil naal ve sajna tenu ha tenu chahya<br />
+							<br />
+							<br />
+							Aaja ve aaja ve aaja<br />
+							Tak diya raha ne<br />
+							Aaja ve aaja ve aaja<br />
+							Sunya mere bahane<br />
+							Aaja ve aaja ve<br />
+							Tak diya raha ne<br />
+							Aaja ve aaja ve aaja<br />
+							Sunya mere bahane<br />
+							<br />
+							<br />
+							Hun ki hona hona ki maafiya mang ke<br />
+							Door mai to hogi tu hadda nu lang ke<br />
+
+							Waja marda kalla ratta nu ro ke<br/>
+							Zindagi banaye apni khushiyon nu kho ke<br/>
+							<br />
+							Hun wapas te mai aa ni sakda beshak mai pyar kara<br/>
+							Tere pichhe ha kudiye lakha de naal lada<br/>
+							Jag de jhamele vich mitti vak raul gaya<br/>
+							Ki honda si hun hasana hase ve bhul gaya<br/><br/>
+							<br />
+							Aaja ve aaja ve aaja<br />
+							Tak diya raha ne<br />
+							Aaja ve aaja ve aaja<br />
+							Sunya mere bahane<br />
+							Aaja ve aaja ve<br />
+							Tak diya raha ne<br />
+							Aaja ve aaja ve aaja<br />
+							Sunya mere bahane<br/><br/>
+							Galte jo me to hogi maaf karde harjaye<br/>
+							Te to mai manga tenu fariyaad tere taye<br/>
+							Saja de jo tu deni menu hai sab manjoor<br/>
+							Hogi jo me to khata mera tut gaya guroor<br/>
+							<br />
+							Ankhaa meri bar aayiya deni tu mai duhaiya<br/>
+							Palle na mere kuch bhi na deni tenu safaiya<br/><br/>
+
+							<br />
+							Aaja ve aaja ve aaja<br />
+							Tak diya raha ne<br />
+							Aaja ve aaja ve aaja<br />
+							Sunya mere bahane<br />
+							Aaja ve aaja ve<br />
+							Tak diya raha ne<br />
+							Aaja ve aaja ve aaja<br />
+							Sunya mere bahane<br />
+							<br />
+							Aaja ve aaja ve
+							<br />
+							Sajna hun aaja ve<br />
+							<br />
+							Aaja ve aaja ve<br />
+							Sajna hun aaja ve<br />
+							Aa.....<br />
+							<br />
+							Sajna hun aaja ve<br />
+							Aa......<br />
+							Tak diya raha ne
+							<br />
+
+
+					</p>
+
+				
+
+				
+				
+				</div>
+				<div class="song7" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+					<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#FF47A3;"><a  href="#"class="click17"style="text-decoration:none; color:black;"><img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>&nbsp; &nbsp;&nbsp;7. Satisfya By Imran Khan &nbsp;&nbsp; &nbsp; <a  href="#"class="click7"style="text-decoration:none; color:black;"> Next<img style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+					<img style="width:80%;height:280px;margin-left:85px;"src="images/maxresdefault.jpg"></img>
+
+					<audio style="margin-top:5px;width:80%;margin-left:85px;"src="music/Satisfya-Imran Khan.mp3" controls>
+					</audio>
+					
+					<p style="color:white; font-family:Forte;font-size:20px;text-align:center;padding:30px;">
+									Gaddi Lamborghini peele rang di <br>
+									Menu kendi ay chala ve slowly<br>
+									Oh pehle gear te jadon mordi<br>
+									O menu lagni ay the one and only<br>
+									Ay ay bechare mundeyan de dilaan di tu quaatil<br>
+									Vekhade meny kiven javengi tu faster<br>
+									Dub de tu gas ni a little bit harder a bit harder yo<br>
+									<br>
+									I'm a ridah, providah <br>
+									bring the heat girl<br>
+									I'ma bring the fire<br>
+									And my name keeps staring worldwide now<br>
+									So my job is to <br>
+									Satisfy yaaa (aaa, ay, satisfy aaa, ai)<br>
+									<br>
+									Call me call me mr makaveli<br>
+									I make em disappear just like harry Houdini<br>
+									Ve ni me lyrically so insane ah<br>
+									so ah meri chest te chain ah<br>
+									sanu na kise di vi cheez di Problem <br>
+									kehne lok they see me as a problem<br>
+									Samaj menu na aave menu ki ay problem<br>
+									I give them a cure with a fresh new album<br>
+									<br>
+									I'm a ridah providah <br>
+									bring the heat girl<br>
+									I'ma bring the fire<br>
+									And my name keeps staring worldwide now<br>
+									So my job is to <br>
+									Satisfy yaaa (aaa, ay, satisfy aaa, ai)<br>
+									<br>
+									I'm never gonna stop while Im hard workin<br>
+									I am in a zone when you can't stop meh<br>
+									hit nahio Baneya fe straight to the bin<br>
+									This is the way I like ta workin<br>
+									I'm never gonna stop while Im hard workin<br>
+									I am in a zone when you can't stop meh<br>
+									hit nahio Baneya fe straight to the bin<br>
+									So move out the way ay, ay, ay<br>
+									<br>
+									I'm a ridah providah <br>
+									bring the heat girl<br>
+									I'ma bring the fire<br>
+									And my name keeps staring worldwide now<br>
+									So my job is to <br>
+									Satisfy yaaa (aaa, ay, satisfy aaa, ai)
+
+
+					</p>
+
+				
+
+				
+				
+				</div>
+				<div class="song8" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+					<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#FF47A3;"><a  href="#"class="click18"style="text-decoration:none; color:black;"><img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>&nbsp; &nbsp;&nbsp;8.Munda Iphone Warga By A-Kay &nbsp;&nbsp; &nbsp; <a  href="#"class="click8"style="text-decoration:none; color:black;"> Next<img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+					<img style="width:80%;height:280px;margin-left:85px;"src="images/998555_364857866974493_1273655119_n.jpg"></img>
+
+					<audio style="margin-top:5px;width:80%;margin-left:85px;"src="music/Munda Iphone Warga (A-Kay) (DjPunjab.Com).mp3" controls>
+					</audio>
+					
+					<p style="color:white; font-family:Forte;font-size:20px;text-align:center;padding:30px;">
+									A Kay, Bling Singh, Musical Doctorz<br/>
+									jann jan khangdi ae, chedd chedd langdi ae<br/>
+									Asi jind jaan yaara utton vaarde<br/>
+									Tu bhaldi ae mitran to cash goriye<br/>
+									Munda Sohniye Sohniye Munda Sohniye Sohniye<br/>
+									Munda Sohniye ne iPhone warga<br/>
+									Jani khani nal khani nal Jani khani nal khani nal<br/>
+									Jani khani nal hunda ne attach goriye<br/>
+									<br/>
+									Time pass hona nai sacha pyaar karange<br/>
+									Tutt gea dil je mehnge mull bhara ge<br/>
+									Tera pyaar jape nakli ji app jeha<br/>
+									Hou mint mint picho han crash goriye<br/>
+									Munda Sohniye Sohniye Munda Sohniye Sohniye<br/>
+									Munda Sohniye ne iPhone warga<br/>
+									Jani khani nal khani nal Jani khani nal khani nal<br/>
+									Jani khani nal hunda ne attach goriye<br/>
+									<br/>
+									Rap:<br/>
+									Jo asal vich hoya main dita yaaro likh<br/>
+									Eh geet siga paya status vich likh<br/>
+									Te chak otho geet kise apan bnalea<br/>
+									Te geet nu bana k ohne sab nu sunalea<br/>
+									Sanu v ae yaaro kito pata lag gea<br/>
+									Gal sunnde hi yaaro sanu dhakka lagg gea<br/>
+									Ratto Raat ae banaya taaki hun chak lave na<br/>
+									Te sach ki ae yaaro kise nu shak rave na<br/>
+									Tahio kadna pea ae yaaro sanu kaali kaali ch<br/>
+									Hundal da ae geet jehda vasda mohali ch<br/>
+									<br/>
+									Hundal mohali vala tharak da bhukka ne<br/>
+									Pyaar sahaan da hai khed biba buta nae<br/>
+									Parchava v hai oh ta tere jahiyan to<br/>
+									Rakh da ae foot da han gap goriye<br/>
+									Munda Sohniye Sohniye Munda Sohniye Sohniye<br/>
+									Munda Sohniye ne iPhone warga<br/>
+									Jani khani nal khani nal Jani khani nal khani nal<br/>
+									Jani khani nal hunda ne attach goriye<br/>
+
+
+
+					</p>
+
+				
+
+				
+				
+				</div>
+				<div class="song9" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+					<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#FF47A3;"><a  href="#"class="click19"style="text-decoration:none; color:black;"><img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>&nbsp; &nbsp;&nbsp;9.Pyaar Mera By Jassi Gill & Pav Dharia &nbsp;&nbsp; &nbsp;<a  href="#"class="click9"style="text-decoration:none; color:black;"> Next<img style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+					<img style="width:80%;height:280px;margin-left:85px;"src="images/Pyar Mera Jassi Gill wallpapers.jpg"></img>
+
+					<audio style="margin-top:5px;width:80%;margin-left:85px;"src="music/Jassi_Gill_&_Pav_Dharia_-_Pyar_Mera_-_(PunjabiMob.Com).mp3" controls>
+					</audio>
+					
+					<p style="color:white; font-family:Forte;font-size:20px;text-align:center;padding:30px;">
+									bhull gya rab bhull menu gya jag<br />
+									chahida si jo v mil gya menu sab<br />
+									meri likhi pair paade<br />
+									meri jholi khair paade<br />
+									kari meharbani hun apne gulaam te<br />
+									pyar mera pahunch gya eho jehe mukaam te<br />
+									shuru tere naam te khatam tere naam te<br />
+									bhull gya rab bhull menu gya jag<br />
+									chahida si jo v menu mil gya sab<br />
+									<br />
+									tere nalo sohna hun koi v na lagge<br />
+									jado tere hoye te ki piche te ki agge<br />
+									teri sharat hazoor<br />
+									ikali ikalli manzoor<br />
+									asi likh ditti haan tere pyar de paigaam te<br />
+									pyar mera pahunch gya eho jehe mukaam te<br />
+									shuru tere naam te khatam tere naam te<br />
+									bhull gya rab bhull menu gya jag<br />
+									chahida si jo v menu mil gya sab<br />
+									<br />
+									sariya de naa te dil likhde nai<br />
+									asi aashiq haan ik de harik de nai<br />
+									unjh dawedaar ethe hor beshumar<br />
+									par tere jeha koi nahi o duniya tamaam te<br />
+									pyar mera pahunch gya eho jehe mukaam te<br />
+									shuru tere naam te khatam tere naam te<br />
+									bhull gya rab bhull menu gya jag<br />
+									chahida si jo v menu mil gya sab<br />
+									<br />
+									babbu waste hi eid tera mukh wekh laina<br />
+									ode waste hai hazz tenu matha tek laina<br />
+									tera dekh lena mukh<br />
+									mere torh dinda dukh<br />
+									hun kirpa e mere dil de araam te<br />
+									pyar mera pahunch gya eho jehe mukaam te<br />
+									shuru tere naam te khatam tere naam te<br />
+									bhull gya rab bhull menu gya jag<br />
+									chahida si jo v menu mil gya sab
+
+
+
+
+									
+					</p>
+
+				
+
+				
+				
+				</div>
+				<div class="song10" style="background:black;width:100%;height:100%;border-radius:2px;display:none;">
+					<p style="color:white; font-family:Forte;font-size:25px;text-align:center;padding:10px;box-shadow:0px 0px 5px white;background:#FF47A3;"><a  href="#"class="click110"style="text-decoration:none; color:black;"><img  style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right - Copy.png"/>Back</a>&nbsp; &nbsp;&nbsp;10. Kudi Tu Patakha &nbsp;&nbsp; &nbsp;<a  href="#"class="click10"style="text-decoration:none; color:black;"> Back <img style="margin-bottom:-5px;width:30px; height:30px; "src="images/008004-glossy-black-icon-arrows-arrowhead-solid-right.png"/></a></p>
+					<img style="width:80%;height:280px;margin-left:85px;"src="images/kudi-tu-pataka-cover.jpg"></img>
+
+					<audio style="margin-top:5px;width:80%;margin-left:85px;"src="music/Kudi Tu Pataka.mp3" controls>
+					</audio>
+					
+					<p style="color:white; font-family:Forte;font-size:20px;text-align:center;padding:30px;">
+								Kudi Tu Pataka  Dil Ch Dhamaka <br />
+								Tennu Pattne Layi Asi  Laya Ajj Naaka <br />
+								Han Door Jo Kahri Hai O Ta Meri FullJhadi<br />
+								Dekhi Yaaran Da Tashan Vaar Jaana Nahio Khali <br />
+								Chiti Jahi Kabootri Te Akh Hai Tikaali <br />
+								Jinne Fasa Layi Ohdi Eh Diwali <br /> <br /> <br />
+								Hooo Lavvan Mein Gediya <br />
+								Jivve Ghumdi Aa Firki <br />
+								Kade Ta kholi Gi Tu V <br />
+								Dil Waali Khidki <br />
+								Umeed Badi Eaa <br />
+								O  Mere Layi Bani Eaa<br />
+								Mein Ta Rokke Di Dress Vekho Pehla Hi Sawali<br />
+								Chiti Jahi Kabootri Te Akh Hai Tikaali <br />
+								Jinne Fasa Layi Ohdi Eh Diwali <br /> <br /> <br />
+								Vadd Nah Tu Dayi  Saade Chahat Waale Khaamb<br />
+								Vekhi Fuss Na Kar Dayi Tu Sada  Allo Bomb <br />
+								Fabbe Gi Sadi Jodi Thand Paaja Thori Thori <br />
+								Sachi Tuhi Mera Shimla Te Tuhi Hai Manali <br />
+								Chiti Jahi Kabootri Te Akh Hai Tikaali <br />
+								Jinne Fasa Layi Ohdi Eh Diwali <br /> <br /> <br />
+								Haye Nakhra Hein Rocket Tera <br />
+								Hassa  Hai Aanaar<br />
+								Ho Fukk Geya Socket Mera <br />
+								Dil Hein Bimaar  <br />
+								Cheti Kadd Koi Sitta <br />
+								Aa Krade Mooh Mitha <br />
+								Sadi Cheera Ton Payi Hein <br />
+								Chah Di Piyaaali <br />
+								Chiti Jahi Kabootri Te Akh Hai Tikaali <br />
+								Jinne Fasa Layi Ohdi Eh Diwali 
+
+									
+					</p>
+
+				
+
+				
+				
+				</div>
+			</div>
+				<div class="box1">
+					<a href="english.html" style="color:white; text-decoration:none;font-family:Forte;font-size:20px;text-align:center;">
+					Top 10 English Songs With Lyrics
+					</a>
+				</div>
+				<div class="box2">
+				<a href="bollywood.html" style="color:white; text-decoration:none;font-family:Forte;font-size:20px;text-align:center;">
+					Top 10 Hindi Songs With Lyrics
+					</a>
+				
+				</div>
+				<div class="box3">
+				<a href="punjabi.html" style="color:white; text-decoration:none;font-family:Forte;font-size:20px;text-align:center;">
+					Top 10 Punjabi Songs With Lyrics
+					</a>
+				
+				</div>
+			
+			</div>
+			
+			
+		
+		</div>
+		<footer style="margin-top:10%">
+				<hr/>
+				<b style="color:white">YUNGISTAAN  copyright &copy; Surbhi Zalpuri 2014</b>
+
+		</footer>
+			
+	</div>
+</body>
+
+</html>
+			

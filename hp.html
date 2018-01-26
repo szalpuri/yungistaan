@@ -1,0 +1,241 @@
+<!Doctype html>
+<html>
+	<head>
+	<script src="jquery.min.js"/>
+	
+	<script type="text/javascript">
+	
+	$(function() {
+			$("#tfq2b").click(function() {
+				if ($("#tfq2b").val() == "Search Google"){
+					$("#tfq2b").val(""); 
+				}
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+
+			function loop(){
+		  $('#1').fadeOut(4000, function(){
+			$('#2').fadeOut(4000, function(){
+				$('#3').fadeOut(4000, function(){
+					$('#4').fadeOut(4000, function(){
+						$('#5').fadeOut(4000, function(){
+							$('#6').fadeOut(4000, function(){
+								
+									$('#1').fadeIn().css({"z-index":"0"});
+									$('#7').fadeOut(2000, function(){
+											$('#2').fadeIn();
+											$('#3').fadeIn();
+											$('#4').fadeIn();
+											$('#5').fadeIn();
+											$('#6').fadeIn();
+											$('#7').fadeIn();
+										loop();
+									});
+								
+							});
+						});	
+					});
+				});
+			});
+		  });
+		}
+		loop();
+			var monthNames = [ "January", "February", "March", "April", "May", "June",
+			"July", "August", "September", "October", "November", "December" ];
+			var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+
+			var newDate = new Date();
+				newDate.getDate();    
+			$('#Date').html("Date"+ " " + ":" + " " +dayNames[newDate.getDay()] + " " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
+		});
+	</script>
+	<link rel="stylesheet" type="text/css" href="style/mystyle.css"></link>
+	<link rel="stylesheet" type="text/css" href="style/books.css"></link>
+	</head>
+	<body>
+	
+	<div class="wrapper">
+		<header>
+		<div class="bar">
+			<img class="logo" src="images/logo.jpg" style="width:160px; height:110px;margin-left:10px;"/>
+			<div class="sitename">
+		
+			All in one Entertainment Stop!<br/>
+			Music! Masti! Love & Dosti!
+			
+			</div>
+			<div id="tfheader">
+				<form id="tfnewsearch" method="get" action="http://www.google.com">
+						<input type="text" id="tfq2b" class="tftextinput2" name="q" size="21" maxlength="120" placeholder="Search Google"><input type="submit" value=">" class="tfbutton2">
+				</form>
+				<div class="tfclear"></div>
+			</div>
+			<div id="Date" style="color:white;font-weight:bold;font-size:20px;font-style:italic;float:right; margin-top:-100px;width:260px;height:20px;"></div>
+			
+		</div>
+
+		<div class="nav" >
+		 <ul class="menu">
+			<li><a href="home.html">Home</a>
+				
+			<li>
+			<li><a href="music.html">Music</a>
+				<ul>
+					<li><a href="english.html">English</a></li>
+					<li><a href="bollywood.html">Bollywood</a></li>
+					<li><a href="punjabi.html">Punjabi</a></li>
+				</ul>
+			</li>
+			<li><a href="gallery.html">Gallery</a>
+				<ul>
+					<li><a href="videos.html">Videos</a></li>
+					<li><a href="wallpapers.html">Wallpapers</a></li>
+				</ul>
+			
+			</li>
+			<li><a href="books.html">Books</a>
+				<ul>
+					<li><a href="hp.html">HarryPotter</a></li>
+					<li><a href="twilight.html">Twilight</a></li>
+					<li><a href="tvd.html">TVD</a> </li>
+					<li><a href="hungergames.html">HungerGames</a></li>
+					
+					
+				</ul>
+			</li>
+			<li><a href="quotes.html">Quotes</a>
+				<ul>
+					<li><a href="frnshpq.html">Frienship</a></li>
+					<li><a href="loveq.html">Love</a></li>
+					<li><a href="brkupq.html">Breakup</a></li>
+					<li><a href="funnyq.html">Humour</a></li>
+				</ul>
+			</li>
+			<li><a href="hangouts.html">Hangouts</a>
+				<ul>
+					<li><a href="food.php">Food</a></li>
+					<li><a href="theatre.php">Theaters</a></li>
+					<li><a href="malls.php">Malls</a></li>
+					<li><a href="adventure.php">FunSpots</a></li>
+				</ul>
+			<li><a href="feedback.php">Feedback</a>
+				
+			</li>
+		</ul>
+		</div>
+		</header>
+		<div class="body">
+			<div class="slideshow">
+			
+				<img id="7" src="images/12292011505274319340.png"/>
+				<img id="6" src="images/Harry_Potter         .jpg"/>
+				<img id="5" src="images/harry_potter_timeline_cover__by_my_graphic-d567r24.jpg"/>
+				<img id="4" src="images/Harry-Potter-7-Cast-720x1280.jpg"/>
+				<img id="3" src="images/harry-potter-and-the-goblet-of-fire-movie.jpg"/>
+				<img id="2" src="images/memes.mugglenet.com_2738_1379342995.jpg"/>
+				<img id="1" src="images/Harry-Potter-Movies-Printable-Street-Widescreen-900x1600.jpg"/>
+				<div class="box-txt" style="top:226px;width:100%;height:54px;display: block;background:black;position:absolute;opacity:0.8;">
+					<p style="color:white; font-weight:bold;text-align:center;">DOWNLOAD AND READ BOOKS</p>
+					</div>
+			</div>
+			<div class="content" >
+			
+				<div class="booksintro">
+						<div class="hp1" style=" text-align:center;padding:10px;margin:0px auto; width:100%">
+							<a href="books/J.K. Rowling - HP 1 - Harry Potter and the Sorcerer's Stone.pdf" style="text-align:center;
+							text-decoration:none;color:white;margin:0px auto;border-radius:2px;font-family:forte;font-size:20px;">
+							<p style="margin:0px auto;background:#F20000;padding:10px;width:500px;border-radius:2px;color:white;box-shadow:0px 0px 5px white;">1. Harry Potter And The Philosophers Stone</p><br/>
+								<img src="images/Harry-Potter-and-the-Philosopher-s-stone-harry-potter-26078680-1024-768.jpg" style="border-radius:2px;width:700px;height:450px;"/></a>
+								<br/>
+						</div><br/><br/><br/>
+						<div class="hp2" style=" text-align:center;padding:10px;margin:0px auto; width:100%">
+							<a href="books/J.K. Rowling - HP 2 - Harry Potter and the Chamber of Secrets.pdf" style="text-align:center;
+							text-decoration:none;color:white;margin:0px auto;border-radius:2px;font-family:forte;font-size:20px;">
+							<p style="margin:0px auto;background:#F20000;padding:10px;width:500px;border-radius:2px;color:white;box-shadow:0px 0px 5px white;">2. Harry Potter And The Chambers Of Secrets</p><br/>
+								<img src="images/harry-potter-and-the-chamber-of-secrets-movie.jpg" style="width:700px;height:450px;border-radius:2px;"/></a>
+								<br/>
+						</div><br/><br/><br/>
+						
+						<div class="hp3" style=" text-align:center;padding:10px;margin:0px auto; width:100%">
+							<a href="books/J.K. Rowling - HP 3 - Harry Potter and the Prisoner of Azkaban.pdf" style="text-align:center;
+							text-decoration:none;color:white;margin:0px auto;border-radius:2px;font-family:forte;font-size:20px;">
+							<p style="margin:0px auto;background:#F20000;padding:10px;width:500px;border-radius:2px;color:white;box-shadow:0px 0px 5px white;">3. Harry Potter And The Prisoner Of Azkaban</p><br/>
+								<img src="images/harry-potter-and-the-prisoner-of-azkaban-movie.jpg" style="width:700px;height:450px;border-radius:2px;"/></a>
+								<br/>
+						</div><br/><br/><br/>
+						
+						<div class="hp4" style=" text-align:center;padding:10px;margin:0px auto; width:100%">
+							<a href="books/J.K. Rowling - HP 4 - Harry Potter and the Goblet of Fire.pdf" style="text-align:center;
+							text-decoration:none;color:white;margin:0px auto;border-radius:2px;font-family:forte;font-size:20px;">
+							<p style="margin:0px auto;background:#F20000;padding:10px;width:500px;border-radius:2px;color:white;box-shadow:0px 0px 5px white;">4. Harry Potter And The Goblet Of Fire</p><br/>
+								<img src="images/Harry_Potter_and_the_Goblet_Of_Fire.jpg" style="width:700px;height:450px;border-radius:2px;"/></a>
+								<br/>
+						</div><br/><br/><br/>
+						
+						<div class="hp5" style=" text-align:center;padding:10px;margin:0px auto; width:100%">
+							<a href="books/J.K. Rowling - HP 5 - Harry Potter and the Order of the Phoenix.pdf" style="text-align:center;
+							text-decoration:none;color:white;margin:0px auto;border-radius:2px;font-family:forte;font-size:20px;">
+							<p style="margin:0px auto;background:#F20000;padding:10px;width:500px;border-radius:2px;color:white;box-shadow:0px 0px 5px white;">5. Harry Potter And The Order Of The Phoenix</p><br/>
+								<img src="images/Order-of-the-Phoenix-harry-potter-69763_800_600.jpg" style="width:700px;height:450px;border-radius:2px;"/></a>
+								<br/>
+						</div><br/><br/><br/>
+						
+						<div class="hp6" style=" text-align:center;padding:10px;margin:0px auto; width:100%">
+							<a href="books/J.K. Rowling - HP 6 - Harry Potter and the Half-Blood Prince.pdf" style="text-align:center;
+							text-decoration:none;color:white;margin:0px auto;border-radius:2px;font-family:forte;font-size:20px;">
+							<p style="margin:0px auto;background:#F20000;padding:10px;width:500px;border-radius:2px;color:white;box-shadow:0px 0px 5px white;">6. Harry Potter And Half Blood Price</p><br/>
+								<img src="images/06_Michael_Gambon_in_Harry_Potter_and_the_Half-Blood_Prince_Wallpaper_11_1280_4814.jpg" style="border-radius:2px;width:700px;height:450px;"/></a>
+								<br/>
+						</div><br/><br/><br/>
+						
+						<div class="hp7" style=" text-align:center;padding:10px;margin:0px auto; width:100%">
+							<a href="books/J.K. Rowling - HP 7 - Harry Potter and the Deathly Hallows.pdf" style="text-align:center;
+							text-decoration:none;color:white;margin:0px auto;border-radius:2px;font-family:forte;font-size:20px;">
+							<p style="margin:0px auto;background:#F20000;padding:10px;width:500px;border-radius:2px;color:white;box-shadow:0px 0px 5px white;">7. Harry Potter And The Deathly Hallows</p><br/>
+								<img src="images/harrypotter7p1.jpg" style="width:700px;height:450px;border-radius:2px;"/></a>
+								<br/>
+						</div>
+						
+						
+						
+				
+				</div>
+				<div class="box1">
+					<a href="hp.html" style="color:white; text-decoration:none;font-family:Forte;font-size:20px;">
+					The Harry Potter
+					</a>
+				</div>
+				<div class="box2">
+				<a href="twilight.html" style="color:white; text-decoration:none;font-family:Forte;font-size:20px;">
+					The Twilight Saga
+					</a>
+				
+				</div>
+				<div class="box3">
+				<a href="tvd.html" style="color:white; text-decoration:none;font-family:Forte;font-size:20px;">
+					The Vampire Diaries
+					</a>
+				
+				</div>
+				<div class="box4">
+				<a href="hungergames.html" style="color:white; text-decoration:none;font-family:Forte;font-size:20px;">
+					The Hunger Games
+					</a>
+				
+				</div>
+			
+			</div>
+		
+		</div>
+		<footer style="margin-top:10%">
+				<hr/>
+				<b style="color:white">YUNGISTAAN  copyright &copy; Surbhi Zalpuri 2014</b>
+
+		</footer>
+	</div>
+</body>
+</html>
+			
